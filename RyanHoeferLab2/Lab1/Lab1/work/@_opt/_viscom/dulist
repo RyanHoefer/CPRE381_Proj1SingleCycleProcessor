@@ -1,0 +1,11 @@
+2 4 org2 8 dataflow 42 /home/rhoefer/cpre3810/Lab1/Lab1/Lab1/work 1 65 0 0 7 0
+2 5 andg2 8 dataflow 42 /home/rhoefer/cpre3810/Lab1/Lab1/Lab1/work 1 65 0 0 7 0
+2 5 xorg2 8 dataflow 42 /home/rhoefer/cpre3810/Lab1/Lab1/Lab1/work 1 65 0 0 7 0
+2 9 fulladder 10 structural 42 /home/rhoefer/cpre3810/Lab1/Lab1/Lab1/work 1 65 0 0 123 0
+2 7 adder_n 10 structural 42 /home/rhoefer/cpre3810/Lab1/Lab1/Lab1/work 1 65 3072 0 4050 0
+2 6 mux2t1 8 dataflow 42 /home/rhoefer/cpre3810/Lab1/Lab1/Lab1/work 1 65 0 0 14 0
+2 8 mux2t1_n 10 structural 42 /home/rhoefer/cpre3810/Lab1/Lab1/Lab1/work 1 65 0 0 537 0
+2 4 invg 8 dataflow 42 /home/rhoefer/cpre3810/Lab1/Lab1/Lab1/work 1 65 0 0 5 0
+2 10 onescomp_n 10 structural 42 /home/rhoefer/cpre3810/Lab1/Lab1/Lab1/work 1 65 0 0 228 0
+2 8 addsub_n 10 structural 42 /home/rhoefer/cpre3810/Lab1/Lab1/Lab1/work 1 65 0 0 914 0
+1 11 tb_addsub_n 5 mixed 42 /home/rhoefer/cpre3810/Lab1/Lab1/Lab1/work 1 65 1024 0 1084 0

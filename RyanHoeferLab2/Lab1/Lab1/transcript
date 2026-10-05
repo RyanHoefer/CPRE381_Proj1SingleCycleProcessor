@@ -1,0 +1,86 @@
+# //  Questa Sim-64
+# //  Version 2026.2 linux_x86_64 May 18 2026
+# //
+# // Unpublished work. Copyright 2026 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+vsim work.tb_tpu_mv_element
+# ** Note: (vsim-220) 'questa.ini' is used as the ini file.
+# vsim work.tb_tpu_mv_element 
+# Start time: 13:13:27 on Sep 18,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_tpu_mv_element(mixed)#1
+vsim work.tb_tpu_mv_element -voptargs=+acc
+# vsim: End time: 13:13:48 on Sep 18,2026, Elapsed time: 0:00:21
+# Errors: 0, Warnings: 0
+# ** Note: (vsim-220) 'questa.ini' is used as the ini file.
+# vsim work.tb_tpu_mv_element -voptargs="+acc" 
+# Start time: 13:13:48 on Sep 18,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_tpu_mv_element(mixed)#1
+# Loading ieee.numeric_std(body)
+# Loading work.tpu_mv_element(structure)#1
+# Loading work.regld(behavior)#1
+# Loading work.reg(behavior)#1
+# Loading work.multiplier(behavior)#1
+# Loading work.adder(behavior)#1
+add wave sim:/tb_tpu_mv_element/*
+# Load canceled
+run 300
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab1/Lab1/Lab1/TPU/TPU_MV_Element.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 14:47:20 on Sep 18,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab1/Lab1/Lab1/TPU/TPU_MV_Element.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity TPU_MV_Element
+# -- Compiling architecture structure of TPU_MV_Element
+# vcom: End time: 14:47:20 on Sep 18,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_tpu_mv_element
+# vsim: End time: 14:47:37 on Sep 18,2026, Elapsed time: 1:33:49
+# Errors: 0, Warnings: 1
+# ** Note: (vsim-220) 'questa.ini' is used as the ini file.
+# vsim -voptargs="+acc" work.tb_tpu_mv_element 
+# Start time: 14:47:37 on Sep 18,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.tb_tpu_mv_element(mixed)#1
+# Loading ieee.numeric_std(body)
+# Loading work.tpu_mv_element(structure)#1
+# Loading work.regld(behavior)#1
+# Loading work.reg(behavior)#1
+# Loading work.multiplier(behavior)#1
+# Loading work.adder(behavior)#1
+add wave sim:/tb_tpu_mv_element/*
+run 300
+# Causality operation skipped due to absence of debug database file
