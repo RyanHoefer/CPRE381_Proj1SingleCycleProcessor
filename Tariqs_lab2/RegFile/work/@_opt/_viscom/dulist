@@ -1,0 +1,6 @@
+1 12 decoder5to32 8 dataflow 29 U:/Cpre3810/Lab2/RegFile/work 1 65 0 0 29 0
+1 4 dffg 5 mixed 29 U:/Cpre3810/Lab2/RegFile/work 1 65 0 0 27 0
+1 10 register_n 10 structural 29 U:/Cpre3810/Lab2/RegFile/work 1 65 0 0 953 0
+1 8 mux32to1 8 dataflow 29 U:/Cpre3810/Lab2/RegFile/work 1 65 0 0 207 0
+1 7 regfile 10 structural 29 U:/Cpre3810/Lab2/RegFile/work 1 65 1024 0 1350 0
+1 10 tb_regfile 8 behavior 29 U:/Cpre3810/Lab2/RegFile/work 1 65 1024 0 1507 0

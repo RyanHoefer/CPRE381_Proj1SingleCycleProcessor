@@ -1,0 +1,4 @@
+2 12 signextender 8 dataflow 31 U:/Cpre3810/Lab2/Extenders/work 1 65 0 0 25 0
+2 12 zeroextender 8 dataflow 31 U:/Cpre3810/Lab2/Extenders/work 1 65 0 0 23 0
+1 12 zeroappender 8 dataflow 31 U:/Cpre3810/Lab2/Extenders/work 1 65 0 0 23 0
+1 12 tb_extenders 8 behavior 31 U:/Cpre3810/Lab2/Extenders/work 1 65 0 0 80 0

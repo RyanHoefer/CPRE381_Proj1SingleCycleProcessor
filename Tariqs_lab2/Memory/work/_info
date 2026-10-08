@@ -1,0 +1,140 @@
+m255
+K4
+z2
+Z0 !s12c _opt1
+Z1 !s99 nomlopt
+R0
+R1
+Z2 !s12c _opt
+R1
+R2
+R1
+!s11e vcom 2026.2 2026.05, May 18 2026
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z3 dU:/Cpre3810/Lab2/Memory
+T_opt
+!i145 1
+!i144 0
+!s110 1790669690
+VbjmBNoGT`;MNzUXGih08b3
+Z4 04 7 8 work tb_dmem behavior 1
+=1-005056b6bd54-6abb7379-c3-7c8
+R1
+Z5 !s12f OEM100
+Z6 !s12b OEM100
+Z7 !s124 OEM100
+Z8 !s135 nogc
+!i152 0
+o-quiet -auto_acc_if_foreign -work work
+Z9 tCvgOpt 0 defaultOptions 1110029060
+n@_opt
+Z10 OL;O;2026.2;84
+R3
+T_opt1
+!i145 1
+!i144 0
+!s110 1790670404
+VGjcYcZY6ze3>o1B=6HHT=1
+R4
+=1-005056b6bd54-6abb7643-d-2b60
+R1
+R5
+R6
+R7
+R8
+!i152 0
+o-quiet -auto_acc_if_foreign -work work +acc
+R9
+n@_opt1
+R10
+Emem
+Z11 w1790635269
+Z12 DPx4 ieee 11 numeric_std 0 22 m=kP7jRZW]kY;6MU;0z<22
+Z13 DPx3 std 6 textio 0 22 <UlP6K1@RDQa_MJ[:UEnP2
+Z14 DPx4 ieee 14 std_logic_1164 0 22 TDbGXLH=YSoj9JRY2gkNY0
+!i122 1
+R3
+Z15 8U:/Cpre3810/Lab2/Memory/mem.vhd
+Z16 FU:/Cpre3810/Lab2/Memory/mem.vhd
+l0
+L8 1
+V;Lg]c0aCI^5@JdU2QmPB80
+!s100 <FE^5`c6G[DN?g3EGE^:f0
+Z17 OL;C;2026.2;84
+32
+Z18 !s110 1790668970
+!i10b 1
+Z19 !s108 1790668969.000000
+Z20 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Lab2/Memory/mem.vhd|
+Z21 !s107 U:/Cpre3810/Lab2/Memory/mem.vhd|
+!i113 0
+Z22 o-work work
+Z23 tExplicit 1 CvgOpt 0 defaultOptions 1083778432
+Artl
+R12
+R13
+R14
+DEx4 work 3 mem 0 22 ;Lg]c0aCI^5@JdU2QmPB80
+!i122 1
+l40
+L29 39
+VK6de7UTOon^MICTO;eDj>1
+!s100 M8@fCBfhYoIU@PkXS=DFb3
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Etb_dmem
+Z24 w1790670381
+R12
+R13
+R14
+!i122 5
+R3
+Z25 8U:/Cpre3810/Lab2/Memory/tb_dmem.vhd
+Z26 FU:/Cpre3810/Lab2/Memory/tb_dmem.vhd
+l0
+L5 1
+VR=;a0];KaN<c^OMX9dVXl1
+!s100 lmMKjk2Vn`>TIQdHfT97a3
+R17
+32
+Z27 !s110 1790670392
+!i10b 1
+Z28 !s108 1790670391.000000
+Z29 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Lab2/Memory/tb_dmem.vhd|
+Z30 !s107 U:/Cpre3810/Lab2/Memory/tb_dmem.vhd|
+!i113 0
+R22
+R23
+Abehavior
+R12
+R13
+R14
+DEx4 work 7 tb_dmem 0 22 R=;a0];KaN<c^OMX9dVXl1
+!i122 5
+l33
+L8 129
+V4cEhHYZZ94zLnhlYe9KjS0
+!s100 @e@YSRMJG4VO:jY116`K;3
+R17
+32
+R27
+!i10b 1
+R28
+R29
+R30
+!i113 0
+R22
+R23

@@ -1,0 +1,54 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity tb_Extenders is
+end tb_Extenders;
+
+architecture behavior of tb_Extenders is
+
+    signal s_Imm     : std_logic_vector(11 downto 0);
+    signal s_SignExt : std_logic_vector(31 downto 0);
+    signal s_ZeroExt : std_logic_vector(31 downto 0);
+
+begin
+
+    SIGN_EXT : entity work.SignExtender
+        port map (
+            i_Imm => s_Imm,
+            o_Ext => s_SignExt
+        );
+
+    ZERO_EXT : entity work.ZeroExtender
+        port map (
+            i_Imm => s_Imm,
+            o_Ext => s_ZeroExt
+        );
+
+    test_process : process
+    begin
+
+        -- Test 1: positive value
+        s_Imm <= x"001";
+        wait for 20 ns;
+
+        -- Test 2: largest positive 12-bit signed value
+        s_Imm <= x"7FF";
+        wait for 20 ns;
+
+        -- Test 3: -1 in 12-bit two's complement
+        s_Imm <= x"FFF";
+        wait for 20 ns;
+
+        -- Test 4: negative value (-35)
+        s_Imm <= x"FDD";
+        wait for 20 ns;
+
+        -- Test 5
+        s_Imm <= x"800";
+        wait for 20 ns;
+
+        wait;
+
+    end process;
+
+end behavior;
