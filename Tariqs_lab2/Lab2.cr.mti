@@ -1,0 +1,122 @@
+U:/Cpre3810/Lab2/MyFirstRISC-VDatapath_OLD/FirstDatapath.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none U:/Cpre3810/Lab2/MyFirstRISC-VDatapath_OLD/FirstDatapath.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity FirstDatapath
+-- Compiling architecture structural of FirstDatapath
+
+} {} {}} U:/Cpre3810/Lab2/MyFirstRISC-VDatapath/NBitAdder.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none U:/Cpre3810/Lab2/MyFirstRISC-VDatapath/NBitAdder.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity NBitAdder
+-- Compiling architecture structural of NBitAdder
+
+} {} {}} U:/Cpre3810/Lab2/MyFirstRISC-VDatapath/mux2t1_N.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none U:/Cpre3810/Lab2/MyFirstRISC-VDatapath/mux2t1_N.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2t1_N
+-- Compiling architecture structural of mux2t1_N
+
+} {} {}} U:/Cpre3810/Lab2/MyFirstRISC-VDatapath/Reg.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none U:/Cpre3810/Lab2/MyFirstRISC-VDatapath/Reg.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Reg
+-- Compiling architecture behavior of Reg
+
+} {} {}} U:/Cpre3810/Lab2/MyFirstRISC-VDatapath/RegLd.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none U:/Cpre3810/Lab2/MyFirstRISC-VDatapath/RegLd.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity RegLd
+-- Compiling architecture behavior of RegLd
+
+} {} {}} U:/Cpre3810/Lab2/MyFirstRISC-VDatapath/Multiplier.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none U:/Cpre3810/Lab2/MyFirstRISC-VDatapath/Multiplier.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Multiplier
+-- Compiling architecture behavior of Multiplier
+
+} {} {}} U:/Cpre3810/Lab2/MyFirstRISC-VDatapath_OLD/tb_FirstDatapath.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none U:/Cpre3810/Lab2/MyFirstRISC-VDatapath_OLD/tb_FirstDatapath.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_FirstDatapath
+-- Compiling architecture behavior of tb_FirstDatapath
+
+} {} {}} U:/Cpre3810/Lab2/MyFirstRISC-VDatapath/AddSub_N.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none U:/Cpre3810/Lab2/MyFirstRISC-VDatapath/AddSub_N.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity AddSub_N
+-- Compiling architecture structural of AddSub_N
+
+} {} {}} U:/Cpre3810/Lab2/MyFirstRISC-VDatapath/mux2t1.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none U:/Cpre3810/Lab2/MyFirstRISC-VDatapath/mux2t1.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2t1
+-- Compiling architecture structure of mux2t1
+
+} {} {}} U:/Cpre3810/Lab2/MyFirstRISC-VDatapath/OnesComp_N.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none U:/Cpre3810/Lab2/MyFirstRISC-VDatapath/OnesComp_N.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity OnesComp_N
+-- Compiling architecture dataflow of OnesComp_N
+
+} {} {}} U:/Cpre3810/Lab2/MyFirstRISC-VDatapath/xorg2.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none U:/Cpre3810/Lab2/MyFirstRISC-VDatapath/xorg2.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity xorg2
+-- Compiling architecture dataflow of xorg2
+
+} {} {}} U:/Cpre3810/Lab2/MyFirstRISC-VDatapath/org2.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none U:/Cpre3810/Lab2/MyFirstRISC-VDatapath/org2.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity org2
+-- Compiling architecture dataflow of org2
+
+} {} {}} U:/Cpre3810/Lab2/MyFirstRISC-VDatapath/FullAdder.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none U:/Cpre3810/Lab2/MyFirstRISC-VDatapath/FullAdder.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity FullAdder
+-- Compiling architecture structural of FullAdder
+
+} {} {}} U:/Cpre3810/Lab2/MyFirstRISC-VDatapath/andg2.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none U:/Cpre3810/Lab2/MyFirstRISC-VDatapath/andg2.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity andg2
+-- Compiling architecture dataflow of andg2
+
+} {} {}} U:/Cpre3810/Lab2/MyFirstRISC-VDatapath/invg.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none U:/Cpre3810/Lab2/MyFirstRISC-VDatapath/invg.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity invg
+-- Compiling architecture dataflow of invg
+
+} {} {}}

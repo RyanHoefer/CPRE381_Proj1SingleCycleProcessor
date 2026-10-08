@@ -1,0 +1,8 @@
+1 6 mux2t1 9 structure 21 U:/Cpre3810/Lab2/work 1 65 0 0 52 0
+1 8 mux2t1_n 10 structural 21 U:/Cpre3810/Lab2/work 1 65 0 0 89 0
+1 10 onescomp_n 8 dataflow 21 U:/Cpre3810/Lab2/work 1 65 0 0 18 0
+1 9 fulladder 10 structural 21 U:/Cpre3810/Lab2/work 1 65 0 0 87 0
+1 9 nbitadder 10 structural 21 U:/Cpre3810/Lab2/work 1 65 0 0 114 0
+1 8 addsub_n 10 structural 21 U:/Cpre3810/Lab2/work 1 65 0 0 153 0
+1 13 firstdatapath 10 structural 21 U:/Cpre3810/Lab2/work 1 65 0 0 111 0
+1 16 tb_firstdatapath 8 behavior 21 U:/Cpre3810/Lab2/work 1 65 0 0 91 0

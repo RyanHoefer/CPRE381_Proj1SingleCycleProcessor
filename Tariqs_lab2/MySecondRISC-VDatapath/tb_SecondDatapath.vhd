@@ -1,0 +1,511 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity tb_SecondDatapath is
+end tb_SecondDatapath;
+
+architecture behavior of tb_SecondDatapath is
+
+    constant CLK_PERIOD : time := 20 ns;
+
+    signal s_CLK       : std_logic := '0';
+    signal s_RST       : std_logic := '1';
+    signal s_RegWrite  : std_logic := '0';
+    signal s_ALUSrc    : std_logic := '0';
+    signal s_nAdd_Sub  : std_logic := '0';
+    signal s_ImmType   : std_logic := '0';
+    signal s_MemWrite  : std_logic := '0';
+    signal s_MemtoReg  : std_logic := '0';
+
+    signal s_RS1       : std_logic_vector(4 downto 0) := (others => '0');
+    signal s_RS2       : std_logic_vector(4 downto 0) := (others => '0');
+    signal s_RD        : std_logic_vector(4 downto 0) := (others => '0');
+
+    signal s_Imm12     : std_logic_vector(11 downto 0) := (others => '0');
+    signal s_Imm20     : std_logic_vector(19 downto 0) := (others => '0');
+
+    signal s_ALUResult : std_logic_vector(31 downto 0);
+    signal s_MemData   : std_logic_vector(31 downto 0);
+    signal s_WriteData : std_logic_vector(31 downto 0);
+
+begin
+
+    --------------------------------------------------------------------
+    -- Device Under Test
+    --------------------------------------------------------------------
+    DUT : entity work.SecondDatapath
+        port map (
+            i_CLK       => s_CLK,
+            i_RST       => s_RST,
+            i_RegWrite  => s_RegWrite,
+            i_ALUSrc    => s_ALUSrc,
+            i_nAdd_Sub  => s_nAdd_Sub,
+            i_ImmType   => s_ImmType,
+            i_MemWrite  => s_MemWrite,
+            i_MemtoReg  => s_MemtoReg,
+
+            i_RS1       => s_RS1,
+            i_RS2       => s_RS2,
+            i_RD        => s_RD,
+
+            i_Imm12     => s_Imm12,
+            i_Imm20     => s_Imm20,
+
+            o_ALUResult => s_ALUResult,
+            o_MemData   => s_MemData,
+            o_WriteData => s_WriteData
+        );
+
+
+    --------------------------------------------------------------------
+    -- Clock
+    --------------------------------------------------------------------
+    clock_proc : process
+    begin
+        while true loop
+            s_CLK <= '0';
+            wait for CLK_PERIOD / 2;
+
+            s_CLK <= '1';
+            wait for CLK_PERIOD / 2;
+        end loop;
+    end process;
+
+
+    --------------------------------------------------------------------
+    -- Test Process
+    --------------------------------------------------------------------
+    test_proc : process
+    begin
+
+        ---------------------------------------------------------------
+        -- RESET
+        ---------------------------------------------------------------
+        s_RST <= '1';
+        wait for CLK_PERIOD;
+
+        s_RST <= '0';
+        wait for CLK_PERIOD;
+
+
+        ---------------------------------------------------------------
+        -- lui x25, 0x10010
+        -- x25 = 0x10010000
+        ---------------------------------------------------------------
+        s_RegWrite <= '1';
+        s_ALUSrc   <= '1';
+        s_nAdd_Sub <= '0';
+        s_ImmType  <= '1';       -- use 20-bit immediate / zero appender
+        s_MemWrite <= '0';
+        s_MemtoReg <= '0';
+
+        s_RS1   <= "00000";      -- x0
+        s_RS2   <= "00000";
+        s_RD    <= "11001";      -- x25
+
+        s_Imm20 <= x"10010";
+        s_Imm12 <= x"000";
+
+        wait for CLK_PERIOD;
+
+
+        ---------------------------------------------------------------
+        -- addi x25, x25, 0
+        ---------------------------------------------------------------
+        s_RegWrite <= '1';
+        s_ALUSrc   <= '1';
+        s_nAdd_Sub <= '0';
+        s_ImmType  <= '0';
+        s_MemWrite <= '0';
+        s_MemtoReg <= '0';
+
+        s_RS1   <= "11001";      -- x25
+        s_RS2   <= "00000";
+        s_RD    <= "11001";      -- x25
+        s_Imm12 <= x"000";
+
+        wait for CLK_PERIOD;
+
+
+        ---------------------------------------------------------------
+        -- addi x26, x25, 256
+        -- x26 = address of B
+        ---------------------------------------------------------------
+        s_RS1   <= "11001";      -- x25
+        s_RS2   <= "00000";
+        s_RD    <= "11010";      -- x26
+        s_Imm12 <= x"100";       -- 256 -- 100 in hex
+
+        wait for CLK_PERIOD;
+
+
+        ---------------------------------------------------------------
+        -- lw x1, 0(x25)
+        ---------------------------------------------------------------
+        s_RegWrite <= '1';
+        s_ALUSrc   <= '1';
+        s_nAdd_Sub <= '0';
+        s_ImmType  <= '0';
+        s_MemWrite <= '0';
+        s_MemtoReg <= '1';
+
+        s_RS1   <= "11001";      -- x25
+        s_RS2   <= "00000";
+        s_RD    <= "00001";      -- x1
+        s_Imm12 <= x"000";
+
+        wait for CLK_PERIOD;
+
+
+        ---------------------------------------------------------------
+        -- lw x2, 4(x25)
+        ---------------------------------------------------------------
+        s_RS1   <= "11001";
+        s_RD    <= "00010";      -- x2
+        s_Imm12 <= x"004";
+
+        wait for CLK_PERIOD;
+
+
+        ---------------------------------------------------------------
+        -- add x1, x1, x2
+        ---------------------------------------------------------------
+        s_RegWrite <= '1';
+        s_ALUSrc   <= '0';
+        s_nAdd_Sub <= '0';
+        s_MemWrite <= '0';
+        s_MemtoReg <= '0';
+
+        s_RS1 <= "00001";        -- x1
+        s_RS2 <= "00010";        -- x2
+        s_RD  <= "00001";        -- x1
+
+        wait for CLK_PERIOD;
+
+
+        ---------------------------------------------------------------
+        -- sw x1, 0(x26)
+        ---------------------------------------------------------------
+        s_RegWrite <= '0';
+        s_ALUSrc   <= '1';
+        s_nAdd_Sub <= '0';
+        s_ImmType  <= '0';
+        s_MemWrite <= '1';
+        s_MemtoReg <= '0';
+
+        s_RS1   <= "11010";      -- x26
+        s_RS2   <= "00001";      -- x1
+        s_RD    <= "00000";
+        s_Imm12 <= x"000";
+
+        wait for CLK_PERIOD;
+
+
+        ---------------------------------------------------------------
+        -- lw x2, 8(x25)
+        ---------------------------------------------------------------
+        s_RegWrite <= '1';
+        s_ALUSrc   <= '1';
+        s_MemWrite <= '0';
+        s_MemtoReg <= '1';
+
+        s_RS1   <= "11001";
+        s_RS2   <= "00000";
+        s_RD    <= "00010";
+        s_Imm12 <= x"008";
+
+        wait for CLK_PERIOD;
+
+
+        ---------------------------------------------------------------
+        -- add x1, x1, x2
+        ---------------------------------------------------------------
+        s_RegWrite <= '1';
+        s_ALUSrc   <= '0';
+        s_MemtoReg <= '0';
+
+        s_RS1 <= "00001";
+        s_RS2 <= "00010";
+        s_RD  <= "00001";
+
+        wait for CLK_PERIOD;
+
+
+        ---------------------------------------------------------------
+        -- sw x1, 4(x26)
+        ---------------------------------------------------------------
+        s_RegWrite <= '0';
+        s_ALUSrc   <= '1';
+        s_MemWrite <= '1';
+
+        s_RS1   <= "11010";
+        s_RS2   <= "00001";
+        s_Imm12 <= x"004";
+
+        wait for CLK_PERIOD;
+
+
+        ---------------------------------------------------------------
+        -- lw x2, 12(x25)
+        ---------------------------------------------------------------
+        s_RegWrite <= '1';
+        s_ALUSrc   <= '1';
+        s_MemWrite <= '0';
+        s_MemtoReg <= '1';
+
+        s_RS1   <= "11001";
+        s_RS2   <= "00000";
+        s_RD    <= "00010";
+        s_Imm12 <= x"00C";
+
+        wait for CLK_PERIOD;
+
+
+        ---------------------------------------------------------------
+        -- add x1, x1, x2
+        ---------------------------------------------------------------
+        s_ALUSrc   <= '0';
+        s_MemtoReg <= '0';
+
+        s_RS1 <= "00001";
+        s_RS2 <= "00010";
+        s_RD  <= "00001";
+
+        wait for CLK_PERIOD;
+
+
+        ---------------------------------------------------------------
+        -- sw x1, 8(x26)
+        ---------------------------------------------------------------
+        s_RegWrite <= '0';
+        s_ALUSrc   <= '1';
+        s_MemWrite <= '1';
+
+        s_RS1   <= "11010";
+        s_RS2   <= "00001";
+        s_Imm12 <= x"008";
+
+        wait for CLK_PERIOD;
+
+
+        ---------------------------------------------------------------
+        -- lw x2, 16(x25)
+        ---------------------------------------------------------------
+        s_RegWrite <= '1';
+        s_MemWrite <= '0';
+        s_MemtoReg <= '1';
+
+        s_RS1   <= "11001";
+        s_RS2   <= "00000";
+        s_RD    <= "00010";
+        s_Imm12 <= x"010";
+
+        wait for CLK_PERIOD;
+
+
+        ---------------------------------------------------------------
+        -- add x1, x1, x2
+        ---------------------------------------------------------------
+        s_ALUSrc   <= '0';
+        s_MemtoReg <= '0';
+
+        s_RS1 <= "00001";
+        s_RS2 <= "00010";
+        s_RD  <= "00001";
+
+        wait for CLK_PERIOD;
+
+
+        ---------------------------------------------------------------
+        -- sw x1, 12(x26)
+        ---------------------------------------------------------------
+        s_RegWrite <= '0';
+        s_ALUSrc   <= '1';
+        s_MemWrite <= '1';
+
+        s_RS1   <= "11010";
+        s_RS2   <= "00001";
+        s_Imm12 <= x"00C";
+
+        wait for CLK_PERIOD;
+
+
+        ---------------------------------------------------------------
+        -- lw x2, 20(x25)
+        ---------------------------------------------------------------
+        s_RegWrite <= '1';
+        s_MemWrite <= '0';
+        s_MemtoReg <= '1';
+
+        s_RS1   <= "11001";
+        s_RS2   <= "00000";
+        s_RD    <= "00010";
+        s_Imm12 <= x"014";
+
+        wait for CLK_PERIOD;
+
+
+        ---------------------------------------------------------------
+        -- add x1, x1, x2
+        ---------------------------------------------------------------
+        s_ALUSrc   <= '0';
+        s_MemtoReg <= '0';
+
+        s_RS1 <= "00001";
+        s_RS2 <= "00010";
+        s_RD  <= "00001";
+
+        wait for CLK_PERIOD;
+
+
+        ---------------------------------------------------------------
+        -- sw x1, 16(x26)
+        ---------------------------------------------------------------
+        s_RegWrite <= '0';
+        s_ALUSrc   <= '1';
+        s_MemWrite <= '1';
+
+        s_RS1   <= "11010";
+        s_RS2   <= "00001";
+        s_Imm12 <= x"010";
+
+        wait for CLK_PERIOD;
+
+
+        ---------------------------------------------------------------
+        -- lw x2, 24(x25)
+        ---------------------------------------------------------------
+        s_RegWrite <= '1';
+        s_MemWrite <= '0';
+        s_MemtoReg <= '1';
+
+        s_RS1   <= "11001";
+        s_RS2   <= "00000";
+        s_RD    <= "00010";
+        s_Imm12 <= x"018";
+
+        wait for CLK_PERIOD;
+
+
+        ---------------------------------------------------------------
+        -- add x1, x1, x2
+        ---------------------------------------------------------------
+        s_ALUSrc   <= '0';
+        s_MemtoReg <= '0';
+
+        s_RS1 <= "00001";
+        s_RS2 <= "00010";
+        s_RD  <= "00001";
+
+        wait for CLK_PERIOD;
+
+
+        ---------------------------------------------------------------
+        -- addi x27, x25, 512
+        ---------------------------------------------------------------
+        s_RegWrite <= '1';
+        s_ALUSrc   <= '1';
+        s_MemWrite <= '0';
+        s_MemtoReg <= '0';
+
+        s_RS1   <= "11001";      -- x25
+        s_RS2   <= "00000";
+        s_RD    <= "11011";      -- x27
+        s_Imm12 <= x"200";       -- 512
+
+        wait for CLK_PERIOD;
+
+
+        ---------------------------------------------------------------
+        -- sw x1, -4(x27)
+        --
+        -- -4 in 12-bit two's complement = FFC
+        ---------------------------------------------------------------
+        s_RegWrite <= '0';
+        s_ALUSrc   <= '1';
+        s_nAdd_Sub <= '0';
+        s_ImmType  <= '0';
+        s_MemWrite <= '1';
+        s_MemtoReg <= '0';
+
+        s_RS1   <= "11011";      -- x27
+        s_RS2   <= "00001";      -- x1
+        s_RD    <= "00000";
+        s_Imm12 <= x"FFC";       -- -4
+
+        wait for CLK_PERIOD;
+
+	
+	---------------------------------------------------------------
+        -- Additional test case for demo
+        -- load 60 from 193 to reg 4
+        -- Step 1 I need to save the val to 193 using sw
+	-- after that I need to load it from that mem location to reg 4 using lw
+        ---------------------------------------------------------------
+	
+	-- addi x3, x0, 60
+
+	s_RegWrite <= '1';
+	s_ALUSrc   <= '1';
+	s_nAdd_Sub <= '0';
+	s_ImmType  <= '0';
+	s_MemWrite <= '0';
+	s_MemtoReg <= '0';
+
+	s_RS1   <= "00000";   -- x0
+	s_RS2   <= "00000";
+	s_RD    <= "00011";   -- x3
+	s_Imm12 <= x"03C";     -- 60
+
+	wait for CLK_PERIOD;
+
+
+	-- sw x3, 772(x0)
+	-- Store 60 into memory location 193 which is x4 = 772 or hex304
+
+	s_RegWrite <= '0';
+	s_ALUSrc   <= '1';
+	s_nAdd_Sub <= '0';
+	s_ImmType  <= '0';
+	s_MemWrite <= '1';
+	s_MemtoReg <= '0';
+
+	s_RS1   <= "00000";   -- x0, base address
+	s_RS2   <= "00011";   -- x3 contains 60
+	s_RD    <= "00000";   -- unused
+	s_Imm12 <= x"304";     -- byte address 772
+
+	wait for CLK_PERIOD;
+
+
+	-- lw x4, 772(x0)
+
+	s_RegWrite <= '1';
+	s_ALUSrc   <= '1';
+	s_nAdd_Sub <= '0';
+	s_ImmType  <= '0';
+	s_MemWrite <= '0';
+	s_MemtoReg <= '1';
+
+	s_RS1   <= "00000";   -- x0
+	s_RS2   <= "00000";
+	s_RD    <= "00100";   -- x4
+	s_Imm12 <= x"304";
+
+	wait for CLK_PERIOD;
+
+
+        ---------------------------------------------------------------
+        -- Stop changing controls
+        ---------------------------------------------------------------
+        s_RegWrite <= '0';
+        s_MemWrite <= '0';
+
+        wait;
+
+    end process;
+
+end behavior;
+
+-- mem load -infile dmem.hex -format hex /tb_seconddatapath/DUT/DMEM/ram

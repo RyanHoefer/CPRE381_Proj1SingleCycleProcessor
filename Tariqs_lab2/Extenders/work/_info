@@ -1,0 +1,199 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+!s11e vcom 2026.2 2026.05, May 18 2026
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dU:/Cpre3810/Lab2/Extenders
+T_opt
+!i145 1
+!i144 0
+!s110 1790671213
+V]CmWB^Pozb=51>5RY>Xe?2
+04 12 8 work tb_extenders behavior 1
+=1-005056b6bd54-6abb796c-1c3-2a0
+R1
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+!i152 0
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0 defaultOptions 1110029060
+n@_opt
+OL;O;2026.2;84
+Esignextender
+Z3 w1790670624
+Z4 DPx3 std 6 textio 0 22 <UlP6K1@RDQa_MJ[:UEnP2
+Z5 DPx4 ieee 14 std_logic_1164 0 22 TDbGXLH=YSoj9JRY2gkNY0
+!i122 0
+R2
+Z6 8U:/Cpre3810/Lab2/Extenders/SignExtender.vhd
+Z7 FU:/Cpre3810/Lab2/Extenders/SignExtender.vhd
+l0
+L4 1
+VPBMo:L:m104EaPZ0j_EgZ2
+!s100 CzZ;XoD4kaGo66A_JIdj?2
+Z8 OL;C;2026.2;84
+32
+Z9 !s110 1790670671
+!i10b 1
+Z10 !s108 1790670670.000000
+Z11 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Lab2/Extenders/SignExtender.vhd|
+Z12 !s107 U:/Cpre3810/Lab2/Extenders/SignExtender.vhd|
+!i113 0
+Z13 o-work work
+Z14 tExplicit 1 CvgOpt 0 defaultOptions 1083778432
+Adataflow
+R4
+R5
+Z15 DEx4 work 12 signextender 0 22 PBMo:L:m104EaPZ0j_EgZ2
+!i122 0
+l12
+Z16 L11 7
+VAh3c[Gd_Ffd4aD8@K7TcF2
+!s100 LJLc`obn0lQ282jFhi?a73
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Etb_extenders
+Z17 w1790671161
+R4
+R5
+!i122 4
+R2
+Z18 8U:/Cpre3810/Lab2/Extenders/tb_Extenders.vhd
+Z19 FU:/Cpre3810/Lab2/Extenders/tb_Extenders.vhd
+l0
+L4 1
+VUoN6;2Tn7PQ3C`UGi^?TK2
+!s100 CbB<BAGSnU>jzN@H:[4T_2
+R8
+32
+Z20 !s110 1790671174
+!i10b 1
+Z21 !s108 1790671174.000000
+Z22 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Lab2/Extenders/tb_Extenders.vhd|
+Z23 !s107 U:/Cpre3810/Lab2/Extenders/tb_Extenders.vhd|
+!i113 0
+R13
+R14
+Abehavior
+Z24 DEx4 work 12 zeroappender 0 22 ]bJ:O7fa8QSE_HE5JT1;71
+Z25 DEx4 work 12 zeroextender 0 22 bEWe1c53[cR:m<lO:SodQ2
+R15
+R4
+R5
+DEx4 work 12 tb_extenders 0 22 UoN6;2Tn7PQ3C`UGi^?TK2
+!i122 4
+l18
+L7 76
+V2:PlJm0`[JVKM[Sb5=nlJ2
+!s100 =@98=jX^>kD@[]>mHSkhU3
+R8
+32
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 0
+R13
+R14
+Ezeroappender
+Z26 w1790671049
+R4
+R5
+!i122 3
+R2
+Z27 8U:/Cpre3810/Lab2/Extenders/ZeroAppender.vhd
+Z28 FU:/Cpre3810/Lab2/Extenders/ZeroAppender.vhd
+l0
+L4 1
+V]bJ:O7fa8QSE_HE5JT1;71
+!s100 [obaC^m=B44GJ^1jM`oA>0
+R8
+32
+Z29 !s110 1790671071
+!i10b 1
+Z30 !s108 1790671071.000000
+Z31 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Lab2/Extenders/ZeroAppender.vhd|
+Z32 !s107 U:/Cpre3810/Lab2/Extenders/ZeroAppender.vhd|
+!i113 0
+R13
+R14
+Adataflow
+R4
+R5
+R24
+!i122 3
+l12
+R16
+V`LVD4bUMmGiFa[18O>4Zm0
+!s100 5zj=MKZ[=]I6GoDi7:8Mc1
+R8
+32
+R29
+!i10b 1
+R30
+R31
+R32
+!i113 0
+R13
+R14
+Ezeroextender
+Z33 w1790670648
+R4
+R5
+!i122 1
+R2
+Z34 8U:/Cpre3810/Lab2/Extenders/ZeroExtender.vhd
+Z35 FU:/Cpre3810/Lab2/Extenders/ZeroExtender.vhd
+l0
+L4 1
+VbEWe1c53[cR:m<lO:SodQ2
+!s100 JB?f<UeA5VN1:8jj6jXKL2
+R8
+32
+Z36 !s110 1790670673
+!i10b 1
+Z37 !s108 1790670673.000000
+Z38 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Lab2/Extenders/ZeroExtender.vhd|
+Z39 !s107 U:/Cpre3810/Lab2/Extenders/ZeroExtender.vhd|
+!i113 0
+R13
+R14
+Adataflow
+R4
+R5
+R25
+!i122 1
+l12
+R16
+VXHaW1Jl8eG2In:;KfLnLC0
+!s100 neKlFGJkgQ1>iPVJ29FV80
+R8
+32
+R36
+!i10b 1
+R37
+R38
+R39
+!i113 0
+R13
+R14

@@ -1,0 +1,216 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity SecondDatapath is
+    port (
+        -- Clock / reset
+        i_CLK       : in std_logic;
+        i_RST       : in std_logic;
+
+        -- Control signals
+        i_RegWrite  : in std_logic;
+        i_ALUSrc    : in std_logic;
+        i_nAdd_Sub  : in std_logic;
+        i_ImmType   : in std_logic;
+        i_MemWrite  : in std_logic;
+        i_MemtoReg  : in std_logic;
+
+        -- Register addresses
+        i_RS1       : in std_logic_vector(4 downto 0);
+        i_RS2       : in std_logic_vector(4 downto 0);
+        i_RD        : in std_logic_vector(4 downto 0);
+
+        -- Immediate values
+        i_Imm12     : in std_logic_vector(11 downto 0);
+        i_Imm20     : in std_logic_vector(19 downto 0);
+
+        -- Useful outputs for simulation
+        o_ALUResult : out std_logic_vector(31 downto 0);
+        o_MemData   : out std_logic_vector(31 downto 0);
+        o_WriteData : out std_logic_vector(31 downto 0)
+    );
+end SecondDatapath;
+
+
+architecture structural of SecondDatapath is
+
+    --------------------------------------------------
+    -- Internal signals
+    --------------------------------------------------
+
+    signal s_RData1      : std_logic_vector(31 downto 0);
+    signal s_RData2      : std_logic_vector(31 downto 0);
+
+    signal s_SignExt     : std_logic_vector(31 downto 0);
+    signal s_ZeroApp     : std_logic_vector(31 downto 0);
+    signal s_Immediate   : std_logic_vector(31 downto 0);
+
+    signal s_ALUInputB   : std_logic_vector(31 downto 0);
+    signal s_ALUResult   : std_logic_vector(31 downto 0);
+    signal s_ALUCout     : std_logic;
+
+    signal s_MemData     : std_logic_vector(31 downto 0);
+    signal s_WriteData   : std_logic_vector(31 downto 0);
+
+    signal s_MemAddr     : std_logic_vector(9 downto 0);
+
+begin
+
+    --------------------------------------------------
+    -- Register File
+    --------------------------------------------------
+
+    REG_FILE : entity work.regfile
+        port map (
+            i_CLK    => i_CLK,
+            i_RST    => i_RST,
+            i_WE     => i_RegWrite,
+
+            i_WAddr  => i_RD,
+            i_WData  => s_WriteData,
+
+            i_RAddr1 => i_RS1,
+            i_RAddr2 => i_RS2,
+
+            o_RData1 => s_RData1,
+            o_RData2 => s_RData2
+        );
+
+
+    --------------------------------------------------
+    -- 12-bit Sign Extender
+    --------------------------------------------------
+
+    SIGN_EXT : entity work.SignExtender
+        port map (
+            i_Imm => i_Imm12,
+            o_Ext => s_SignExt
+        );
+
+
+    --------------------------------------------------
+    -- 20-bit Zero Appender
+    --------------------------------------------------
+
+    ZERO_APPEND : entity work.ZeroAppender
+        port map (
+            i_Imm => i_Imm20,
+            o_Ext => s_ZeroApp
+        );
+
+
+    --------------------------------------------------
+    -- Immediate Type MUX
+    --
+    -- ImmType = 0 -> sign-extended 12-bit immediate
+    -- ImmType = 1 -> 20-bit immediate with 12 zeros appended
+    --------------------------------------------------
+
+    IMM_MUX : entity work.mux2t1_N
+        generic map (
+            N => 32
+        )
+        port map (
+            i_S  => i_ImmType,
+            i_D0 => s_SignExt,
+            i_D1 => s_ZeroApp,
+            o_O  => s_Immediate
+        );
+
+
+    --------------------------------------------------
+    -- ALU Source MUX
+    --
+    -- ALUSrc = 0 -> register RS2
+    -- ALUSrc = 1 -> immediate
+    --------------------------------------------------
+
+    ALU_SRC_MUX : entity work.mux2t1_N
+        generic map (
+            N => 32
+        )
+        port map (
+            i_S  => i_ALUSrc,
+            i_D0 => s_RData2,
+            i_D1 => s_Immediate,
+            o_O  => s_ALUInputB
+        );
+
+
+    --------------------------------------------------
+    -- ALU
+    --------------------------------------------------
+
+    ALU : entity work.AddSub_N
+        generic map (
+            N => 32
+        )
+        port map (
+            i_A       => s_RData1,
+            i_B       => s_ALUInputB,
+            nAdd_Sub  => i_nAdd_Sub,
+            o_Y       => s_ALUResult,
+            o_Cout    => s_ALUCout
+        );
+
+
+    --------------------------------------------------
+    -- Memory address
+    --
+    -- mem.vhd is word-addressed.
+    -- RISC-V addresses in the program are byte offsets,
+    -- so divide the byte address by 4 by dropping bits 1:0.
+    --------------------------------------------------
+
+    s_MemAddr <= s_ALUResult(11 downto 2);
+
+
+    --------------------------------------------------
+    -- Data Memory
+    --------------------------------------------------
+
+    DMEM : entity work.mem
+        generic map (
+            DATA_WIDTH => 32,
+            ADDR_WIDTH => 10,
+            BYTE_WIDTH => 8
+        )
+        port map (
+            clk  => i_CLK,
+            addr => s_MemAddr,
+            data => s_RData2,
+            be   => "1111",
+            we   => i_MemWrite,
+            q    => s_MemData
+        );
+
+
+    --------------------------------------------------
+    -- Write-back MUX
+    --
+    -- MemtoReg = 0 -> ALU result
+    -- MemtoReg = 1 -> memory output
+    --------------------------------------------------
+
+    WRITEBACK_MUX : entity work.mux2t1_N
+        generic map (
+            N => 32
+        )
+        port map (
+            i_S  => i_MemtoReg,
+            i_D0 => s_ALUResult,
+            i_D1 => s_MemData,
+            o_O  => s_WriteData
+        );
+
+
+    --------------------------------------------------
+    -- Simulation outputs
+    --------------------------------------------------
+
+    o_ALUResult <= s_ALUResult;
+    o_MemData   <= s_MemData;
+    o_WriteData <= s_WriteData;
+
+end structural;

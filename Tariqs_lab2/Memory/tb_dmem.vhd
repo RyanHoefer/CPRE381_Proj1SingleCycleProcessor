@@ -1,0 +1,136 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity tb_dmem is
+end tb_dmem;
+
+architecture behavior of tb_dmem is
+
+    component mem is
+        generic (
+            DATA_WIDTH : natural := 32;
+            ADDR_WIDTH : natural := 10;
+            BYTE_WIDTH : natural := 8
+        );
+        port (
+            clk  : in  std_logic;
+            addr : in  std_logic_vector(ADDR_WIDTH-1 downto 0);
+            data : in  std_logic_vector(DATA_WIDTH-1 downto 0);
+            be   : in  std_logic_vector(3 downto 0);
+            we   : in  std_logic := '1';
+            q    : out std_logic_vector(DATA_WIDTH-1 downto 0)
+        );
+    end component;
+
+    signal s_clk  : std_logic := '0';
+    signal s_addr : std_logic_vector(9 downto 0) := (others => '0');
+    signal s_data : std_logic_vector(31 downto 0) := (others => '0');
+    signal s_be   : std_logic_vector(3 downto 0) := "1111";
+    signal s_we   : std_logic := '0';
+    signal s_q    : std_logic_vector(31 downto 0);
+
+begin
+
+    -- Data memory instance
+    dmem : mem
+        generic map (
+            DATA_WIDTH => 32,
+            ADDR_WIDTH => 10,
+            BYTE_WIDTH => 8
+        )
+        port map (
+            clk  => s_clk,
+            addr => s_addr,
+            data => s_data,
+            be   => s_be,
+            we   => s_we,
+            q    => s_q
+        );
+
+    -- Clock: 10 ns period
+    clock_process : process
+    begin
+        while true loop
+            s_clk <= '0';
+            wait for 5 ns;
+            s_clk <= '1';
+            wait for 5 ns;
+        end loop;
+    end process;
+
+    test_process : process
+
+        type data_array is array (0 to 9) of
+            std_logic_vector(31 downto 0);
+
+        constant values : data_array := (
+            x"FFFFFFFF", -- -1
+            x"00000002", --  2
+            x"FFFFFFFD", -- -3
+            x"00000004", --  4
+            x"00000005", --  5
+            x"00000006", --  6
+            x"FFFFFFF9", -- -7
+            x"FFFFFFF8", -- -8
+            x"00000009", --  9
+            x"FFFFFFF6"  -- -10
+        );
+
+    begin
+
+        --------------------------------------------------
+        -- Read addresses 0 through 9
+        --------------------------------------------------
+        s_we <= '0';
+
+        for i in 0 to 9 loop
+            s_addr <= std_logic_vector(to_unsigned(i, 10));
+            wait for 10 ns;
+        end loop;
+
+
+        --------------------------------------------------
+        -- Write same values to 0x100 through 0x109
+        --------------------------------------------------
+        s_we <= '1';
+        s_be <= "1111";
+
+        for i in 0 to 9 loop
+            wait until falling_edge(s_clk);
+
+            s_addr <= std_logic_vector(
+                to_unsigned(16#100# + i, 10)
+            );
+
+            s_data <= values(i);
+
+            wait until rising_edge(s_clk);
+        end loop;
+
+
+        --------------------------------------------------
+        -- Stop writing
+        --------------------------------------------------
+        s_we <= '0';
+
+        wait until falling_edge(s_clk);
+
+
+        --------------------------------------------------
+        -- Read back 0x100 through 0x109
+        --------------------------------------------------
+        for i in 0 to 9 loop
+            s_addr <= std_logic_vector(
+                to_unsigned(16#100# + i, 10)
+            );
+
+            wait for 10 ns;
+        end loop;
+
+
+        wait;
+
+    end process;
+
+end behavior;
