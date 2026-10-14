@@ -1,0 +1,1832 @@
+# //  Questa Sim-64
+# //  Version 2026.2 linux_x86_64 May 18 2026
+# //
+# // Unpublished work. Copyright 2026 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:59:36 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity addsub_N_with_imm
+# -- Compiling architecture structural of addsub_N_with_imm
+# vcom: End time: 18:59:36 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:59:37 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd 
+# -- Loading package STANDARD
+# ** Error (suppressible): /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd(1): (vcom-1491) Empty source files.
+# vcom: End time: 18:59:37 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/tb_datapath.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:59:39 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/tb_datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_datapath
+# -- Compiling architecture behavior of tb_datapath
+# ** Error: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/tb_datapath.vhd(62): (vcom-1136) Unknown identifier "result_t".
+# ** Error: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/tb_datapath.vhd(79): Illegal sequential statement.
+# ** Error: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/tb_datapath.vhd(373): Illegal concurrent statement.
+# ** Note: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/tb_datapath.vhd(376): VHDL Compiler exiting
+# vcom: End time: 18:59:39 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:59:41 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd 
+# -- Loading package STANDARD
+# ** Error (suppressible): /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd(1): (vcom-1491) Empty source files.
+# vcom: End time: 18:59:41 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:00:13 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd 
+# -- Loading package STANDARD
+# ** Error (suppressible): /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd(1): (vcom-1491) Empty source files.
+# vcom: End time: 19:00:13 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:00:21 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Error: (vcom-11) Could not find work.mux_types. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+# ** Error (suppressible): /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd(4): (vcom-1195) Cannot find expanded name "work.mux_types".
+# ** Error: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd(4): Unknown expanded name.
+# ** Note: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd(6): VHDL Compiler exiting
+# vcom: End time: 19:00:22 on Sep 20,2026, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:00:42 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Error: (vcom-11) Could not find work.mux_types. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+# ** Error (suppressible): /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd(4): (vcom-1195) Cannot find expanded name "work.mux_types".
+# ** Error: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd(4): Unknown expanded name.
+# ** Note: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd(6): VHDL Compiler exiting
+# vcom: End time: 19:00:42 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:00:51 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity datapath
+# -- Compiling architecture structural of datapath
+# vcom: End time: 19:00:51 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/tb_datapath.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:00:52 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/tb_datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_datapath
+# -- Compiling architecture behavior of tb_datapath
+# ** Error: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/tb_datapath.vhd(62): (vcom-1136) Unknown identifier "result_t".
+# ** Error: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/tb_datapath.vhd(79): Illegal sequential statement.
+# ** Error: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/tb_datapath.vhd(373): Illegal concurrent statement.
+# ** Note: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/tb_datapath.vhd(376): VHDL Compiler exiting
+# vcom: End time: 19:00:53 on Sep 20,2026, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/tb_datapath.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:01:35 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/tb_datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_datapath
+# -- Compiling architecture behavior of tb_datapath
+# ** Error (suppressible): /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/tb_datapath.vhd(218): (vcom-1272) Length of expected is 5; length of actual is 6.
+# ** Note: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/tb_datapath.vhd(372): VHDL Compiler exiting
+# vcom: End time: 19:01:35 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/tb_datapath.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:02:02 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/tb_datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_datapath
+# -- Compiling architecture behavior of tb_datapath
+# vcom: End time: 19:02:02 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:02:05 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity datapath
+# -- Compiling architecture structural of datapath
+# vcom: End time: 19:02:05 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:02:06 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity addsub_N_with_imm
+# -- Compiling architecture structural of addsub_N_with_imm
+# vcom: End time: 19:02:06 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_datapath -voptargs=+acc
+# ** Note: (vsim-220) '/usr/local/mentor/questasim/linux_x86_64/../questa.ini' is used as the ini file.
+# vsim work.tb_datapath -voptargs="+acc" 
+# Start time: 19:02:21 on Sep 20,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Warning: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd(48): (vopt-3473) Component instance "registerFile : register_file" is not bound.
+#         Region: /tb_datapath/DUT
+# ** Warning: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd(64): (vopt-3473) Component instance "t1 : onescomp_N" is not bound.
+#         Region: /tb_datapath/DUT/addsub
+# ** Warning: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd(68): (vopt-3473) Component instance "t2 : mux2t1_N" is not bound.
+#         Region: /tb_datapath/DUT/addsub
+# ** Warning: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd(75): (vopt-3473) Component instance "t3 : mux2t1_N" is not bound.
+#         Region: /tb_datapath/DUT/addsub
+# ** Warning: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd(82): (vopt-3473) Component instance "t4 : adder_N" is not bound.
+#         Region: /tb_datapath/DUT/addsub
+# ** Warning: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd(92): (vopt-3473) Component instance "t5 : mux2t1_N" is not bound.
+#         Region: /tb_datapath/DUT/addsub
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=7.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_datapath(behavior)#1
+# Loading work.datapath(structural)#1
+# ** Warning: (vsim-3473) Component instance "registerFile : register_file" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd
+# Loading work.addsub_n_with_imm(structural)#1
+# ** Warning: (vsim-3473) Component instance "t1 : onescomp_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t2 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t3 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t4 : adder_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t5 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_datapath/DUT/addsub/s, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb_datapath/DUT/writeToRegister_D.
+add wave sim:/tb_datatpath/*
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/tb_datatpath/*'.
+add wave sim:/tb_datapath/*
+run 1000
+run 1000
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/tb_datapath.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:09:40 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/tb_datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_datapath
+# -- Compiling architecture behavior of tb_datapath
+# vcom: End time: 19:09:40 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_datapath
+# vsim: End time: 19:09:47 on Sep 20,2026, Elapsed time: 0:07:26
+# Errors: 0, Warnings: 14
+# ** Note: (vsim-220) '/usr/local/mentor/questasim/linux_x86_64/../questa.ini' is used as the ini file.
+# vsim -voptargs="+acc" work.tb_datapath 
+# Start time: 19:09:47 on Sep 20,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Warning: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd(48): (vopt-3473) Component instance "registerFile : register_file" is not bound.
+#         Region: /tb_datapath/DUT
+# ** Warning: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd(64): (vopt-3473) Component instance "t1 : onescomp_N" is not bound.
+#         Region: /tb_datapath/DUT/addsub
+# ** Warning: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd(68): (vopt-3473) Component instance "t2 : mux2t1_N" is not bound.
+#         Region: /tb_datapath/DUT/addsub
+# ** Warning: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd(75): (vopt-3473) Component instance "t3 : mux2t1_N" is not bound.
+#         Region: /tb_datapath/DUT/addsub
+# ** Warning: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd(82): (vopt-3473) Component instance "t4 : adder_N" is not bound.
+#         Region: /tb_datapath/DUT/addsub
+# ** Warning: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd(92): (vopt-3473) Component instance "t5 : mux2t1_N" is not bound.
+#         Region: /tb_datapath/DUT/addsub
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=7.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_datapath(behavior)#1
+# Loading work.datapath(structural)#1
+# ** Warning: (vsim-3473) Component instance "registerFile : register_file" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd
+# Loading work.addsub_n_with_imm(structural)#1
+# ** Warning: (vsim-3473) Component instance "t1 : onescomp_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t2 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t3 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t4 : adder_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t5 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_datapath/DUT/addsub/s, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb_datapath/DUT/writeToRegister_D.
+add wave sim:/tb_datapath/*
+run 1000
+run 1000
+run 1000
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/decoder_5t32.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:47:39 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/decoder_5t32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder_5t32
+# -- Compiling architecture dataflow of decoder_5t32
+# vcom: End time: 19:47:40 on Sep 20,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_32t1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:47:40 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_32t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Error: (vcom-11) Could not find work.mux_types. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+# ** Error (suppressible): /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_32t1.vhd(20): (vcom-1195) Cannot find expanded name "work.mux_types".
+# ** Error: /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_32t1.vhd(20): Unknown expanded name.
+# ** Note: /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_32t1.vhd(23): VHDL Compiler exiting
+# vcom: End time: 19:47:41 on Sep 20,2026, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_32t1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:47:47 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_32t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Error: (vcom-11) Could not find work.mux_types. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+# ** Error (suppressible): /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_32t1.vhd(20): (vcom-1195) Cannot find expanded name "work.mux_types".
+# ** Error: /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_32t1.vhd(20): Unknown expanded name.
+# ** Note: /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_32t1.vhd(23): VHDL Compiler exiting
+# vcom: End time: 19:47:47 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_types.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:47:48 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package mux_types
+# vcom: End time: 19:47:48 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/register_file.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:47:49 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/register_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package mux_types
+# -- Compiling entity register_file
+# -- Compiling architecture mixed of register_file
+# vcom: End time: 19:47:49 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/register_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:47:50 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/register_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity register_N
+# -- Compiling architecture dataflow of register_N
+# ** Error (suppressible): /home/rhoefer/cpre3810/Lab2/src/RegFile/register_N.vhd(26): (vcom-1141) Identifier "dffg" does not identify a component declaration.
+# ** Note: /home/rhoefer/cpre3810/Lab2/src/RegFile/register_N.vhd(33): VHDL Compiler exiting
+# vcom: End time: 19:47:50 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_decoder_5t32.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:47:50 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_decoder_5t32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_decoder_5t32
+# -- Compiling architecture behavior of tb_decoder_5t32
+# vcom: End time: 19:47:50 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/register_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:47:51 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/register_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity register_N
+# -- Compiling architecture dataflow of register_N
+# ** Error (suppressible): /home/rhoefer/cpre3810/Lab2/src/RegFile/register_N.vhd(26): (vcom-1141) Identifier "dffg" does not identify a component declaration.
+# ** Note: /home/rhoefer/cpre3810/Lab2/src/RegFile/register_N.vhd(33): VHDL Compiler exiting
+# vcom: End time: 19:47:51 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_decoder_5t32.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:47:56 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_decoder_5t32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_decoder_5t32
+# -- Compiling architecture behavior of tb_decoder_5t32
+# vcom: End time: 19:47:56 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_mux_32t1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:47:57 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_mux_32t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package mux_types
+# -- Compiling entity tb_mux_32t1
+# -- Compiling architecture behavior of tb_mux_32t1
+# vcom: End time: 19:47:57 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_register_file.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:47:57 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_register_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_register_file
+# -- Compiling architecture behavior of tb_register_file
+# vcom: End time: 19:47:57 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_register_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:47:59 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_register_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_register_N
+# -- Compiling architecture behavior of tb_register_N
+# vcom: End time: 19:47:59 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_32t1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:48:00 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_32t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mux_types
+# -- Compiling entity mux_32t1
+# -- Compiling architecture dataflow of mux_32t1
+# vcom: End time: 19:48:00 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_32t1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:48:03 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_32t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mux_types
+# -- Compiling entity mux_32t1
+# -- Compiling architecture dataflow of mux_32t1
+# vcom: End time: 19:48:03 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_32t1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:48:04 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_32t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mux_types
+# -- Compiling entity mux_32t1
+# -- Compiling architecture dataflow of mux_32t1
+# vcom: End time: 19:48:04 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_decoder_5t32.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:48:07 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_decoder_5t32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_decoder_5t32
+# -- Compiling architecture behavior of tb_decoder_5t32
+# vcom: End time: 19:48:07 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/register_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:48:08 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/register_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity register_N
+# -- Compiling architecture dataflow of register_N
+# ** Error (suppressible): /home/rhoefer/cpre3810/Lab2/src/RegFile/register_N.vhd(26): (vcom-1141) Identifier "dffg" does not identify a component declaration.
+# ** Note: /home/rhoefer/cpre3810/Lab2/src/RegFile/register_N.vhd(33): VHDL Compiler exiting
+# vcom: End time: 19:48:08 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/register_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:48:10 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/register_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity register_N
+# -- Compiling architecture dataflow of register_N
+# ** Error (suppressible): /home/rhoefer/cpre3810/Lab2/src/RegFile/register_N.vhd(26): (vcom-1141) Identifier "dffg" does not identify a component declaration.
+# ** Note: /home/rhoefer/cpre3810/Lab2/src/RegFile/register_N.vhd(33): VHDL Compiler exiting
+# vcom: End time: 19:48:10 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/register_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:49:50 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/register_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity register_N
+# -- Compiling architecture dataflow of register_N
+# vcom: End time: 19:49:50 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/register_file.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:49:51 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/register_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package mux_types
+# -- Compiling entity register_file
+# -- Compiling architecture mixed of register_file
+# vcom: End time: 19:49:51 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_types.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:49:52 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package mux_types
+# vcom: End time: 19:49:52 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_32t1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:49:53 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_32t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mux_types
+# -- Compiling entity mux_32t1
+# -- Compiling architecture dataflow of mux_32t1
+# vcom: End time: 19:49:53 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/decoder_5t32.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:49:55 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/decoder_5t32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder_5t32
+# -- Compiling architecture dataflow of decoder_5t32
+# vcom: End time: 19:49:55 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_register_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:49:56 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_register_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_register_N
+# -- Compiling architecture behavior of tb_register_N
+# vcom: End time: 19:49:56 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_register_file.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:49:57 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_register_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_register_file
+# -- Compiling architecture behavior of tb_register_file
+# vcom: End time: 19:49:57 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_mux_32t1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:49:58 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_mux_32t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package mux_types
+# -- Compiling entity tb_mux_32t1
+# -- Compiling architecture behavior of tb_mux_32t1
+# vcom: End time: 19:49:58 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_decoder_5t32.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:49:58 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_decoder_5t32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_decoder_5t32
+# -- Compiling architecture behavior of tb_decoder_5t32
+# vcom: End time: 19:49:58 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/register_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:49:59 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/register_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity register_N
+# -- Compiling architecture dataflow of register_N
+# vcom: End time: 19:49:59 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/register_file.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:50:00 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/register_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package mux_types
+# -- Compiling entity register_file
+# -- Compiling architecture mixed of register_file
+# vcom: End time: 19:50:00 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:50:06 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity addsub_N_with_imm
+# -- Compiling architecture structural of addsub_N_with_imm
+# vcom: End time: 19:50:06 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:50:07 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity datapath
+# -- Compiling architecture structural of datapath
+# vcom: End time: 19:50:07 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/tb_datapath.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:50:08 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/tb_datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_datapath
+# -- Compiling architecture behavior of tb_datapath
+# vcom: End time: 19:50:08 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_datapath
+# vsim: End time: 19:50:29 on Sep 20,2026, Elapsed time: 0:40:42
+# Errors: 0, Warnings: 14
+# ** Note: (vsim-220) '/usr/local/mentor/questasim/linux_x86_64/../questa.ini' is used as the ini file.
+# vsim -voptargs="+acc" work.tb_datapath 
+# Start time: 19:50:29 on Sep 20,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_datapath(behavior)#1
+# Loading work.datapath(structural)#1
+# ** Warning: (vsim-3473) Component instance "registerFile : register_file" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd
+# Loading work.addsub_n_with_imm(structural)#1
+# ** Warning: (vsim-3473) Component instance "t1 : onescomp_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t2 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t3 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t4 : adder_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t5 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_datapath/DUT/addsub/s, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb_datapath/DUT/writeToRegister_D.
+add wave sim:/tb_datapath/*
+run 1000
+# Paste insertion failed: add: ** UI-Msg (Warning): (vish-4014) No objects found matching 'add'.
+# Paste insertion failed: wave: ** UI-Msg (Warning): (vish-4014) No objects found matching 'wave'.
+# Paste insertion failed: -r: Missing signal name or pattern.
+# Paste insertion failed: add: ** UI-Msg (Warning): (vish-4014) No objects found matching 'add'.
+# Paste insertion failed: wave: ** UI-Msg (Warning): (vish-4014) No objects found matching 'wave'.
+# Paste insertion failed: -r: Missing signal name or pattern.
+# Paste insertion failed: sim:/tb_datapath/DUT/registerFile/*: ** UI-Msg (Warning): (vish-4014) No objects found matching '/tb_datapath/DUT/registerFile/*'.
+# Paste insertion failed: add: ** UI-Msg (Warning): (vish-4014) No objects found matching 'add'.
+# Paste insertion failed: wave: ** UI-Msg (Warning): (vish-4014) No objects found matching 'wave'.
+# Paste insertion failed: -r: Missing signal name or pattern.
+# Paste insertion failed: restart: ** UI-Msg (Warning): (vish-4014) No objects found matching 'restart'.
+# Paste insertion failed: -f: Missing signal name or pattern.
+# Paste insertion failed: run: ** UI-Msg (Warning): (vish-4014) No objects found matching 'run'.
+# Paste insertion failed: 200: ** UI-Msg (Warning): (vish-4014) No objects found matching '200'.
+# Paste insertion failed: ns: ** UI-Msg (Warning): (vish-4014) No objects found matching 'ns'.
+add wave -r sim:/tb_datapath/DUT/*
+add wave -r sim:/tb_datapath/DUT/registerFile/*
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/tb_datapath/DUT/registerFile/*'.
+add wave -r sim:/tb_datapath/DUT/addsub/*
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Warning: (vsim-3473) Component instance "registerFile : register_file" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd
+# ** Warning: (vsim-3473) Component instance "t1 : onescomp_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t2 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t3 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+run 200 ns
+# ** Warning: (vsim-3473) Component instance "t4 : adder_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t5 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_datapath/DUT/addsub/s, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb_datapath/DUT/writeToRegister_D.
+vsim -voptargs=+acc work.tb_datapath
+# vsim: End time: 19:52:26 on Sep 20,2026, Elapsed time: 0:01:57
+# Errors: 0, Warnings: 7
+# ** Note: (vsim-220) '/usr/local/mentor/questasim/linux_x86_64/../questa.ini' is used as the ini file.
+# vsim -voptargs="+acc" work.tb_datapath 
+# Start time: 19:52:26 on Sep 20,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_datapath(behavior)#1
+# Loading work.datapath(structural)#1
+# ** Warning: (vsim-3473) Component instance "registerFile : register_file" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd
+# Loading work.addsub_n_with_imm(structural)#1
+# ** Warning: (vsim-3473) Component instance "t1 : onescomp_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t2 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t3 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t4 : adder_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t5 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_datapath/DUT/addsub/s, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb_datapath/DUT/writeToRegister_D.
+add wave -r sim:/tb_datapath/DUT/*
+add wave -r sim:/tb_datapath/DUT/registerFile/*
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/tb_datapath/DUT/registerFile/*'.
+add wave -r sim:/tb_datapath/DUT/addsub/*
+restart -f
+run 200 ns
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Warning: (vsim-3473) Component instance "registerFile : register_file" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd
+# ** Warning: (vsim-3473) Component instance "t1 : onescomp_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t2 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t3 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t4 : adder_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t5 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_datapath/DUT/addsub/s, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb_datapath/DUT/writeToRegister_D.
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/decoder_5t32.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:53:14 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/decoder_5t32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder_5t32
+# -- Compiling architecture dataflow of decoder_5t32
+# vcom: End time: 19:53:14 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_32t1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:53:15 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_32t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mux_types
+# -- Compiling entity mux_32t1
+# -- Compiling architecture dataflow of mux_32t1
+# vcom: End time: 19:53:15 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_types.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:53:16 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package mux_types
+# vcom: End time: 19:53:16 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/register_file.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:53:18 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/register_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package mux_types
+# -- Compiling entity register_file
+# -- Compiling architecture mixed of register_file
+# vcom: End time: 19:53:18 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/register_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:53:19 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/register_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity register_N
+# -- Compiling architecture dataflow of register_N
+# vcom: End time: 19:53:19 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_decoder_5t32.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:53:19 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_decoder_5t32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_decoder_5t32
+# -- Compiling architecture behavior of tb_decoder_5t32
+# vcom: End time: 19:53:20 on Sep 20,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_mux_32t1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:53:20 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_mux_32t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package mux_types
+# -- Compiling entity tb_mux_32t1
+# -- Compiling architecture behavior of tb_mux_32t1
+# vcom: End time: 19:53:20 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_register_file.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:53:21 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_register_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_register_file
+# -- Compiling architecture behavior of tb_register_file
+# vcom: End time: 19:53:21 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_register_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:53:23 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_register_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_register_N
+# -- Compiling architecture behavior of tb_register_N
+# vcom: End time: 19:53:23 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run 300
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Adder/adder_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:57:09 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Adder/adder_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder_N
+# -- Compiling architecture structural of adder_N
+# vcom: End time: 19:57:09 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Adder/fulladder.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:57:10 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Adder/fulladder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fulladder
+# -- Compiling architecture structural of fulladder
+# vcom: End time: 19:57:10 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Adder/tb_adder_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:57:11 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Adder/tb_adder_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Adder/tb_adder_N.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_adder_N
+# -- Compiling architecture mixed of tb_adder_N
+# vcom: End time: 19:57:11 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/AddSub/addsub_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:57:16 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/AddSub/addsub_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity addsub_N
+# -- Compiling architecture structural of addsub_N
+# vcom: End time: 19:57:16 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/AddSub/tb_addsub_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:57:17 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/AddSub/tb_addsub_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/AddSub/tb_addsub_N.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_addsub_N
+# -- Compiling architecture mixed of tb_addsub_N
+# vcom: End time: 19:57:17 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/MUX/mux2t1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:57:25 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/MUX/mux2t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mux2t1
+# -- Compiling architecture structure of mux2t1
+# vcom: End time: 19:57:25 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/MUX/mux2t1_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:57:26 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/MUX/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# vcom: End time: 19:57:26 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/MUX/mux2t1dflow.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:57:27 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/MUX/mux2t1dflow.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mux2t1dflow
+# -- Compiling architecture dataflow of mux2t1dflow
+# vcom: End time: 19:57:27 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/OnesComp/onescomp_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 19:57:31 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/OnesComp/onescomp_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity onescomp_N
+# -- Compiling architecture structural of onescomp_N
+# vcom: End time: 19:57:31 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_datapath
+# vsim: End time: 19:57:47 on Sep 20,2026, Elapsed time: 0:05:21
+# Errors: 0, Warnings: 7
+# ** Note: (vsim-220) '/usr/local/mentor/questasim/linux_x86_64/../questa.ini' is used as the ini file.
+# vsim -voptargs="+acc" work.tb_datapath 
+# Start time: 19:57:47 on Sep 20,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_datapath(behavior)#1
+# Loading work.datapath(structural)#1
+# ** Warning: (vsim-3473) Component instance "registerFile : register_file" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd
+# Loading work.addsub_n_with_imm(structural)#1
+# ** Warning: (vsim-3473) Component instance "t1 : onescomp_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t2 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t3 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t4 : adder_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t5 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_datapath/DUT/addsub/s, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb_datapath/DUT/writeToRegister_D.
+add wave sim:/tb_datapath/*
+run 300
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:04:27 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 21:04:27 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Multiplier.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:04:28 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Multiplier.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Multiplier
+# -- Compiling architecture behavior of Multiplier
+# vcom: End time: 21:04:28 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:04:29 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 21:04:29 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Reg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:04:29 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Reg
+# -- Compiling architecture behavior of Reg
+# vcom: End time: 21:04:30 on Sep 20,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/RegLd.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:04:30 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/RegLd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RegLd
+# -- Compiling architecture behavior of RegLd
+# vcom: End time: 21:04:30 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/xorg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:04:31 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# vcom: End time: 21:04:31 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Adder.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:04:31 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Adder
+# -- Compiling architecture behavior of Adder
+# vcom: End time: 21:04:31 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:04:32 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 21:04:32 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_datapath
+# vsim: End time: 21:04:48 on Sep 20,2026, Elapsed time: 1:07:01
+# Errors: 0, Warnings: 7
+# ** Note: (vsim-220) '/usr/local/mentor/questasim/linux_x86_64/../questa.ini' is used as the ini file.
+# vsim -voptargs="+acc" work.tb_datapath 
+# Start time: 21:04:48 on Sep 20,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_datapath(behavior)#1
+# Loading work.datapath(structural)#1
+# ** Warning: (vsim-3473) Component instance "registerFile : register_file" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd
+# Loading work.addsub_n_with_imm(structural)#1
+# ** Warning: (vsim-3473) Component instance "t1 : onescomp_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t2 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t3 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t4 : adder_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t5 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_datapath/DUT/addsub/s, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb_datapath/DUT/writeToRegister_D.
+add wave sim:/tb_datapath/*
+run 300
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/dffg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:05:36 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/dffg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# vcom: End time: 21:05:36 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/mem.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:05:39 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mem
+# -- Compiling architecture rtl of mem
+# vcom: End time: 21:05:39 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/tb_dffg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:05:40 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/tb_dffg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_dffg
+# -- Compiling architecture behavior of tb_dffg
+# vcom: End time: 21:05:40 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_datapath
+# vsim: End time: 21:05:54 on Sep 20,2026, Elapsed time: 0:01:06
+# Errors: 0, Warnings: 7
+# ** Note: (vsim-220) '/usr/local/mentor/questasim/linux_x86_64/../questa.ini' is used as the ini file.
+# vsim -voptargs="+acc" work.tb_datapath 
+# Start time: 21:05:54 on Sep 20,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_datapath(behavior)#1
+# Loading work.datapath(structural)#1
+# ** Warning: (vsim-3473) Component instance "registerFile : register_file" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd
+# Loading work.addsub_n_with_imm(structural)#1
+# ** Warning: (vsim-3473) Component instance "t1 : onescomp_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t2 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t3 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t4 : adder_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t5 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_datapath/DUT/addsub/s, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb_datapath/DUT/writeToRegister_D.
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/OnesComp/onescomp_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:06:09 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/OnesComp/onescomp_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity onescomp_N
+# -- Compiling architecture structural of onescomp_N
+# vcom: End time: 21:06:09 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/MUX/mux2t1_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:06:17 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/MUX/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# vcom: End time: 21:06:17 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Adder/adder_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:06:26 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Adder/adder_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder_N
+# -- Compiling architecture structural of adder_N
+# vcom: End time: 21:06:26 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_datapath
+# vsim: End time: 21:06:39 on Sep 20,2026, Elapsed time: 0:00:45
+# Errors: 0, Warnings: 7
+# ** Note: (vsim-220) '/usr/local/mentor/questasim/linux_x86_64/../questa.ini' is used as the ini file.
+# vsim -voptargs="+acc" work.tb_datapath 
+# Start time: 21:06:39 on Sep 20,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_datapath(behavior)#1
+# Loading work.datapath(structural)#1
+# ** Warning: (vsim-3473) Component instance "registerFile : register_file" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd
+# Loading work.addsub_n_with_imm(structural)#1
+# ** Warning: (vsim-3473) Component instance "t1 : onescomp_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t2 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t3 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t4 : adder_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t5 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_datapath/DUT/addsub/s, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb_datapath/DUT/writeToRegister_D.
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:07:53 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 21:07:53 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Multiplier.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:07:53 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Multiplier.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Multiplier
+# -- Compiling architecture behavior of Multiplier
+# vcom: End time: 21:07:54 on Sep 20,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:07:54 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 21:07:54 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Reg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:07:55 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Reg
+# -- Compiling architecture behavior of Reg
+# vcom: End time: 21:07:55 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/RegLd.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:07:56 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/RegLd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RegLd
+# -- Compiling architecture behavior of RegLd
+# vcom: End time: 21:07:56 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/xorg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:07:56 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# vcom: End time: 21:07:56 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Adder.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:07:57 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Adder
+# -- Compiling architecture behavior of Adder
+# vcom: End time: 21:07:57 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:07:57 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 21:07:57 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/TPU/tb_TPU_MV_Element(addedtests).vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:07:59 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/TPU/tb_TPU_MV_Element(addedtests).vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/TPU/tb_TPU_MV_Element(addedtests).vhd(18): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_TPU_MV_Element
+# -- Compiling architecture mixed of tb_TPU_MV_Element
+# vcom: End time: 21:07:59 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/TPU/tb_TPU_MV_Element.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:08:00 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/TPU/tb_TPU_MV_Element.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/TPU/tb_TPU_MV_Element.vhd(18): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# ** Warning: /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/TPU/tb_TPU_MV_Element.vhd(23): (vcom-1615) Existing entity 'tb_TPU_MV_Element' at /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/TPU/tb_TPU_MV_Element(addedtests).vhd(23) will be overwritten.
+# -- Compiling entity tb_TPU_MV_Element
+# ** Warning: /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/TPU/tb_TPU_MV_Element.vhd(28): (vcom-1615) Existing architecture 'tb_TPU_MV_Element(mixed)' at /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/TPU/tb_TPU_MV_Element(addedtests).vhd(28) will be overwritten.
+# -- Compiling architecture mixed of tb_TPU_MV_Element
+# vcom: End time: 21:08:00 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 3
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/TPU/TPU_MV_Element.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:08:01 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/TPU/TPU_MV_Element.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity TPU_MV_Element
+# -- Compiling architecture structure of TPU_MV_Element
+# vcom: End time: 21:08:02 on Sep 20,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Adder/adder_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:08:05 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Adder/adder_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder_N
+# -- Compiling architecture structural of adder_N
+# vcom: End time: 21:08:05 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Adder/fulladder.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:08:05 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Adder/fulladder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fulladder
+# -- Compiling architecture structural of fulladder
+# vcom: End time: 21:08:05 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Adder/tb_adder_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:08:06 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Adder/tb_adder_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Adder/tb_adder_N.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_adder_N
+# -- Compiling architecture mixed of tb_adder_N
+# vcom: End time: 21:08:06 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Adder/tb_adder_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:08:43 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Adder/tb_adder_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/Adder/tb_adder_N.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_adder_N
+# -- Compiling architecture mixed of tb_adder_N
+# vcom: End time: 21:08:43 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/AddSub/addsub_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:08:47 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/AddSub/addsub_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity addsub_N
+# -- Compiling architecture structural of addsub_N
+# vcom: End time: 21:08:47 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/AddSub/tb_addsub_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:08:48 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/AddSub/tb_addsub_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/AddSub/tb_addsub_N.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_addsub_N
+# -- Compiling architecture mixed of tb_addsub_N
+# vcom: End time: 21:08:48 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/MUX/mux2t1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:08:52 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/MUX/mux2t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mux2t1
+# -- Compiling architecture structure of mux2t1
+# vcom: End time: 21:08:52 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/MUX/mux2t1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:08:54 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/MUX/mux2t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mux2t1
+# -- Compiling architecture structure of mux2t1
+# vcom: End time: 21:08:54 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/MUX/mux2t1_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:08:55 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/MUX/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# vcom: End time: 21:08:55 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/MUX/mux2t1dflow.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:08:56 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/MUX/mux2t1dflow.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mux2t1dflow
+# -- Compiling architecture dataflow of mux2t1dflow
+# vcom: End time: 21:08:56 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/OnesComp/onescomp_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:09:02 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/OnesComp/onescomp_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity onescomp_N
+# -- Compiling architecture structural of onescomp_N
+# vcom: End time: 21:09:02 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/OnesComp/tb_onescomp_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:09:03 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/OnesComp/tb_onescomp_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /home/rhoefer/cpre3810/Lab2/Lab1/Lab1/OnesComp/tb_onescomp_N.vhd(5): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_onescomp_N
+# -- Compiling architecture mixed of tb_onescomp_N
+# vcom: End time: 21:09:03 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:09:32 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity datapath
+# -- Compiling architecture structural of datapath
+# vcom: End time: 21:09:33 on Sep 20,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:09:33 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity addsub_N_with_imm
+# -- Compiling architecture structural of addsub_N_with_imm
+# vcom: End time: 21:09:34 on Sep 20,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/decoder_5t32.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:09:42 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/decoder_5t32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder_5t32
+# -- Compiling architecture dataflow of decoder_5t32
+# vcom: End time: 21:09:42 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_32t1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:09:43 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_32t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mux_types
+# -- Compiling entity mux_32t1
+# -- Compiling architecture dataflow of mux_32t1
+# vcom: End time: 21:09:43 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_types.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:09:44 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/mux_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package mux_types
+# vcom: End time: 21:09:44 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/register_file.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:09:45 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/register_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package mux_types
+# -- Compiling entity register_file
+# -- Compiling architecture mixed of register_file
+# vcom: End time: 21:09:45 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/register_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:09:45 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/register_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity register_N
+# -- Compiling architecture dataflow of register_N
+# vcom: End time: 21:09:45 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_decoder_5t32.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:09:46 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_decoder_5t32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_decoder_5t32
+# -- Compiling architecture behavior of tb_decoder_5t32
+# vcom: End time: 21:09:46 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_mux_32t1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:09:47 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_mux_32t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package mux_types
+# -- Compiling entity tb_mux_32t1
+# -- Compiling architecture behavior of tb_mux_32t1
+# vcom: End time: 21:09:47 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_register_file.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:09:48 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_register_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_register_file
+# -- Compiling architecture behavior of tb_register_file
+# vcom: End time: 21:09:48 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_register_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:09:49 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/RegFile/tb_register_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_register_N
+# -- Compiling architecture behavior of tb_register_N
+# vcom: End time: 21:09:49 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:09:52 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity addsub_N_with_imm
+# -- Compiling architecture structural of addsub_N_with_imm
+# vcom: End time: 21:09:52 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:09:52 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity datapath
+# -- Compiling architecture structural of datapath
+# vcom: End time: 21:09:52 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/tb_datapath.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:09:53 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/tb_datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_datapath
+# -- Compiling architecture behavior of tb_datapath
+# vcom: End time: 21:09:53 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_datapath
+# vsim: End time: 21:10:07 on Sep 20,2026, Elapsed time: 0:03:28
+# Errors: 0, Warnings: 7
+# ** Note: (vsim-220) '/usr/local/mentor/questasim/linux_x86_64/../questa.ini' is used as the ini file.
+# vsim -voptargs="+acc" work.tb_datapath 
+# Start time: 21:10:07 on Sep 20,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_datapath(behavior)#1
+# Loading work.datapath(structural)#1
+# ** Warning: (vsim-3473) Component instance "registerFile : register_file" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/datapath.vhd
+# Loading work.addsub_n_with_imm(structural)#1
+# ** Warning: (vsim-3473) Component instance "t1 : onescomp_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t2 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t3 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t4 : adder_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-3473) Component instance "t5 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapath/DUT/addsub File: /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_datapath/DUT/addsub/s, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb_datapath/DUT/writeToRegister_D.
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:14:49 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity addsub_N_with_imm
+# -- Compiling architecture structural of addsub_N_with_imm
+# vcom: End time: 21:14:50 on Sep 20,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:17:27 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity addsub_N_with_imm
+# -- Compiling architecture structural of addsub_N_with_imm
+# -- Loading entity onescomp_N
+# -- Loading entity mux2t1_N
+# -- Loading entity adder_N
+# vcom: End time: 21:17:27 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:17:34 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/addsub_N_with_imm.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity addsub_N_with_imm
+# -- Compiling architecture structural of addsub_N_with_imm
+# -- Loading entity onescomp_N
+# -- Loading entity mux2t1_N
+# -- Loading entity adder_N
+# vcom: End time: 21:17:34 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_datapath
+# vsim: End time: 21:17:44 on Sep 20,2026, Elapsed time: 0:07:37
+# Errors: 0, Warnings: 7
+# ** Note: (vsim-220) '/usr/local/mentor/questasim/linux_x86_64/../questa.ini' is used as the ini file.
+# vsim -voptargs="+acc" work.tb_datapath 
+# Start time: 21:17:44 on Sep 20,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_datapath(behavior)#1
+# Loading work.datapath(structural)#1
+# Loading work.mux_types
+# Loading work.register_file(mixed)#1
+# Loading work.decoder_5t32(dataflow)#1
+# Loading work.register_n(dataflow)#1
+# Loading work.dffg(mixed)#1
+# Loading ieee.numeric_std(body)
+# Loading work.mux_32t1(dataflow)#1
+# Loading work.addsub_n_with_imm(structural)#1
+# Loading work.onescomp_n(structural)#1
+# Loading work.invg(dataflow)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.mux2t1(structure)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+# Loading work.adder_n(structural)#1
+# Loading work.fulladder(structural)#1
+# Loading work.xorg2(dataflow)#1
+add wave sim:/tb_tpu_mv_element/*
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/tb_tpu_mv_element/*'.
+add wave sim:/tb_datapath/*
+run 300
+run 700
+run 1000
+run 300
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/tb_datapath.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 21:32:07 on Sep 20,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/Lab2/src/MyFirstRISCVDatapath/tb_datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_datapath
+# -- Compiling architecture behavior of tb_datapath
+# vcom: End time: 21:32:07 on Sep 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_datapath
+# vsim: End time: 21:32:16 on Sep 20,2026, Elapsed time: 0:14:32
+# Errors: 0, Warnings: 1
+# ** Note: (vsim-220) '/usr/local/mentor/questasim/linux_x86_64/../questa.ini' is used as the ini file.
+# vsim -voptargs="+acc" work.tb_datapath 
+# Start time: 21:32:16 on Sep 20,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_datapath(behavior)#1
+# Loading work.datapath(structural)#1
+# Loading work.mux_types
+# Loading work.register_file(mixed)#1
+# Loading work.decoder_5t32(dataflow)#1
+# Loading work.register_n(dataflow)#1
+# Loading work.dffg(mixed)#1
+# Loading ieee.numeric_std(body)
+# Loading work.mux_32t1(dataflow)#1
+# Loading work.addsub_n_with_imm(structural)#1
+# Loading work.onescomp_n(structural)#1
+# Loading work.invg(dataflow)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.mux2t1(structure)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+# Loading work.adder_n(structural)#1
+# Loading work.fulladder(structural)#1
+# Loading work.xorg2(dataflow)#1
+add wave sim:/tb_datapath/*
+run 1000
+run 1000
+run 400
+run 500
+run 400

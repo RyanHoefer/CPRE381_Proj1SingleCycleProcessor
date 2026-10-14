@@ -1,0 +1,75 @@
+m255
+K4
+z2
+!s11e vcom 2026.2 2026.05, May 18 2026
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dU:/Cpre3810/Project1/First_Demo(Oct-13th)
+Eriscv_processor
+w1791978742
+Z1 DPx4 work 11 riscv_types 0 22 9;Gzz>ELXcocUDa1gPB><0
+Z2 DPx3 std 6 textio 0 22 <UlP6K1@RDQa_MJ[:UEnP2
+Z3 DPx4 ieee 14 std_logic_1164 0 22 TDbGXLH=YSoj9JRY2gkNY0
+!i122 1
+R0
+8U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/RISTCV_Processor.vhd
+FU:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/RISTCV_Processor.vhd
+l0
+L25 1
+VzLI9Dk:3:2fkWVN3_;ifa3
+!s100 6;350ZWc<_;eglH]gg_fg2
+Z4 OL;C;2026.2;84
+32
+!s110 1791980614
+!i10b 1
+!s108 1791980614.000000
+!s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/RISTCV_Processor.vhd|
+!s107 U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/RISTCV_Processor.vhd|
+!i113 0
+Z5 o-work work
+Z6 tExplicit 1 CvgOpt 0 defaultOptions 1083778432
+Priscv_types
+R2
+R3
+!i122 0
+Z7 w1791980455
+R0
+Z8 8U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/RISCV_types.vhd
+Z9 FU:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/RISCV_types.vhd
+l0
+L15 13
+V9;Gzz>ELXcocUDa1gPB><0
+!s100 akSOk]IC9Y>?WgK7AoAX^2
+R4
+32
+Z10 !s110 1791980464
+!i10b 1
+Z11 !s108 1791980464.000000
+Z12 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/RISCV_types.vhd|
+Z13 !s107 U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/RISCV_types.vhd|
+!i113 0
+R5
+R6
+Bbody
+R1
+R2
+R3
+!i122 0
+l0
+L29 3
+VaF9BE=C0SO_TE1;7B=UYa0
+!s100 GDR?4:nAbmIiboG0gc@;N2
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R5
+R6

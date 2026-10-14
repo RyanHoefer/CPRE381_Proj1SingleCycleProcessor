@@ -1,0 +1,970 @@
+m255
+K4
+z2
+!s12c _opt1
+Z0 !s99 nomlopt
+!s11e vcom 2026.2 2026.05, May 18 2026
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dU:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor
+T_opt1
+!i145 1
+!i144 0
+!s110 1791991456
+VG@HD:[jBi61>AF]AUmETV2
+04 15 9 work riscv_processor structure 1
+=1-005056b6d354-6acf9e9d-2a3-2b1c
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+!i152 0
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0 defaultOptions 1110029060
+n@_opt1
+OL;O;2026.2;84
+Eadder
+Z2 w1791928069
+Z3 DPx4 ieee 11 numeric_std 0 22 m=kP7jRZW]kY;6MU;0z<22
+Z4 DPx3 std 6 textio 0 22 <UlP6K1@RDQa_MJ[:UEnP2
+Z5 DPx4 ieee 14 std_logic_1164 0 22 TDbGXLH=YSoj9JRY2gkNY0
+!i122 9
+R1
+Z6 8U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/Adder.vhd
+Z7 FU:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/Adder.vhd
+l0
+Z8 L26 1
+VMGGJVXB7mec<Pd8J>IC^D3
+!s100 kfPW^o^7FEWRe`V][JAj@0
+Z9 OL;C;2026.2;84
+32
+Z10 !s110 1791991402
+!i10b 1
+Z11 !s108 1791991402.000000
+Z12 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/Adder.vhd|
+Z13 !s107 U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/Adder.vhd|
+!i113 0
+Z14 o-work work
+Z15 tExplicit 1 CvgOpt 0 defaultOptions 1083778432
+Abehavior
+R3
+R4
+R5
+DEx4 work 5 adder 0 22 MGGJVXB7mec<Pd8J>IC^D3
+!i122 9
+l40
+L39 11
+VGY>:oT8VP2;W<OneM6A;W0
+!s100 kZHIb07f4nb8HBjm2M1;`1
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Eadder_n
+R2
+R4
+R5
+!i122 10
+R1
+Z16 8U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/adder_N.vhd
+Z17 FU:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/adder_N.vhd
+l0
+Z18 L17 1
+Vd2F[WJ>JR28oQ_dPJ>QXP0
+!s100 >B@4P_bd08]lOB179G=530
+R9
+32
+Z19 !s110 1791991404
+!i10b 1
+Z20 !s108 1791991404.000000
+Z21 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/adder_N.vhd|
+Z22 !s107 U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/adder_N.vhd|
+!i113 0
+R14
+R15
+Astructural
+R4
+R5
+DEx4 work 7 adder_n 0 22 d2F[WJ>JR28oQ_dPJ>QXP0
+!i122 10
+l39
+L28 29
+VEFbY]QSTO<iaEzgR<T`J]1
+!s100 E<RQdB_RUGe9UPn3<Wcj22
+R9
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 0
+R14
+R15
+Eaddsub_n_with_imm
+Z23 w1791991334
+R4
+R5
+!i122 11
+R1
+Z24 8U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/addsub_N_with_imm.vhd
+Z25 FU:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/addsub_N_with_imm.vhd
+l0
+R18
+V_m48g>50]7inFY2<mamHE3
+!s100 n1[dOUV<TO6D2<4onGdL_0
+R9
+32
+Z26 !s110 1791991406
+!i10b 1
+Z27 !s108 1791991406.000000
+Z28 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/addsub_N_with_imm.vhd|
+Z29 !s107 U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/addsub_N_with_imm.vhd|
+!i113 0
+R14
+R15
+Astructural
+R4
+R5
+DEx4 work 17 addsub_n_with_imm 0 22 _m48g>50]7inFY2<mamHE3
+!i122 11
+l62
+L30 74
+VlFjn?=1B`Z2mzd80D=K5h3
+!s100 7TYHIc0d<Ho5;4if0M<HS3
+R9
+32
+R26
+!i10b 1
+R27
+R28
+R29
+!i113 0
+R14
+R15
+Eandg2
+Z30 w1791928070
+R4
+R5
+!i122 4
+R1
+Z31 8U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/andg2.vhd
+Z32 FU:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/andg2.vhd
+l0
+Z33 L23 1
+VPn2c?DZ=XKbTj:kRjnLQI1
+!s100 YT?bGzEmcFo:DlnoC^B4_0
+R9
+32
+Z34 !s110 1791991386
+!i10b 1
+Z35 !s108 1791991385.000000
+Z36 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/andg2.vhd|
+Z37 !s107 U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/andg2.vhd|
+!i113 0
+R14
+R15
+Adataflow
+R4
+R5
+DEx4 work 5 andg2 0 22 Pn2c?DZ=XKbTj:kRjnLQI1
+!i122 4
+l32
+Z38 L31 6
+VgkFJJ5@K]T6QHgc>@BL?n0
+!s100 I`@Z@UBObS]<7m8bPgKUS1
+R9
+32
+R34
+!i10b 1
+R35
+R36
+R37
+!i113 0
+R14
+R15
+Econtrolunit
+Z39 w1791934120
+R4
+R5
+!i122 12
+R1
+Z40 8U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/ControlUnit.vhd
+Z41 FU:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/ControlUnit.vhd
+l0
+L5 1
+V[Uo6ChM49mFQ;lhmD_ZGC1
+!s100 N;I?_?OjEK0P=Q:XXalRd1
+R9
+32
+Z42 !s110 1791991408
+!i10b 1
+Z43 !s108 1791991408.000000
+Z44 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/ControlUnit.vhd|
+Z45 !s107 U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/ControlUnit.vhd|
+!i113 0
+R14
+R15
+Abehavioral
+R4
+R5
+DEx4 work 11 controlunit 0 22 [Uo6ChM49mFQ;lhmD_ZGC1
+!i122 12
+l19
+L18 81
+VLAOgK86PAnd?;DzkD=zdK0
+!s100 6`34726:XD?eLZMU=C`7f0
+R9
+32
+R42
+!i10b 1
+R43
+R44
+R45
+!i113 0
+R14
+R15
+Edecoder_5t32
+Z46 w1791487192
+R4
+R5
+!i122 13
+R1
+Z47 8U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/decoder_5t32.vhd
+Z48 FU:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/decoder_5t32.vhd
+l0
+R18
+Ve3Y@7bnnd8m5Gnab_c;H11
+!s100 M:0SfIf`8^NgnH`d52EGZ3
+R9
+32
+Z49 !s110 1791991410
+!i10b 1
+Z50 !s108 1791991410.000000
+Z51 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/decoder_5t32.vhd|
+Z52 !s107 U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/decoder_5t32.vhd|
+!i113 0
+R14
+R15
+Adataflow
+R4
+R5
+DEx4 work 12 decoder_5t32 0 22 e3Y@7bnnd8m5Gnab_c;H11
+!i122 13
+l23
+L22 38
+VQ4eZ;MP_W4BbO[gTWz0VN0
+!s100 R2e]PI4k`ME[8<oAn4=i@0
+R9
+32
+R49
+!i10b 1
+R50
+R51
+R52
+!i113 0
+R14
+R15
+Edffg
+Z53 w1791928071
+R4
+R5
+!i122 14
+R1
+Z54 8U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/dffg.vhd
+Z55 FU:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/dffg.vhd
+l0
+R33
+V1J_BV;nI9_:HfnOnKoE0>1
+!s100 T4gcXQGMCgKJbn8XhBM;b0
+R9
+32
+Z56 !s110 1791991413
+!i10b 1
+Z57 !s108 1791991412.000000
+Z58 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/dffg.vhd|
+Z59 !s107 U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/dffg.vhd|
+!i113 0
+R14
+R15
+Amixed
+R4
+R5
+DEx4 work 4 dffg 0 22 1J_BV;nI9_:HfnOnKoE0>1
+!i122 14
+l37
+L33 29
+V841ozIS0U:kcnJfcUhj=]2
+!s100 iOdlTUid@@]UimFK_53^C1
+R9
+32
+R56
+!i10b 1
+R57
+R58
+R59
+!i113 0
+R14
+R15
+Efetchmodule
+R53
+R5
+R4
+R3
+!i122 15
+R1
+Z60 8U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/FetchModule.vhd
+Z61 FU:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/FetchModule.vhd
+l0
+L6 1
+VVnUHniG4WODW5BF0fPARj0
+!s100 YTh:z=f:=8IjU`hK2BSzM1
+R9
+32
+Z62 !s110 1791991414
+!i10b 1
+Z63 !s108 1791991414.000000
+Z64 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/FetchModule.vhd|
+Z65 !s107 U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/FetchModule.vhd|
+!i113 0
+R14
+R15
+Astructural
+R5
+R4
+R3
+DEx4 work 11 fetchmodule 0 22 VnUHniG4WODW5BF0fPARj0
+!i122 15
+l48
+L21 99
+V4?]0zQ:YX^Qi[BJ^Hn_U53
+!s100 l]S;4P@M32@MBFZ1VLjdI3
+R9
+32
+R62
+!i10b 1
+R63
+R64
+R65
+!i113 0
+R14
+R15
+Efulladder
+R2
+R4
+R5
+!i122 16
+R1
+Z66 8U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/fulladder.vhd
+Z67 FU:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/fulladder.vhd
+l0
+R18
+V7jR`0TG:^zfcNMB<_D6g;2
+!s100 cT>B:jZLKSCDXV3e`L<UK2
+R9
+32
+Z68 !s110 1791991419
+!i10b 1
+Z69 !s108 1791991419.000000
+Z70 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/fulladder.vhd|
+Z71 !s107 U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/fulladder.vhd|
+!i113 0
+R14
+R15
+Astructural
+R4
+R5
+DEx4 work 9 fulladder 0 22 7jR`0TG:^zfcNMB<_D6g;2
+!i122 16
+l45
+L26 45
+VoLfS3BC^iZSVI=SIn9SIg2
+!s100 M_T>]Ok[zFamU^:RG;TK13
+R9
+32
+R68
+!i10b 1
+R69
+R70
+R71
+!i113 0
+R14
+R15
+Eimmediategenerator
+Z72 w1791926794
+R4
+R5
+!i122 17
+R1
+Z73 8U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/ImmediateGenerator.vhd
+Z74 FU:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/ImmediateGenerator.vhd
+l0
+L5 1
+V0:IK]GZVkSIUTT>jK`JHf0
+!s100 ]`N[0VPD6[;f<iJg^L7kf1
+R9
+32
+Z75 !s110 1791991421
+!i10b 1
+Z76 !s108 1791991421.000000
+Z77 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/ImmediateGenerator.vhd|
+Z78 !s107 U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/ImmediateGenerator.vhd|
+!i113 0
+R14
+R15
+Abehavioral
+R4
+R5
+DEx4 work 18 immediategenerator 0 22 0:IK]GZVkSIUTT>jK`JHf0
+!i122 17
+l14
+L13 34
+ViEa;XMebQ26jCh`J>[j[k1
+!s100 Kl?R8?fbMD70NkTYfC2[d2
+R9
+32
+R75
+!i10b 1
+R76
+R77
+R78
+!i113 0
+R14
+R15
+Einvg
+Z79 w1791487191
+R4
+R5
+!i122 18
+R1
+Z80 8U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/invg.vhd
+Z81 FU:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/invg.vhd
+l0
+R33
+VCN8?fe;9i1YMoP3^56CA43
+!s100 _XK?_^5z0Rm1<k12?;5R?2
+R9
+32
+Z82 !s110 1791991423
+!i10b 1
+Z83 !s108 1791991422.000000
+Z84 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/invg.vhd|
+Z85 !s107 U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/invg.vhd|
+!i113 0
+R14
+R15
+Adataflow
+R4
+R5
+DEx4 work 4 invg 0 22 CN8?fe;9i1YMoP3^56CA43
+!i122 18
+l31
+L30 6
+V_QRWUeiJC[3NdKCj57flz0
+!s100 bk7I76o8e1LURdoZEQb8H0
+R9
+32
+R82
+!i10b 1
+R83
+R84
+R85
+!i113 0
+R14
+R15
+Emem
+Z86 w1790635269
+R3
+R4
+R5
+!i122 19
+R1
+Z87 8U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/mem.vhd
+Z88 FU:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/mem.vhd
+l0
+L8 1
+V;Lg]c0aCI^5@JdU2QmPB80
+!s100 <FE^5`c6G[DN?g3EGE^:f0
+R9
+32
+Z89 !s110 1791991428
+!i10b 1
+Z90 !s108 1791991427.000000
+Z91 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/mem.vhd|
+Z92 !s107 U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/mem.vhd|
+!i113 0
+R14
+R15
+Artl
+R3
+R4
+R5
+DEx4 work 3 mem 0 22 ;Lg]c0aCI^5@JdU2QmPB80
+!i122 19
+l40
+L29 39
+VK6de7UTOon^MICTO;eDj>1
+!s100 M8@fCBfhYoIU@PkXS=DFb3
+R9
+32
+R89
+!i10b 1
+R90
+R91
+R92
+!i113 0
+R14
+R15
+Emux2t1
+R46
+R3
+R4
+R5
+!i122 5
+R1
+Z93 8U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/mux2t1.vhd
+Z94 FU:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/mux2t1.vhd
+l0
+L5 1
+VEDL6mO?bX`PTm[]>YgJf41
+!s100 U_SfQYJDmH2a9B^m7zXVK1
+R9
+32
+Z95 !s110 1791991389
+!i10b 1
+Z96 !s108 1791991389.000000
+Z97 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/mux2t1.vhd|
+Z98 !s107 U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/mux2t1.vhd|
+!i113 0
+R14
+R15
+Astructure
+R3
+R4
+R5
+DEx4 work 6 mux2t1 0 22 EDL6mO?bX`PTm[]>YgJf41
+!i122 5
+l39
+L14 44
+VP^De@J@e]l:=ELHA^^6Ti0
+!s100 <1GI?T@4^0WQLH;768VZ43
+R9
+32
+R95
+!i10b 1
+R96
+R97
+R98
+!i113 0
+R14
+R15
+Emux2t1_n
+R46
+R4
+R5
+!i122 6
+R1
+Z99 8U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/mux2t1_N.vhd
+Z100 FU:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/mux2t1_N.vhd
+l0
+L21 1
+V=Y]W>jOQInM;_Ib?>XPI<2
+!s100 6WH1kRd<eiGeF78;iL:LL0
+R9
+32
+Z101 !s110 1791991392
+!i10b 1
+Z102 !s108 1791991392.000000
+Z103 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/mux2t1_N.vhd|
+Z104 !s107 U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/mux2t1_N.vhd|
+!i113 0
+R14
+R15
+Astructural
+R4
+R5
+DEx4 work 8 mux2t1_n 0 22 =Y]W>jOQInM;_Ib?>XPI<2
+!i122 6
+l39
+L30 21
+Ve@jQ33WfiR=TKzz?CGf2>2
+!s100 C[H9ST2aIzLmhQj_c;20B0
+R9
+32
+R101
+!i10b 1
+R102
+R103
+R104
+!i113 0
+R14
+R15
+Emux_32t1
+R46
+Z105 DPx4 work 9 mux_types 0 22 3lXzU6^2b[aLYSoQnAE2R2
+R3
+R4
+R5
+!i122 8
+R1
+Z106 8U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/mux_32t1.vhd
+Z107 FU:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/mux_32t1.vhd
+l0
+R33
+VW8QYHH]0]jUZQ1kIIFdh03
+!s100 <>k1iL]hfX7RSDY[ZK`XO2
+R9
+32
+Z108 !s110 1791991397
+!i10b 1
+Z109 !s108 1791991397.000000
+Z110 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/mux_32t1.vhd|
+Z111 !s107 U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/mux_32t1.vhd|
+!i113 0
+R14
+R15
+Adataflow
+R105
+R3
+R4
+R5
+DEx4 work 8 mux_32t1 0 22 W8QYHH]0]jUZQ1kIIFdh03
+!i122 8
+l30
+L29 4
+VGCE1?<O@c0B:z2glm2o5E2
+!s100 mgWf]ZPc:VllW`7h6fzWd3
+R9
+32
+R108
+!i10b 1
+R109
+R110
+R111
+!i113 0
+R14
+R15
+Pmux_types
+R4
+R5
+!i122 7
+w1791982141
+R1
+8U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/mux_types.vhd
+FU:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/mux_types.vhd
+l0
+L4 4
+V3lXzU6^2b[aLYSoQnAE2R2
+!s100 of9ko`b:I[EaM?9;khT5b3
+R9
+32
+!s110 1791991395
+!i10b 1
+!s108 1791991394.000000
+!s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/mux_types.vhd|
+!s107 U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/mux_types.vhd|
+!i113 0
+R14
+R15
+Eonescomp_n
+Z112 w1791982019
+R4
+R5
+!i122 20
+R1
+Z113 8U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/onescomp_N.vhd
+Z114 FU:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/onescomp_N.vhd
+l0
+R18
+VLVV3LS7[C^i]37k4O8jeK2
+!s100 GbM;zbFaD6chJN_eZz_bn2
+R9
+32
+Z115 !s110 1791991433
+!i10b 1
+Z116 !s108 1791991433.000000
+Z117 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/onescomp_N.vhd|
+Z118 !s107 U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/onescomp_N.vhd|
+!i113 0
+R14
+R15
+Astructural
+R4
+R5
+DEx4 work 10 onescomp_n 0 22 LVV3LS7[C^i]37k4O8jeK2
+!i122 20
+l32
+L25 17
+Vf_TP30E:n7;FKmDRClVbI1
+!s100 ;3SQIABO3Ri?Gn[D3E>OQ0
+R9
+32
+R115
+!i10b 1
+R116
+R117
+R118
+!i113 0
+R14
+R15
+Eorg2
+R30
+R4
+R5
+!i122 3
+R1
+Z119 8U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/org2.vhd
+Z120 FU:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/org2.vhd
+l0
+R33
+V6JXFKnZ3n`b>lm=MD=QGA3
+!s100 bGQ1F9eW^Q17OoL9h4g7z2
+R9
+32
+Z121 !s110 1791991381
+!i10b 1
+Z122 !s108 1791991381.000000
+Z123 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/org2.vhd|
+Z124 !s107 U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/org2.vhd|
+!i113 0
+R14
+R15
+Adataflow
+R4
+R5
+DEx4 work 4 org2 0 22 6JXFKnZ3n`b>lm=MD=QGA3
+!i122 3
+l32
+R38
+VH=6A;fhk=i<h<ZMnVDczR1
+!s100 h5_AzR3TdRA0a_K=dQ>mI2
+R9
+32
+R121
+!i10b 1
+R122
+R123
+R124
+!i113 0
+R14
+R15
+Eregister_file
+Z125 w1791981397
+R105
+R4
+R5
+!i122 21
+R1
+Z126 8U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/register_file.vhd
+Z127 FU:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/register_file.vhd
+l0
+L6 1
+V9>`=2INXAFFnd9;T;U0Lz3
+!s100 R1D380@ZaDBEk3B_=251P2
+R9
+32
+Z128 !s110 1791991437
+!i10b 1
+Z129 !s108 1791991437.000000
+Z130 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/register_file.vhd|
+Z131 !s107 U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/register_file.vhd|
+!i113 0
+R14
+R15
+Amixed
+R105
+R4
+R5
+DEx4 work 13 register_file 0 22 9>`=2INXAFFnd9;T;U0Lz3
+!i122 21
+l42
+L17 54
+VWV2gfW2]DiC1W4kTnP@>Y0
+!s100 STLL8JKYTfKEab=5J:O]92
+R9
+32
+R128
+!i10b 1
+R129
+R130
+R131
+!i113 0
+R14
+R15
+Eregister_n
+R53
+R4
+R5
+!i122 22
+R1
+Z132 8U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/register_N.vhd
+Z133 FU:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/register_N.vhd
+l0
+L6 1
+V?B9:QI`KCj?>elo1T6na:3
+!s100 zBe0I_zib]2^3BDkXWL<Q1
+R9
+32
+Z134 !s110 1791991440
+!i10b 1
+Z135 !s108 1791991439.000000
+Z136 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/register_N.vhd|
+Z137 !s107 U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/register_N.vhd|
+!i113 0
+R14
+R15
+Adataflow
+R4
+R5
+DEx4 work 10 register_n 0 22 ?B9:QI`KCj?>elo1T6na:3
+!i122 22
+l22
+L13 19
+VZ`8EljHWiofn]9HOi^Yd<0
+!s100 8D1?HgPY=7bh3f8LEB>@k3
+R9
+32
+R134
+!i10b 1
+R135
+R136
+R137
+!i113 0
+R14
+R15
+Eriscv_processor
+Z138 w1791980861
+Z139 DPx4 work 11 riscv_types 0 22 9;Gzz>ELXcocUDa1gPB><0
+R4
+R5
+!i122 24
+R1
+Z140 8U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/RISCV_Processor.vhd
+Z141 FU:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/RISCV_Processor.vhd
+l0
+R8
+VFfR>bWB1?fj=:n^E8hIPd2
+!s100 NEC@hUS2D`_mW5FfMC=O]2
+R9
+32
+Z142 !s110 1791991444
+!i10b 1
+Z143 !s108 1791991443.000000
+Z144 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/RISCV_Processor.vhd|
+Z145 !s107 U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/RISCV_Processor.vhd|
+!i113 0
+R14
+R15
+Astructure
+R139
+R4
+R5
+DEx4 work 15 riscv_processor 0 22 FfR>bWB1?fj=:n^E8hIPd2
+!i122 24
+l144
+L38 220
+VPU2YWnX_g5fIKnckCa0[I0
+!s100 zXIH1:Vno=1=XZ@4Qbe]]1
+R9
+32
+R142
+!i10b 1
+R143
+R144
+R145
+!i113 0
+R14
+R15
+Priscv_types
+R4
+R5
+!i122 2
+Z146 w1791980455
+R1
+Z147 8U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/RISCV_types.vhd
+Z148 FU:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/RISCV_types.vhd
+l0
+L15 13
+V9;Gzz>ELXcocUDa1gPB><0
+!s100 akSOk]IC9Y>?WgK7AoAX^2
+R9
+32
+Z149 !s110 1791991377
+!i10b 1
+Z150 !s108 1791991377.000000
+Z151 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/RISCV_types.vhd|
+Z152 !s107 U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/RISCV_types.vhd|
+!i113 0
+R14
+R15
+Bbody
+R139
+R4
+R5
+!i122 2
+l0
+L29 3
+VaF9BE=C0SO_TE1;7B=UYa0
+!s100 GDR?4:nAbmIiboG0gc@;N2
+R9
+32
+R149
+!i10b 1
+R150
+R151
+R152
+!i113 0
+R14
+R15
+Exorg2
+R30
+R4
+R5
+!i122 1
+R1
+Z153 8U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/xorg2.vhd
+Z154 FU:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/xorg2.vhd
+l0
+R33
+VZ?9dg:GOPVA2WTE?L>^H:1
+!s100 [hI[mXFH4_j16U;>U1Lfn2
+R9
+32
+Z155 !s110 1791991372
+!i10b 1
+Z156 !s108 1791991372.000000
+Z157 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/xorg2.vhd|
+Z158 !s107 U:/Cpre3810/Project1/First_Demo(Oct-13th)/Processor/xorg2.vhd|
+!i113 0
+R14
+R15
+Adataflow
+R4
+R5
+DEx4 work 5 xorg2 0 22 Z?9dg:GOPVA2WTE?L>^H:1
+!i122 1
+l32
+R38
+VK2ZnW@ZOKBahi[bSa5ZVT3
+!s100 Z6[FAPS4fBLB`F?OO<AY72
+R9
+32
+R155
+!i10b 1
+R156
+R157
+R158
+!i113 0
+R14
+R15
