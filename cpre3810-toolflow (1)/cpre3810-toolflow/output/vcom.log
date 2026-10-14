@@ -1,0 +1,38 @@
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+Start time: 11:21:43 on Oct 14,2026
+vcom -2008 -work internal/ModelSimContainer/work proj/src/RISCV_types.vhd internal/testpy/tb.vhd proj/src/RISCV_types.vhd proj/src/TopLevel/decoder_5t32.vhd proj/src/TopLevel/invg.vhd proj/src/TopLevel/fulladder.vhd proj/src/TopLevel/mux2t1_N.vhd proj/src/TopLevel/andg2.vhd proj/src/TopLevel/mem.vhd proj/src/TopLevel/register_file.vhd proj/src/TopLevel/mux_types.vhd proj/src/TopLevel/Adder.vhd proj/src/TopLevel/ControlUnit.vhd proj/src/TopLevel/adder_N.vhd proj/src/TopLevel/mux2t1.vhd proj/src/TopLevel/addsub_N_with_imm.vhd proj/src/TopLevel/ImmediateGenerator.vhd proj/src/TopLevel/FetchModule.vhd proj/src/TopLevel/onescomp_N.vhd proj/src/TopLevel/mux_32t1.vhd proj/src/TopLevel/register_N.vhd proj/src/TopLevel/RISCV_Processor.vhd proj/src/TopLevel/xorg2.vhd proj/src/TopLevel/org2.vhd proj/src/TopLevel/dffg.vhd proj/src/TopLevel/ryans_components/mux2t1_N.vhd proj/src/TopLevel/ryans_components/mem.vhd proj/src/TopLevel/ryans_components/dffg.vhd proj/src/TopLevel/ryans_components/tb_dffg.vhd proj/src/TopLevel/ryans_components/mux2t1.vhd proj/src/TopLevel/ryans_components/RegFile/tb_register_N.vhd proj/src/TopLevel/ryans_components/RegFile/register_file.vhd proj/src/TopLevel/ryans_components/RegFile/decoder_5t32.vhd proj/src/TopLevel/ryans_components/RegFile/tb_register_file.vhd proj/src/TopLevel/ryans_components/RegFile/register_N.vhd proj/src/TopLevel/ryans_components/RegFile/mux_types.vhd proj/src/TopLevel/ryans_components/RegFile/tb_decoder_5t32.vhd proj/src/TopLevel/ryans_components/RegFile/mux_32t1.vhd proj/src/TopLevel/ryans_components/RegFile/tb_mux_32t1.vhd proj/src/TopLevel/ryans_components/MySecondRISCVDatapath/datapath2.vhd proj/src/TopLevel/ryans_components/MySecondRISCVDatapath/tb_datapath2.vhd proj/src/TopLevel/ryans_components/MySecondRISCVDatapath/tb_datapath2_demo.vhd proj/src/TopLevel/ryans_components/MyFirstRISCVDatapath/tb_datapath.vhd proj/src/TopLevel/ryans_components/MyFirstRISCVDatapath/addsub_N_with_imm.vhd proj/src/TopLevel/ryans_components/MyFirstRISCVDatapath/datapath.vhd proj/src/TopLevel/ryans_components/Extenders/tb_extender_N.vhd proj/src/TopLevel/ryans_components/Extenders/extender_N.vhd proj/src/TopLevel/ryans_components/Extenders/zero_appender_N.vhd proj/src/TopLevel/ryans_components/Memory/tb_dmem.vhd 
+** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package RISCV_types
+-- Compiling package body RISCV_types
+-- Loading package RISCV_types
+-- Loading package std_logic_textio
+-- Loading package ENV
+-- Compiling entity tb
+-- Compiling architecture mixed of tb
+** Warning: proj/src/RISCV_types.vhd(15): (vcom-1615) Existing package 'RISCV_types' at line 18 will be overwritten.
+-- Compiling package RISCV_types
+** Warning: proj/src/RISCV_types.vhd(32): (vcom-1615) Existing package body 'RISCV_types(body)' at line 32 will be overwritten.
+-- Compiling package body RISCV_types
+-- Loading package RISCV_types
+-- Compiling entity decoder_5t32
+-- Compiling architecture dataflow of decoder_5t32
+-- Compiling entity invg
+-- Compiling architecture dataflow of invg
+-- Compiling entity fulladder
+-- Compiling architecture structural of fulladder
+-- Compiling entity mux2t1_N
+-- Compiling architecture structural of mux2t1_N
+-- Compiling entity andg2
+-- Compiling architecture dataflow of andg2
+-- Loading package NUMERIC_STD
+-- Compiling entity mem
+-- Compiling architecture rtl of mem
+** Error: (vcom-11) Could not find work.mux_types. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+** Error (suppressible): proj/src/TopLevel/register_file.vhd(4): (vcom-1195) Cannot find expanded name "work.mux_types".
+** Error: proj/src/TopLevel/register_file.vhd(4): Unknown expanded name.
+** Note: proj/src/TopLevel/register_file.vhd(6): VHDL Compiler exiting
+vcom: End time: 11:21:43 on Oct 14,2026, Elapsed time: 0:00:00
+Errors: 3, Warnings: 3
