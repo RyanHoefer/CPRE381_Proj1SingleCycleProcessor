@@ -1,0 +1,28 @@
+.data
+.text
+
+
+main:
+    # TEST 1: ADDI
+    addi x1, x0, 10       # x1 = 10
+    addi x2, x0, 20       # x2 = 20
+
+    # TEST 2: ADD
+    add x3, x1, x2        # x3 = 10 + 20 = 30
+
+    # TEST 3: SUB
+    sub x4, x3, x1        # x4 = 30 - 10 = 20
+
+    # TEST 4: LUI
+    lui x5, 0x12345       # x5 = 0x12345000
+
+    # TEST 5: SW
+    sw x3, 0(x0)          # Memory[0] = 30
+
+    # TEST 6: LW
+    lw x6, 0(x0)          # x6 = Memory[0] = 30
+
+    # VERIFY MEMORY LOAD
+    add x7, x6, x4        # x7 = 30 + 20 = 50
+
+      wfi
