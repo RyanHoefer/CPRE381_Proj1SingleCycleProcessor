@@ -71,6 +71,73 @@ architecture structure of RISCV_Processor is
           q            : out std_logic_vector((DATA_WIDTH -1) downto 0));
     end component;
 
+    component ControlUnit is
+    port (
+        i_Instruction : in std_logic_vector(31 downto 0);
+
+        o_ALUSrc     : out std_logic;
+        o_ALUControl : out std_logic;
+        o_ImmType    : out std_logic_vector(2 downto 0);
+        o_ResultSrc  : out std_logic_vector(1 downto 0);
+        o_MemWrite   : out std_logic;
+        o_RegWrite   : out std_logic
+    );
+    end component;
+
+    component  FetchModule is
+      generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
+          Port (  i_rs1_data, i_rs2_data : in std_logic_vector(31 downto 0); -- for branch compares and jal and jalr
+                  i_instruction : in std_logic_vector(31 downto 0); -- raw instruction form instruction memory of current instruction
+
+                  pc_addr_imm	: in std_logic_vector(31 downto 0); -- immediate offset value for jal and jalr
+
+                  CLK, reset : in std_logic;
+
+                  o_pc : out std_logic_vector(31 downto 0); -- to the instruciton memory for the next instruction
+                  o_pc_plus4 : out std_logic_vector(31 downto 0)); -- to write back to register for jal and jalr
+
+      end component;
+
+    component register_file is
+      generic(N : integer := 32);
+
+        Port (  i_r1, i_r2 : in std_logic_vector(4 downto 0);
+                  i_w : in std_logic_vector(4 downto 0);
+                  i_writeData : in std_logic_vector(31 downto 0);
+                  i_writeEnable : std_logic;
+                  CLK : in std_logic;
+                  o_data1 : out std_logic_vector(31 downto 0);
+                  o_data2 : out std_logic_vector(31 downto 0));
+      end component;
+
+      component ImmediateGenerator is
+        port (
+            i_Instruction : in  std_logic_vector(31 downto 0);
+            i_ImmType     : in  std_logic_vector(2 downto 0);
+            o_Immediate   : out std_logic_vector(31 downto 0)
+        );
+      end component;
+
+      component addsub_N_with_imm is
+        generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
+        port(
+            i_A           : in std_logic_vector(N-1 downto 0);
+            i_B           : in std_logic_vector(N-1 downto 0);
+            i_imm         : in std_logic_vector(N-1 downto 0);
+            ctl           : in std_logic;
+            i_aluSrc      : in std_logic;
+            s             : out std_logic_vector(N-1 downto 0);
+            c_out         : out std_logic);
+      end component;
+
+    signal ALUSrc, ALUControl, MemWrite, RegWrite, writeEnable : std_logic;
+    signal ImmType : std_logic_vector(2 downto 0);
+    signal ResultSrc : std_logic_vector(1 downto 0);
+
+    signal rs1_data, rs2_data, pc_addr_imm, PCPlusFour, writeData, readData1, readData2, aluResult : std_logic_vector(31 downto 0);
+
+
+
   -- TODO: You may add any additional signals or components your implementation 
   --       requires below this comment
 
@@ -82,6 +149,52 @@ begin
       iInstAddr when others;
 
 
+    instructionDecoder: ControlUnit
+    port map(i_Instruction => s_Inst,
+             o_ALUSrc => ALUSrc,
+             o_ALUControl => ALUControl,
+             o_ImmType => ImmType,
+             o_ResultSrc => ResultSrc,
+             o_MemWrite   => s_DMemWr,
+             o_RegWrite   => RegWrite);
+
+    RyanFetchModule: FetchModule
+    port map(i_Instruction => s_Inst,
+             i_rs1_data => rs1_data,
+             i_rs2_data => rs2_data,
+             pc_addr_imm => pc_addr_imm,
+             CLK => iCLK,
+             reset   => iRST,
+             o_pc   => s_PC,
+             o_pc_plus4   => PCPlusFour);
+
+    registerFile : register_file
+      generic map(N => N)
+      port map (i_r1 => s_Inst(19 downto 15),
+              i_r2 => s_Inst(24 downto 20),
+              i_w => s_Inst(11 downto 27),
+              i_writeData => writeData,
+              i_writeEnable => RegWrite,
+              CLK => iCLK,
+              o_data1 => readData1,
+              o_data2 => readData2);
+
+    immeGenerator : immediateGenerator
+      port map (i_Instruction => s_Inst,
+              i_ImmType => ImmType,
+              o_Immediate => pc_addr_imm);
+
+    addsub : addsub_N_with_imm
+    generic map(N => N)
+        port map (  i_A => readData1,
+                    i_B => readData2,
+                    i_imm => pc_addr_imm,
+                    ctl => ALUControl,
+                    i_aluSrc => ALUSrc,
+                    s => aluResult,
+                    c_out => open);
+  
+
   IMem: mem
     generic map(ADDR_WIDTH => ADDR_WIDTH,
                 DATA_WIDTH => N)
@@ -91,7 +204,9 @@ begin
              be   => "1111",
              we   => iInstLd,
              q    => s_Inst);
-  
+
+      s_DMemAddr <= aluResult; --- these are here to keep our names and provided skeleton names the same 
+      s_DMemData <= readData2;
   DMem: mem
     generic map(ADDR_WIDTH => ADDR_WIDTH,
                 DATA_WIDTH => N)
@@ -102,7 +217,7 @@ begin
              we   => s_DMemWr,
              q    => s_DMemOut);
 
-  -- TODO: Ensure that s_Halt is connected to an output control signal produced from decoding the Halt instruction (Opcode: 01 0100)
+  s_Halt <= '1' when s_Inst(6 downto 0) = "0010100" else '0';
 
   -- TODO: Implement the rest of your processor below this comment! 
 
