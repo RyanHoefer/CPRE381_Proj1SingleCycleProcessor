@@ -1,0 +1,10 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity ImmediateGenerator is
+    port (
+        i_Instruction : in  std_logic_vector(31 downto 0);
+        i_ImmType     : in  std_logic_vector(2 downto 0);
+        o_Immediate   : out std_logic_vector(31 downto 0)
+    );
+end ImmediateGenerator;

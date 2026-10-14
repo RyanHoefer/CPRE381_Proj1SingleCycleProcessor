@@ -1,0 +1,450 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+!s11e vcom 2026.2 2026.05, May 18 2026
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dU:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic
+T_opt
+!i145 1
+!i144 0
+!s110 1791931112
+Vbdze8dcCQAjAC?JhCUBQl3
+04 14 10 work tb_fetchmodule behavioral 1
+=1-005056b6366b-6aceb2e7-81-277c
+R1
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+!i152 0
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0 defaultOptions 1110029060
+n@_opt
+OL;O;2026.2;84
+Eadder
+Z3 w1791928069
+Z4 DPx4 ieee 11 numeric_std 0 22 m=kP7jRZW]kY;6MU;0z<22
+Z5 DPx3 std 6 textio 0 22 <UlP6K1@RDQa_MJ[:UEnP2
+Z6 DPx4 ieee 14 std_logic_1164 0 22 TDbGXLH=YSoj9JRY2gkNY0
+!i122 14
+R2
+Z7 8U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/Adder.vhd
+Z8 FU:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/Adder.vhd
+l0
+L26 1
+VMGGJVXB7mec<Pd8J>IC^D3
+!s100 kfPW^o^7FEWRe`V][JAj@0
+Z9 OL;C;2026.2;84
+32
+Z10 !s110 1791931082
+!i10b 1
+Z11 !s108 1791931082.000000
+Z12 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/Adder.vhd|
+Z13 !s107 U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/Adder.vhd|
+!i113 0
+Z14 o-work work
+Z15 tExplicit 1 CvgOpt 0 defaultOptions 1083778432
+Abehavior
+R4
+R5
+R6
+DEx4 work 5 adder 0 22 MGGJVXB7mec<Pd8J>IC^D3
+!i122 14
+l40
+L39 11
+VGY>:oT8VP2;W<OneM6A;W0
+!s100 kZHIb07f4nb8HBjm2M1;`1
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Eadder_n
+R3
+R5
+R6
+!i122 15
+R2
+Z16 8U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/adder_N.vhd
+Z17 FU:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/adder_N.vhd
+l0
+Z18 L17 1
+Vd2F[WJ>JR28oQ_dPJ>QXP0
+!s100 >B@4P_bd08]lOB179G=530
+R9
+32
+Z19 !s110 1791931084
+!i10b 1
+Z20 !s108 1791931084.000000
+Z21 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/adder_N.vhd|
+Z22 !s107 U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/adder_N.vhd|
+!i113 0
+R14
+R15
+Astructural
+R5
+R6
+DEx4 work 7 adder_n 0 22 d2F[WJ>JR28oQ_dPJ>QXP0
+!i122 15
+l39
+L28 29
+VEFbY]QSTO<iaEzgR<T`J]1
+!s100 E<RQdB_RUGe9UPn3<Wcj22
+R9
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 0
+R14
+R15
+Eandg2
+Z23 w1791928070
+R5
+R6
+!i122 16
+R2
+Z24 8U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/andg2.vhd
+Z25 FU:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/andg2.vhd
+l0
+Z26 L23 1
+VPn2c?DZ=XKbTj:kRjnLQI1
+!s100 YT?bGzEmcFo:DlnoC^B4_0
+R9
+32
+Z27 !s110 1791931086
+!i10b 1
+Z28 !s108 1791931086.000000
+Z29 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/andg2.vhd|
+Z30 !s107 U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/andg2.vhd|
+!i113 0
+R14
+R15
+Adataflow
+R5
+R6
+DEx4 work 5 andg2 0 22 Pn2c?DZ=XKbTj:kRjnLQI1
+!i122 16
+l32
+Z31 L31 6
+VgkFJJ5@K]T6QHgc>@BL?n0
+!s100 I`@Z@UBObS]<7m8bPgKUS1
+R9
+32
+R27
+!i10b 1
+R28
+R29
+R30
+!i113 0
+R14
+R15
+Edffg
+Z32 w1791928071
+R5
+R6
+!i122 17
+R2
+Z33 8U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/dffg.vhd
+Z34 FU:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/dffg.vhd
+l0
+R26
+V1J_BV;nI9_:HfnOnKoE0>1
+!s100 T4gcXQGMCgKJbn8XhBM;b0
+R9
+32
+Z35 !s110 1791931090
+!i10b 1
+Z36 !s108 1791931089.000000
+Z37 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/dffg.vhd|
+Z38 !s107 U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/dffg.vhd|
+!i113 0
+R14
+R15
+Amixed
+R5
+R6
+DEx4 work 4 dffg 0 22 1J_BV;nI9_:HfnOnKoE0>1
+!i122 17
+l37
+L33 29
+V841ozIS0U:kcnJfcUhj=]2
+!s100 iOdlTUid@@]UimFK_53^C1
+R9
+32
+R35
+!i10b 1
+R36
+R37
+R38
+!i113 0
+R14
+R15
+Efetchmodule
+R32
+R6
+R5
+R4
+!i122 18
+R2
+Z39 8U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/FetchModule.vhd
+Z40 FU:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/FetchModule.vhd
+l0
+L6 1
+VVnUHniG4WODW5BF0fPARj0
+!s100 YTh:z=f:=8IjU`hK2BSzM1
+R9
+32
+Z41 !s110 1791931092
+!i10b 1
+Z42 !s108 1791931092.000000
+Z43 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/FetchModule.vhd|
+Z44 !s107 U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/FetchModule.vhd|
+!i113 0
+R14
+R15
+Astructural
+R6
+R5
+R4
+Z45 DEx4 work 11 fetchmodule 0 22 VnUHniG4WODW5BF0fPARj0
+!i122 18
+l48
+L21 99
+V4?]0zQ:YX^Qi[BJ^Hn_U53
+!s100 l]S;4P@M32@MBFZ1VLjdI3
+R9
+32
+R41
+!i10b 1
+R42
+R43
+R44
+!i113 0
+R14
+R15
+Efulladder
+R3
+R5
+R6
+!i122 19
+R2
+Z46 8U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/fulladder.vhd
+Z47 FU:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/fulladder.vhd
+l0
+R18
+V7jR`0TG:^zfcNMB<_D6g;2
+!s100 cT>B:jZLKSCDXV3e`L<UK2
+R9
+32
+Z48 !s110 1791931094
+!i10b 1
+Z49 !s108 1791931093.000000
+Z50 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/fulladder.vhd|
+Z51 !s107 U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/fulladder.vhd|
+!i113 0
+R14
+R15
+Astructural
+R5
+R6
+DEx4 work 9 fulladder 0 22 7jR`0TG:^zfcNMB<_D6g;2
+!i122 19
+l45
+L26 45
+VoLfS3BC^iZSVI=SIn9SIg2
+!s100 M_T>]Ok[zFamU^:RG;TK13
+R9
+32
+R48
+!i10b 1
+R49
+R50
+R51
+!i113 0
+R14
+R15
+Eorg2
+R23
+R5
+R6
+!i122 20
+R2
+Z52 8U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/org2.vhd
+Z53 FU:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/org2.vhd
+l0
+R26
+V6JXFKnZ3n`b>lm=MD=QGA3
+!s100 bGQ1F9eW^Q17OoL9h4g7z2
+R9
+32
+Z54 !s110 1791931095
+!i10b 1
+Z55 !s108 1791931095.000000
+Z56 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/org2.vhd|
+Z57 !s107 U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/org2.vhd|
+!i113 0
+R14
+R15
+Adataflow
+R5
+R6
+DEx4 work 4 org2 0 22 6JXFKnZ3n`b>lm=MD=QGA3
+!i122 20
+l32
+R31
+VH=6A;fhk=i<h<ZMnVDczR1
+!s100 h5_AzR3TdRA0a_K=dQ>mI2
+R9
+32
+R54
+!i10b 1
+R55
+R56
+R57
+!i113 0
+R14
+R15
+Eregister_n
+R32
+R5
+R6
+!i122 21
+R2
+Z58 8U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/register_N.vhd
+Z59 FU:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/register_N.vhd
+l0
+L6 1
+V?B9:QI`KCj?>elo1T6na:3
+!s100 zBe0I_zib]2^3BDkXWL<Q1
+R9
+32
+Z60 !s110 1791931097
+!i10b 1
+Z61 !s108 1791931097.000000
+Z62 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/register_N.vhd|
+Z63 !s107 U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/register_N.vhd|
+!i113 0
+R14
+R15
+Adataflow
+R5
+R6
+DEx4 work 10 register_n 0 22 ?B9:QI`KCj?>elo1T6na:3
+!i122 21
+l22
+L13 19
+VZ`8EljHWiofn]9HOi^Yd<0
+!s100 8D1?HgPY=7bh3f8LEB>@k3
+R9
+32
+R60
+!i10b 1
+R61
+R62
+R63
+!i113 0
+R14
+R15
+Etb_fetchmodule
+Z64 w1791929976
+R5
+R6
+!i122 22
+R2
+Z65 8U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/tb_FetchModule.vhd
+Z66 FU:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/tb_FetchModule.vhd
+l0
+L4 1
+VJD>H8T9DkKQ<k^6@YIm<i0
+!s100 [m:HHPLH5DH;^_Wo:B_AV0
+R9
+32
+Z67 !s110 1791931098
+!i10b 1
+Z68 !s108 1791931098.000000
+Z69 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/tb_FetchModule.vhd|
+Z70 !s107 U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/tb_FetchModule.vhd|
+!i113 0
+R14
+R15
+Abehavioral
+R4
+R45
+R5
+R6
+DEx4 work 14 tb_fetchmodule 0 22 JD>H8T9DkKQ<k^6@YIm<i0
+!i122 22
+l18
+L7 69
+VP8OBETE<ShNTOdbjDOEhf1
+!s100 SEcem=]3Wclf7YeJPk@Cd3
+R9
+32
+R67
+!i10b 1
+R68
+R69
+R70
+!i113 0
+R14
+R15
+Exorg2
+R23
+R5
+R6
+!i122 23
+R2
+Z71 8U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/xorg2.vhd
+Z72 FU:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/xorg2.vhd
+l0
+R26
+VZ?9dg:GOPVA2WTE?L>^H:1
+!s100 [hI[mXFH4_j16U;>U1Lfn2
+R9
+32
+Z73 !s110 1791931100
+!i10b 1
+Z74 !s108 1791931099.000000
+Z75 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/xorg2.vhd|
+Z76 !s107 U:/Cpre3810/Project1/Ryan's work so far/src/FetchLogic/xorg2.vhd|
+!i113 0
+R14
+R15
+Adataflow
+R5
+R6
+DEx4 work 5 xorg2 0 22 Z?9dg:GOPVA2WTE?L>^H:1
+!i122 23
+l32
+R31
+VK2ZnW@ZOKBahi[bSa5ZVT3
+!s100 Z6[FAPS4fBLB`F?OO<AY72
+R9
+32
+R73
+!i10b 1
+R74
+R75
+R76
+!i113 0
+R14
+R15

@@ -1,0 +1,113 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2026.2 2026.05, May 18 2026
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dU:/Cpre3810/Project1/First_Demo/Control Unit
+T_opt
+!i145 1
+!i144 0
+!s110 1791934390
+VEIO717Zd>B8JSDoPzk0Dg0
+04 14 10 work tb_controlunit behavioral 1
+=1-005056b6366b-6acebfb5-ff-eb4
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+!i152 0
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0 defaultOptions 1110029060
+n@_opt
+OL;O;2026.2;84
+Econtrolunit
+Z2 w1791934120
+Z3 DPx3 std 6 textio 0 22 <UlP6K1@RDQa_MJ[:UEnP2
+Z4 DPx4 ieee 14 std_logic_1164 0 22 TDbGXLH=YSoj9JRY2gkNY0
+!i122 0
+R1
+Z5 8U:/Cpre3810/Project1/First_Demo/Control Unit/ControlUnit.vhd
+Z6 FU:/Cpre3810/Project1/First_Demo/Control Unit/ControlUnit.vhd
+l0
+L5 1
+V[Uo6ChM49mFQ;lhmD_ZGC1
+!s100 N;I?_?OjEK0P=Q:XXalRd1
+Z7 OL;C;2026.2;84
+32
+Z8 !s110 1791934311
+!i10b 1
+Z9 !s108 1791934310.000000
+Z10 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo/Control Unit/ControlUnit.vhd|
+Z11 !s107 U:/Cpre3810/Project1/First_Demo/Control Unit/ControlUnit.vhd|
+!i113 0
+Z12 o-work work
+Z13 tExplicit 1 CvgOpt 0 defaultOptions 1083778432
+Abehavioral
+R3
+R4
+Z14 DEx4 work 11 controlunit 0 22 [Uo6ChM49mFQ;lhmD_ZGC1
+!i122 0
+l19
+L18 81
+VLAOgK86PAnd?;DzkD=zdK0
+!s100 6`34726:XD?eLZMU=C`7f0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Etb_controlunit
+Z15 w1791934369
+R3
+R4
+!i122 1
+R1
+Z16 8U:/Cpre3810/Project1/First_Demo/Control Unit/tb_ControlUnit.vhd
+Z17 FU:/Cpre3810/Project1/First_Demo/Control Unit/tb_ControlUnit.vhd
+l0
+L5 1
+VN_7i58RLM;hin4bIZg]180
+!s100 S8GCQ?[Mk[<=hSoO]:ES`0
+R7
+32
+Z18 !s110 1791934378
+!i10b 1
+Z19 !s108 1791934378.000000
+Z20 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo/Control Unit/tb_ControlUnit.vhd|
+Z21 !s107 U:/Cpre3810/Project1/First_Demo/Control Unit/tb_ControlUnit.vhd|
+!i113 0
+R12
+R13
+Abehavioral
+R14
+R3
+R4
+DEx4 work 14 tb_controlunit 0 22 N_7i58RLM;hin4bIZg]180
+!i122 1
+l18
+L8 85
+V504JAc=aEEm`CUILOll9R2
+!s100 bBCH5doXhVbeQ[:n<;CVE3
+R7
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R12
+R13

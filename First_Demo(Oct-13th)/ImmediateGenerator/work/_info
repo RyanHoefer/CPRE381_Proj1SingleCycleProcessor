@@ -1,0 +1,113 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2026.2 2026.05, May 18 2026
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dU:/Cpre3810/Project1/First_Demo
+T_opt
+!i145 1
+!i144 0
+!s110 1791927005
+VBa`D^j6O5n2M1_HKnQSUH2
+04 21 10 work tb_immediategenerator behavioral 1
+=1-005056b6366b-6acea2da-39d-212c
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+!i152 0
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0 defaultOptions 1110029060
+n@_opt
+OL;O;2026.2;84
+Eimmediategenerator
+Z2 w1791926794
+Z3 DPx3 std 6 textio 0 22 <UlP6K1@RDQa_MJ[:UEnP2
+Z4 DPx4 ieee 14 std_logic_1164 0 22 TDbGXLH=YSoj9JRY2gkNY0
+!i122 0
+R1
+Z5 8U:/Cpre3810/Project1/First_Demo/ImmediateGenerator.vhd
+Z6 FU:/Cpre3810/Project1/First_Demo/ImmediateGenerator.vhd
+l0
+L5 1
+V0:IK]GZVkSIUTT>jK`JHf0
+!s100 ]`N[0VPD6[;f<iJg^L7kf1
+Z7 OL;C;2026.2;84
+32
+Z8 !s110 1791926980
+!i10b 1
+Z9 !s108 1791926980.000000
+Z10 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo/ImmediateGenerator.vhd|
+Z11 !s107 U:/Cpre3810/Project1/First_Demo/ImmediateGenerator.vhd|
+!i113 0
+Z12 o-work work
+Z13 tExplicit 1 CvgOpt 0 defaultOptions 1083778432
+Abehavioral
+R3
+R4
+Z14 DEx4 work 18 immediategenerator 0 22 0:IK]GZVkSIUTT>jK`JHf0
+!i122 0
+l14
+L13 34
+ViEa;XMebQ26jCh`J>[j[k1
+!s100 Kl?R8?fbMD70NkTYfC2[d2
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Etb_immediategenerator
+Z15 w1791926888
+R3
+R4
+!i122 1
+R1
+Z16 8U:/Cpre3810/Project1/First_Demo/tb_ImmediateGenerator.vhd
+Z17 FU:/Cpre3810/Project1/First_Demo/tb_ImmediateGenerator.vhd
+l0
+L5 1
+V0ah;Fi?o7DgCfIXPcN7NV2
+!s100 n65G;z0L[GO^LT]e`^WH<1
+R7
+32
+Z18 !s110 1791926984
+!i10b 1
+Z19 !s108 1791926984.000000
+Z20 !s90 -reportprogress|300|-work|work|U:/Cpre3810/Project1/First_Demo/tb_ImmediateGenerator.vhd|
+Z21 !s107 U:/Cpre3810/Project1/First_Demo/tb_ImmediateGenerator.vhd|
+!i113 0
+R12
+R13
+Abehavioral
+R14
+R3
+R4
+DEx4 work 21 tb_immediategenerator 0 22 0ah;Fi?o7DgCfIXPcN7NV2
+!i122 1
+l14
+L8 65
+V`4I[Za?40ii3K0kKf3MkA2
+!s100 2nFhG]<z0CVmJIz8IO^lj2
+R7
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R12
+R13
