@@ -147,6 +147,7 @@ begin
 
   -- Connect ALU output for synthesis
   oALUOut <= aluResult;
+  s_RegWrData <= writeData;
 
   -- TODO: This is required to be your final input to your instruction memory. This provides a feasible method to externally load the memory module which means that the synthesis tool must assume it knows nothing about the values stored in the instruction memory. If this is not included, much, if not all of the design is optimized out because the synthesis tool will believe the memory to be all zeros.
   with iInstLd select
@@ -161,7 +162,7 @@ begin
         o_ImmType     => ImmType,
         o_ResultSrc   => ResultSrc,
         o_MemWrite    => s_DMemWr,
-        o_RegWrite    => RegWrite
+        o_RegWrite    => s_RegWr
     );
 
   RyanFetchModule: FetchModule
@@ -176,14 +177,15 @@ begin
         o_pc_plus4    => PCPlusFour
     );
 
+    s_RegWrAddr <= s_Inst(11 downto 7);
   registerFile: register_file
     generic map(N => N)
     port map(
         i_r1          => s_Inst(19 downto 15),
         i_r2          => s_Inst(24 downto 20),
-        i_w           => s_Inst(11 downto 7),
-        i_writeData   => writeData,
-        i_writeEnable => RegWrite,
+        i_w           => s_RegWrAddr,
+        i_writeData   => s_RegWrData,
+        i_writeEnable => s_RegWr,
         CLK           => iCLK,
         o_data1       => readData1,
         o_data2       => readData2
