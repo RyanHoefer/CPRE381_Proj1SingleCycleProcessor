@@ -1,11 +1,9 @@
 QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-Start time: 11:50:22 on Oct 14,2026
-vcom -2008 -work internal/ModelSimContainer/work proj/src/RISCV_types.vhd internal/testpy/tb.vhd proj/src/RISCV_types.vhd proj/src/TopLevel/decoder_5t32.vhd proj/src/TopLevel/invg.vhd proj/src/TopLevel/fulladder.vhd proj/src/TopLevel/mux2t1_N.vhd proj/src/TopLevel/andg2.vhd proj/src/TopLevel/mem.vhd proj/src/TopLevel/register_file.vhd proj/src/TopLevel/mux_types.vhd proj/src/TopLevel/Adder.vhd proj/src/TopLevel/ControlUnit.vhd proj/src/TopLevel/adder_N.vhd proj/src/TopLevel/mux2t1.vhd proj/src/TopLevel/addsub_N_with_imm.vhd proj/src/TopLevel/ImmediateGenerator.vhd proj/src/TopLevel/FetchModule.vhd proj/src/TopLevel/onescomp_N.vhd proj/src/TopLevel/mux_32t1.vhd proj/src/TopLevel/register_N.vhd proj/src/TopLevel/RISCV_Processor.vhd proj/src/TopLevel/xorg2.vhd proj/src/TopLevel/org2.vhd proj/src/TopLevel/dffg.vhd proj/src/TopLevel/ryans_components/mux2t1_N.vhd proj/src/TopLevel/ryans_components/mem.vhd proj/src/TopLevel/ryans_components/dffg.vhd proj/src/TopLevel/ryans_components/tb_dffg.vhd proj/src/TopLevel/ryans_components/mux2t1.vhd proj/src/TopLevel/ryans_components/RegFile/tb_register_N.vhd proj/src/TopLevel/ryans_components/RegFile/register_file.vhd proj/src/TopLevel/ryans_components/RegFile/decoder_5t32.vhd proj/src/TopLevel/ryans_components/RegFile/tb_register_file.vhd proj/src/TopLevel/ryans_components/RegFile/register_N.vhd proj/src/TopLevel/ryans_components/RegFile/mux_types.vhd proj/src/TopLevel/ryans_components/RegFile/tb_decoder_5t32.vhd proj/src/TopLevel/ryans_components/RegFile/mux_32t1.vhd proj/src/TopLevel/ryans_components/RegFile/tb_mux_32t1.vhd proj/src/TopLevel/ryans_components/MySecondRISCVDatapath/datapath2.vhd proj/src/TopLevel/ryans_components/MySecondRISCVDatapath/tb_datapath2.vhd proj/src/TopLevel/ryans_components/MySecondRISCVDatapath/tb_datapath2_demo.vhd proj/src/TopLevel/ryans_components/MyFirstRISCVDatapath/tb_datapath.vhd proj/src/TopLevel/ryans_components/MyFirstRISCVDatapath/addsub_N_with_imm.vhd proj/src/TopLevel/ryans_components/MyFirstRISCVDatapath/datapath.vhd proj/src/TopLevel/ryans_components/Extenders/tb_extender_N.vhd proj/src/TopLevel/ryans_components/Extenders/extender_N.vhd proj/src/TopLevel/ryans_components/Extenders/zero_appender_N.vhd proj/src/TopLevel/ryans_components/Memory/tb_dmem.vhd 
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+Start time: 13:07:06 on Oct 15,2026
+vcom -2008 -work internal/ModelSimContainer/work proj/src/RISCV_types.vhd internal/testpy/tb.vhd proj/src/RISCV_types.vhd proj/src/TopLevel/mux_32t1.vhd proj/src/TopLevel/decoder_5t32.vhd proj/src/TopLevel/Adder.vhd proj/src/TopLevel/ImmediateGenerator.vhd proj/src/TopLevel/mux_types.vhd proj/src/TopLevel/FetchModule.vhd proj/src/TopLevel/mem.vhd proj/src/TopLevel/fulladder.vhd proj/src/TopLevel/invg.vhd proj/src/TopLevel/adder_N.vhd proj/src/TopLevel/register_file.vhd proj/src/TopLevel/andg2.vhd proj/src/TopLevel/mux2t1_N.vhd proj/src/TopLevel/dffg.vhd proj/src/TopLevel/org2.vhd proj/src/TopLevel/xorg2.vhd proj/src/TopLevel/onescomp_N.vhd proj/src/TopLevel/mux2t1.vhd proj/src/TopLevel/addsub_N_with_imm.vhd proj/src/TopLevel/RISCV_Processor.vhd proj/src/TopLevel/register_N.vhd proj/src/TopLevel/ControlUnit.vhd proj/src/TopLevel/ryans_components/mux2t1.vhd proj/src/TopLevel/ryans_components/tb_dffg.vhd proj/src/TopLevel/ryans_components/mem.vhd proj/src/TopLevel/ryans_components/mux2t1_N.vhd proj/src/TopLevel/ryans_components/dffg.vhd proj/src/TopLevel/ryans_components/RegFile/tb_register_N.vhd proj/src/TopLevel/ryans_components/RegFile/register_N.vhd proj/src/TopLevel/ryans_components/RegFile/tb_mux_32t1.vhd proj/src/TopLevel/ryans_components/RegFile/decoder_5t32.vhd proj/src/TopLevel/ryans_components/RegFile/tb_decoder_5t32.vhd proj/src/TopLevel/ryans_components/RegFile/register_file.vhd proj/src/TopLevel/ryans_components/RegFile/mux_types.vhd proj/src/TopLevel/ryans_components/RegFile/mux_32t1.vhd proj/src/TopLevel/ryans_components/RegFile/tb_register_file.vhd proj/src/TopLevel/ryans_components/Extenders/extender_N.vhd proj/src/TopLevel/ryans_components/Extenders/tb_extender_N.vhd proj/src/TopLevel/ryans_components/Extenders/zero_appender_N.vhd proj/src/TopLevel/ryans_components/MyFirstRISCVDatapath/addsub_N_with_imm.vhd proj/src/TopLevel/ryans_components/MyFirstRISCVDatapath/datapath.vhd proj/src/TopLevel/ryans_components/MyFirstRISCVDatapath/tb_datapath.vhd proj/src/TopLevel/ryans_components/MySecondRISCVDatapath/datapath2.vhd proj/src/TopLevel/ryans_components/MySecondRISCVDatapath/tb_datapath2_demo.vhd proj/src/TopLevel/ryans_components/MySecondRISCVDatapath/tb_datapath2.vhd proj/src/TopLevel/ryans_components/Memory/tb_dmem.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
-** Warning: proj/src/RISCV_types.vhd(15): (vcom-1615) Existing package 'mux_types' at /home/almaaini/CPRE3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ryans_components/RegFile/mux_types.vhd(4) will be overwritten.
 -- Compiling package mux_types
 -- Compiling package body RISCV_types
 -- Loading package RISCV_types
@@ -18,61 +16,47 @@ vcom -2008 -work internal/ModelSimContainer/work proj/src/RISCV_types.vhd intern
 ** Warning: proj/src/RISCV_types.vhd(32): (vcom-1615) Existing package body 'RISCV_types(body)' at line 32 will be overwritten.
 -- Compiling package body RISCV_types
 -- Loading package RISCV_types
-** Warning: proj/src/TopLevel/decoder_5t32.vhd(17): (vcom-1615) Existing entity 'decoder_5t32' at /home/almaaini/CPRE3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ryans_components/RegFile/decoder_5t32.vhd(17) will be overwritten.
--- Compiling entity decoder_5t32
-** Warning: proj/src/TopLevel/decoder_5t32.vhd(22): (vcom-1615) Existing architecture 'decoder_5t32(dataflow)' at /home/almaaini/CPRE3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ryans_components/RegFile/decoder_5t32.vhd(22) will be overwritten.
--- Compiling architecture dataflow of decoder_5t32
--- Compiling entity invg
--- Compiling architecture dataflow of invg
--- Compiling entity fulladder
--- Compiling architecture structural of fulladder
-** Warning: proj/src/TopLevel/mux2t1_N.vhd(21): (vcom-1615) Existing entity 'mux2t1_N' at /home/almaaini/CPRE3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ryans_components/mux2t1_N.vhd(21) will be overwritten.
--- Compiling entity mux2t1_N
-** Warning: proj/src/TopLevel/mux2t1_N.vhd(30): (vcom-1615) Existing architecture 'mux2t1_N(structural)' at /home/almaaini/CPRE3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ryans_components/mux2t1_N.vhd(30) will be overwritten.
--- Compiling architecture structural of mux2t1_N
--- Compiling entity andg2
--- Compiling architecture dataflow of andg2
 -- Loading package NUMERIC_STD
-** Warning: proj/src/TopLevel/mem.vhd(8): (vcom-1615) Existing entity 'mem' at /home/almaaini/CPRE3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ryans_components/mem.vhd(8) will be overwritten.
--- Compiling entity mem
-** Warning: proj/src/TopLevel/mem.vhd(29): (vcom-1615) Existing architecture 'mem(rtl)' at /home/almaaini/CPRE3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ryans_components/mem.vhd(29) will be overwritten.
--- Compiling architecture rtl of mem
 -- Loading package mux_types
-** Warning: proj/src/TopLevel/register_file.vhd(6): (vcom-1615) Existing entity 'register_file' at /home/almaaini/CPRE3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ryans_components/RegFile/register_file.vhd(6) will be overwritten.
--- Compiling entity register_file
-** Warning: proj/src/TopLevel/register_file.vhd(17): (vcom-1615) Existing architecture 'register_file(mixed)' at /home/almaaini/CPRE3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ryans_components/RegFile/register_file.vhd(17) will be overwritten.
--- Compiling architecture mixed of register_file
-** Warning: proj/src/TopLevel/mux_types.vhd(4): (vcom-1615) Existing package 'mux_types' at proj/src/RISCV_types.vhd(18) will be overwritten.
--- Compiling package mux_types
+-- Compiling entity mux_32t1
+-- Compiling architecture dataflow of mux_32t1
+-- Compiling entity decoder_5t32
+-- Compiling architecture dataflow of decoder_5t32
 -- Compiling entity Adder
 -- Compiling architecture behavior of Adder
--- Compiling entity ControlUnit
--- Compiling architecture Behavioral of ControlUnit
--- Compiling entity adder_N
--- Compiling architecture structural of adder_N
-** Warning: proj/src/TopLevel/mux2t1.vhd(5): (vcom-1615) Existing entity 'mux2t1' at /home/almaaini/CPRE3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ryans_components/mux2t1.vhd(5) will be overwritten.
--- Compiling entity mux2t1
-** Warning: proj/src/TopLevel/mux2t1.vhd(14): (vcom-1615) Existing architecture 'mux2t1(structure)' at /home/almaaini/CPRE3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ryans_components/mux2t1.vhd(14) will be overwritten.
--- Compiling architecture structure of mux2t1
-** Warning: proj/src/TopLevel/addsub_N_with_imm.vhd(17): (vcom-1615) Existing entity 'addsub_N_with_imm' at /home/almaaini/CPRE3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ryans_components/MyFirstRISCVDatapath/addsub_N_with_imm.vhd(17) will be overwritten.
--- Compiling entity addsub_N_with_imm
-** Warning: proj/src/TopLevel/addsub_N_with_imm.vhd(30): (vcom-1615) Existing architecture 'addsub_N_with_imm(structural)' at /home/almaaini/CPRE3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ryans_components/MyFirstRISCVDatapath/addsub_N_with_imm.vhd(30) will be overwritten.
--- Compiling architecture structural of addsub_N_with_imm
 -- Compiling entity ImmediateGenerator
 -- Compiling architecture Behavioral of ImmediateGenerator
+** Warning: proj/src/TopLevel/mux_types.vhd(4): (vcom-1615) Existing package 'mux_types' at proj/src/RISCV_types.vhd(18) will be overwritten.
+-- Compiling package mux_types
 -- Compiling entity FetchModule
 -- Compiling architecture structural of FetchModule
+-- Compiling entity mem
+-- Compiling architecture rtl of mem
+-- Compiling entity fulladder
+-- Compiling architecture structural of fulladder
+-- Compiling entity invg
+-- Compiling architecture dataflow of invg
+-- Compiling entity adder_N
+-- Compiling architecture structural of adder_N
+-- Loading package mux_types
+-- Compiling entity register_file
+-- Compiling architecture mixed of register_file
+-- Compiling entity andg2
+-- Compiling architecture dataflow of andg2
+-- Compiling entity mux2t1_N
+-- Compiling architecture structural of mux2t1_N
+-- Compiling entity dffg
+-- Compiling architecture mixed of dffg
+-- Compiling entity org2
+-- Compiling architecture dataflow of org2
+-- Compiling entity xorg2
+-- Compiling architecture dataflow of xorg2
 -- Compiling entity onescomp_N
 -- Compiling architecture structural of onescomp_N
--- Loading package mux_types
-** Warning: proj/src/TopLevel/mux_32t1.vhd(23): (vcom-1615) Existing entity 'mux_32t1' at /home/almaaini/CPRE3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ryans_components/RegFile/mux_32t1.vhd(23) will be overwritten.
--- Compiling entity mux_32t1
-** Warning: proj/src/TopLevel/mux_32t1.vhd(29): (vcom-1615) Existing architecture 'mux_32t1(dataflow)' at /home/almaaini/CPRE3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ryans_components/RegFile/mux_32t1.vhd(29) will be overwritten.
--- Compiling architecture dataflow of mux_32t1
-** Warning: proj/src/TopLevel/register_N.vhd(6): (vcom-1615) Existing entity 'register_N' at /home/almaaini/CPRE3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ryans_components/RegFile/register_N.vhd(6) will be overwritten.
--- Compiling entity register_N
-** Warning: proj/src/TopLevel/register_N.vhd(13): (vcom-1615) Existing architecture 'register_N(dataflow)' at /home/almaaini/CPRE3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ryans_components/RegFile/register_N.vhd(13) will be overwritten.
--- Compiling architecture dataflow of register_N
+-- Compiling entity mux2t1
+-- Compiling architecture structure of mux2t1
+-- Compiling entity addsub_N_with_imm
+-- Compiling architecture structural of addsub_N_with_imm
 -- Loading package RISCV_types
 -- Compiling entity RISCV_Processor
 -- Compiling architecture structure of RISCV_Processor
@@ -84,71 +68,61 @@ vcom -2008 -work internal/ModelSimContainer/work proj/src/RISCV_types.vhd intern
 -- Compiling entity RISCV_Processor
 ** Warning: proj/src/TopLevel/RISCV_Processor.vhd(552): (vcom-1615) Existing architecture 'RISCV_Processor(structure)' at line 294 will be overwritten.
 -- Compiling architecture structure of RISCV_Processor
--- Compiling entity xorg2
--- Compiling architecture dataflow of xorg2
--- Compiling entity org2
--- Compiling architecture dataflow of org2
-** Warning: proj/src/TopLevel/dffg.vhd(23): (vcom-1615) Existing entity 'dffg' at /home/almaaini/CPRE3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ryans_components/dffg.vhd(23) will be overwritten.
--- Compiling entity dffg
-** Warning: proj/src/TopLevel/dffg.vhd(33): (vcom-1615) Existing architecture 'dffg(mixed)' at /home/almaaini/CPRE3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ryans_components/dffg.vhd(33) will be overwritten.
--- Compiling architecture mixed of dffg
-** Warning: proj/src/TopLevel/ryans_components/mux2t1_N.vhd(21): (vcom-1615) Existing entity 'mux2t1_N' at proj/src/TopLevel/mux2t1_N.vhd(21) will be overwritten.
--- Compiling entity mux2t1_N
-** Warning: proj/src/TopLevel/ryans_components/mux2t1_N.vhd(30): (vcom-1615) Existing architecture 'mux2t1_N(structural)' at proj/src/TopLevel/mux2t1_N.vhd(30) will be overwritten.
--- Compiling architecture structural of mux2t1_N
-** Warning: proj/src/TopLevel/ryans_components/mem.vhd(8): (vcom-1615) Existing entity 'mem' at proj/src/TopLevel/mem.vhd(8) will be overwritten.
--- Compiling entity mem
-** Warning: proj/src/TopLevel/ryans_components/mem.vhd(29): (vcom-1615) Existing architecture 'mem(rtl)' at proj/src/TopLevel/mem.vhd(29) will be overwritten.
--- Compiling architecture rtl of mem
-** Warning: proj/src/TopLevel/ryans_components/dffg.vhd(23): (vcom-1615) Existing entity 'dffg' at proj/src/TopLevel/dffg.vhd(23) will be overwritten.
--- Compiling entity dffg
-** Warning: proj/src/TopLevel/ryans_components/dffg.vhd(33): (vcom-1615) Existing architecture 'dffg(mixed)' at proj/src/TopLevel/dffg.vhd(33) will be overwritten.
--- Compiling architecture mixed of dffg
--- Compiling entity tb_dffg
--- Compiling architecture behavior of tb_dffg
+-- Compiling entity register_N
+-- Compiling architecture dataflow of register_N
+-- Compiling entity ControlUnit
+-- Compiling architecture Behavioral of ControlUnit
 ** Warning: proj/src/TopLevel/ryans_components/mux2t1.vhd(5): (vcom-1615) Existing entity 'mux2t1' at proj/src/TopLevel/mux2t1.vhd(5) will be overwritten.
 -- Compiling entity mux2t1
 ** Warning: proj/src/TopLevel/ryans_components/mux2t1.vhd(14): (vcom-1615) Existing architecture 'mux2t1(structure)' at proj/src/TopLevel/mux2t1.vhd(14) will be overwritten.
 -- Compiling architecture structure of mux2t1
+-- Compiling entity tb_dffg
+-- Compiling architecture behavior of tb_dffg
+** Warning: proj/src/TopLevel/ryans_components/mem.vhd(8): (vcom-1615) Existing entity 'mem' at proj/src/TopLevel/mem.vhd(8) will be overwritten.
+-- Compiling entity mem
+** Warning: proj/src/TopLevel/ryans_components/mem.vhd(29): (vcom-1615) Existing architecture 'mem(rtl)' at proj/src/TopLevel/mem.vhd(29) will be overwritten.
+-- Compiling architecture rtl of mem
+** Warning: proj/src/TopLevel/ryans_components/mux2t1_N.vhd(21): (vcom-1615) Existing entity 'mux2t1_N' at proj/src/TopLevel/mux2t1_N.vhd(21) will be overwritten.
+-- Compiling entity mux2t1_N
+** Warning: proj/src/TopLevel/ryans_components/mux2t1_N.vhd(30): (vcom-1615) Existing architecture 'mux2t1_N(structural)' at proj/src/TopLevel/mux2t1_N.vhd(30) will be overwritten.
+-- Compiling architecture structural of mux2t1_N
+** Warning: proj/src/TopLevel/ryans_components/dffg.vhd(23): (vcom-1615) Existing entity 'dffg' at proj/src/TopLevel/dffg.vhd(23) will be overwritten.
+-- Compiling entity dffg
+** Warning: proj/src/TopLevel/ryans_components/dffg.vhd(33): (vcom-1615) Existing architecture 'dffg(mixed)' at proj/src/TopLevel/dffg.vhd(33) will be overwritten.
+-- Compiling architecture mixed of dffg
 -- Compiling entity tb_register_N
 -- Compiling architecture behavior of tb_register_N
-** Warning: proj/src/TopLevel/ryans_components/RegFile/register_file.vhd(6): (vcom-1615) Existing entity 'register_file' at proj/src/TopLevel/register_file.vhd(6) will be overwritten.
--- Compiling entity register_file
-** Warning: proj/src/TopLevel/ryans_components/RegFile/register_file.vhd(17): (vcom-1615) Existing architecture 'register_file(mixed)' at proj/src/TopLevel/register_file.vhd(17) will be overwritten.
--- Compiling architecture mixed of register_file
-** Warning: proj/src/TopLevel/ryans_components/RegFile/decoder_5t32.vhd(17): (vcom-1615) Existing entity 'decoder_5t32' at proj/src/TopLevel/decoder_5t32.vhd(17) will be overwritten.
--- Compiling entity decoder_5t32
-** Warning: proj/src/TopLevel/ryans_components/RegFile/decoder_5t32.vhd(22): (vcom-1615) Existing architecture 'decoder_5t32(dataflow)' at proj/src/TopLevel/decoder_5t32.vhd(22) will be overwritten.
--- Compiling architecture dataflow of decoder_5t32
--- Compiling entity tb_register_file
--- Compiling architecture behavior of tb_register_file
 ** Warning: proj/src/TopLevel/ryans_components/RegFile/register_N.vhd(6): (vcom-1615) Existing entity 'register_N' at proj/src/TopLevel/register_N.vhd(6) will be overwritten.
 -- Compiling entity register_N
 ** Warning: proj/src/TopLevel/ryans_components/RegFile/register_N.vhd(13): (vcom-1615) Existing architecture 'register_N(dataflow)' at proj/src/TopLevel/register_N.vhd(13) will be overwritten.
 -- Compiling architecture dataflow of register_N
-** Warning: proj/src/TopLevel/ryans_components/RegFile/mux_types.vhd(4): (vcom-1615) Existing package 'mux_types' at proj/src/TopLevel/mux_types.vhd(5) will be overwritten.
--- Compiling package mux_types
+-- Compiling entity tb_mux_32t1
+-- Compiling architecture behavior of tb_mux_32t1
+** Warning: proj/src/TopLevel/ryans_components/RegFile/decoder_5t32.vhd(17): (vcom-1615) Existing entity 'decoder_5t32' at proj/src/TopLevel/decoder_5t32.vhd(17) will be overwritten.
+-- Compiling entity decoder_5t32
+** Warning: proj/src/TopLevel/ryans_components/RegFile/decoder_5t32.vhd(22): (vcom-1615) Existing architecture 'decoder_5t32(dataflow)' at proj/src/TopLevel/decoder_5t32.vhd(22) will be overwritten.
+-- Compiling architecture dataflow of decoder_5t32
 -- Compiling entity tb_decoder_5t32
 -- Compiling architecture behavior of tb_decoder_5t32
+** Warning: proj/src/TopLevel/ryans_components/RegFile/register_file.vhd(6): (vcom-1615) Existing entity 'register_file' at proj/src/TopLevel/register_file.vhd(6) will be overwritten.
+-- Compiling entity register_file
+** Warning: proj/src/TopLevel/ryans_components/RegFile/register_file.vhd(17): (vcom-1615) Existing architecture 'register_file(mixed)' at proj/src/TopLevel/register_file.vhd(17) will be overwritten.
+-- Compiling architecture mixed of register_file
+** Warning: proj/src/TopLevel/ryans_components/RegFile/mux_types.vhd(4): (vcom-1615) Existing package 'mux_types' at proj/src/TopLevel/mux_types.vhd(5) will be overwritten.
+-- Compiling package mux_types
 -- Loading package mux_types
 ** Warning: proj/src/TopLevel/ryans_components/RegFile/mux_32t1.vhd(23): (vcom-1615) Existing entity 'mux_32t1' at proj/src/TopLevel/mux_32t1.vhd(23) will be overwritten.
 -- Compiling entity mux_32t1
 ** Warning: proj/src/TopLevel/ryans_components/RegFile/mux_32t1.vhd(29): (vcom-1615) Existing architecture 'mux_32t1(dataflow)' at proj/src/TopLevel/mux_32t1.vhd(29) will be overwritten.
 -- Compiling architecture dataflow of mux_32t1
--- Compiling entity tb_mux_32t1
--- Compiling architecture behavior of tb_mux_32t1
--- Compiling entity datapath2
--- Compiling architecture structural of datapath2
-** Warning: proj/src/TopLevel/ryans_components/MySecondRISCVDatapath/tb_datapath2.vhd(14): (vcom-1615) Existing entity 'tb_datapath2' at /home/almaaini/CPRE3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ryans_components/MySecondRISCVDatapath/tb_datapath2_demo.vhd(14) will be overwritten.
--- Compiling entity tb_datapath2
-** Warning: proj/src/TopLevel/ryans_components/MySecondRISCVDatapath/tb_datapath2.vhd(20): (vcom-1615) Existing architecture 'tb_datapath2(behavior)' at /home/almaaini/CPRE3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ryans_components/MySecondRISCVDatapath/tb_datapath2_demo.vhd(20) will be overwritten.
--- Compiling architecture behavior of tb_datapath2
-** Warning: proj/src/TopLevel/ryans_components/MySecondRISCVDatapath/tb_datapath2_demo.vhd(14): (vcom-1615) Existing entity 'tb_datapath2' at proj/src/TopLevel/ryans_components/MySecondRISCVDatapath/tb_datapath2.vhd(14) will be overwritten.
--- Compiling entity tb_datapath2
-** Warning: proj/src/TopLevel/ryans_components/MySecondRISCVDatapath/tb_datapath2_demo.vhd(20): (vcom-1615) Existing architecture 'tb_datapath2(behavior)' at proj/src/TopLevel/ryans_components/MySecondRISCVDatapath/tb_datapath2.vhd(20) will be overwritten.
--- Compiling architecture behavior of tb_datapath2
--- Compiling entity tb_datapath
--- Compiling architecture behavior of tb_datapath
+-- Compiling entity tb_register_file
+-- Compiling architecture behavior of tb_register_file
+-- Compiling entity extender_N
+-- Compiling architecture dataflow of extender_N
+-- Compiling entity tb_extender_N
+-- Compiling architecture behavior of tb_extender_N
+-- Compiling entity zero_appender_N
+-- Compiling architecture dataflow of zero_appender_N
 ** Warning: proj/src/TopLevel/ryans_components/MyFirstRISCVDatapath/addsub_N_with_imm.vhd(17): (vcom-1615) Existing entity 'addsub_N_with_imm' at proj/src/TopLevel/addsub_N_with_imm.vhd(17) will be overwritten.
 -- Compiling entity addsub_N_with_imm
 ** Warning: proj/src/TopLevel/ryans_components/MyFirstRISCVDatapath/addsub_N_with_imm.vhd(30): (vcom-1615) Existing architecture 'addsub_N_with_imm(structural)' at proj/src/TopLevel/addsub_N_with_imm.vhd(30) will be overwritten.
@@ -158,13 +132,17 @@ vcom -2008 -work internal/ModelSimContainer/work proj/src/RISCV_types.vhd intern
 -- Loading entity adder_N
 -- Compiling entity datapath
 -- Compiling architecture structural of datapath
--- Compiling entity tb_extender_N
--- Compiling architecture behavior of tb_extender_N
--- Compiling entity extender_N
--- Compiling architecture dataflow of extender_N
--- Compiling entity zero_appender_N
--- Compiling architecture dataflow of zero_appender_N
+-- Compiling entity tb_datapath
+-- Compiling architecture behavior of tb_datapath
+-- Compiling entity datapath2
+-- Compiling architecture structural of datapath2
+-- Compiling entity tb_datapath2
+-- Compiling architecture behavior of tb_datapath2
+** Warning: proj/src/TopLevel/ryans_components/MySecondRISCVDatapath/tb_datapath2.vhd(14): (vcom-1615) Existing entity 'tb_datapath2' at proj/src/TopLevel/ryans_components/MySecondRISCVDatapath/tb_datapath2_demo.vhd(14) will be overwritten.
+-- Compiling entity tb_datapath2
+** Warning: proj/src/TopLevel/ryans_components/MySecondRISCVDatapath/tb_datapath2.vhd(20): (vcom-1615) Existing architecture 'tb_datapath2(behavior)' at proj/src/TopLevel/ryans_components/MySecondRISCVDatapath/tb_datapath2_demo.vhd(20) will be overwritten.
+-- Compiling architecture behavior of tb_datapath2
 -- Compiling entity tb_dmem
 -- Compiling architecture behavior of tb_dmem
-vcom: End time: 11:50:22 on Oct 14,2026, Elapsed time: 0:00:00
-Errors: 0, Warnings: 50
+vcom: End time: 13:07:07 on Oct 15,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 28

@@ -22,12 +22,12 @@
 13 register_file
 17
 10 BYTE_WIDTH
-1
-129 /home/almaaini/CPRE3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/containers/sim_container_0/work
 24
 12 OUTPUT_TRACE
 22
 2 tb
+1
+128 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/containers/sim_container_0/work
 7
 17 addsub_n_with_imm
 18
@@ -48,6 +48,20 @@
 9 iInstAddr
 6
 10 onescomp_n
+]
+[G
+1
+7
+3
+1
+4
+1
+0
+32
+0
+0 0
+0
+0
 ]
 [G
 1
@@ -294,20 +308,6 @@
 1
 8
 9
-1
-4
-1
-0
-32
-0
-0 0
-0
-0
-]
-[G
-1
-7
-3
 1
 4
 1
