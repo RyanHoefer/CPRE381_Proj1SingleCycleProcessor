@@ -130,8 +130,9 @@ architecture structure of RISCV_Processor is
     );
   end component;
 
-  signal ALUSrc, ALUControl, MemWrite, RegWrite, writeEnable : std_logic;
+  signal ALUSrc, ALUControl : std_logic;
   signal ImmType  : std_logic_vector(2 downto 0);
+  signal s_rs1, s_rs2  : std_logic_vector(4 downto 0);
   signal ResultSrc : std_logic_vector(1 downto 0);
 
   signal rs1_data, rs2_data, pc_addr_imm, PCPlusFour,
@@ -178,11 +179,13 @@ begin
     );
 
     s_RegWrAddr <= s_Inst(11 downto 7);
+    s_rs1 <= s_Inst(19 downto 15);
+    s_rs2 <= s_Inst(24 downto 20);
   registerFile: register_file
     generic map(N => N)
     port map(
-        i_r1          => s_Inst(19 downto 15),
-        i_r2          => s_Inst(24 downto 20),
+        i_r1          => s_rs1,
+        i_r2          => s_rs2,
         i_w           => s_RegWrAddr,
         i_writeData   => s_RegWrData,
         i_writeEnable => s_RegWr,

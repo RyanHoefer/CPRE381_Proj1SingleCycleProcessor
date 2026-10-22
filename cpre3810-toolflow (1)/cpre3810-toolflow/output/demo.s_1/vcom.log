@@ -1,6 +1,6 @@
 QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-Start time: 15:02:46 on Oct 15,2026
-vcom -2008 -work internal/ModelSimContainer/work proj/src/RISCV_types.vhd internal/testpy/tb.vhd proj/src/RISCV_types.vhd proj/src/TopLevel/mux_32t1.vhd proj/src/TopLevel/decoder_5t32.vhd proj/src/TopLevel/Adder.vhd proj/src/TopLevel/ImmediateGenerator.vhd proj/src/TopLevel/mux_types.vhd proj/src/TopLevel/FetchModule.vhd proj/src/TopLevel/mem.vhd proj/src/TopLevel/fulladder.vhd proj/src/TopLevel/invg.vhd proj/src/TopLevel/adder_N.vhd proj/src/TopLevel/register_file.vhd proj/src/TopLevel/andg2.vhd proj/src/TopLevel/mux2t1_N.vhd proj/src/TopLevel/dffg.vhd proj/src/TopLevel/org2.vhd proj/src/TopLevel/xorg2.vhd proj/src/TopLevel/onescomp_N.vhd proj/src/TopLevel/mux2t1.vhd proj/src/TopLevel/addsub_N_with_imm.vhd proj/src/TopLevel/RISCV_Processor.vhd proj/src/TopLevel/register_N.vhd proj/src/TopLevel/ControlUnit.vhd proj/src/TopLevel/ryans_components/mux2t1.vhd proj/src/TopLevel/ryans_components/tb_dffg.vhd proj/src/TopLevel/ryans_components/mem.vhd proj/src/TopLevel/ryans_components/mux2t1_N.vhd proj/src/TopLevel/ryans_components/dffg.vhd proj/src/TopLevel/ryans_components/RegFile/tb_register_N.vhd proj/src/TopLevel/ryans_components/RegFile/register_N.vhd proj/src/TopLevel/ryans_components/RegFile/tb_mux_32t1.vhd proj/src/TopLevel/ryans_components/RegFile/decoder_5t32.vhd proj/src/TopLevel/ryans_components/RegFile/tb_decoder_5t32.vhd proj/src/TopLevel/ryans_components/RegFile/register_file.vhd proj/src/TopLevel/ryans_components/RegFile/mux_types.vhd proj/src/TopLevel/ryans_components/RegFile/mux_32t1.vhd proj/src/TopLevel/ryans_components/RegFile/tb_register_file.vhd proj/src/TopLevel/ryans_components/Extenders/extender_N.vhd proj/src/TopLevel/ryans_components/Extenders/tb_extender_N.vhd proj/src/TopLevel/ryans_components/Extenders/zero_appender_N.vhd proj/src/TopLevel/ryans_components/MyFirstRISCVDatapath/addsub_N_with_imm.vhd proj/src/TopLevel/ryans_components/MyFirstRISCVDatapath/datapath.vhd proj/src/TopLevel/ryans_components/MyFirstRISCVDatapath/tb_datapath.vhd proj/src/TopLevel/ryans_components/MySecondRISCVDatapath/datapath2.vhd proj/src/TopLevel/ryans_components/MySecondRISCVDatapath/tb_datapath2_demo.vhd proj/src/TopLevel/ryans_components/MySecondRISCVDatapath/tb_datapath2.vhd proj/src/TopLevel/ryans_components/Memory/tb_dmem.vhd 
+Start time: 12:16:13 on Oct 21,2026
+vcom -2008 -work internal/ModelSimContainer/work proj/src/RISCV_types.vhd internal/testpy/tb.vhd proj/src/RISCV_types.vhd proj/src/TopLevel/mux_32t1.vhd proj/src/TopLevel/decoder_5t32.vhd proj/src/TopLevel/Adder.vhd proj/src/TopLevel/ImmediateGenerator.vhd proj/src/TopLevel/mux_types.vhd proj/src/TopLevel/FetchModule.vhd proj/src/TopLevel/mem.vhd proj/src/TopLevel/fulladder.vhd proj/src/TopLevel/invg.vhd proj/src/TopLevel/RISTCV_Processor.vhd proj/src/TopLevel/adder_N.vhd proj/src/TopLevel/register_file.vhd proj/src/TopLevel/andg2.vhd proj/src/TopLevel/mux2t1_N.vhd proj/src/TopLevel/dffg.vhd proj/src/TopLevel/org2.vhd proj/src/TopLevel/xorg2.vhd proj/src/TopLevel/onescomp_N.vhd proj/src/TopLevel/mux2t1.vhd proj/src/TopLevel/addsub_N_with_imm.vhd proj/src/TopLevel/register_N.vhd proj/src/TopLevel/ControlUnit.vhd proj/src/TopLevel/ryans_components/mux2t1.vhd proj/src/TopLevel/ryans_components/tb_dffg.vhd proj/src/TopLevel/ryans_components/mem.vhd proj/src/TopLevel/ryans_components/mux2t1_N.vhd proj/src/TopLevel/ryans_components/dffg.vhd proj/src/TopLevel/ryans_components/RegFile/tb_register_N.vhd proj/src/TopLevel/ryans_components/RegFile/register_N.vhd proj/src/TopLevel/ryans_components/RegFile/tb_mux_32t1.vhd proj/src/TopLevel/ryans_components/RegFile/decoder_5t32.vhd proj/src/TopLevel/ryans_components/RegFile/tb_decoder_5t32.vhd proj/src/TopLevel/ryans_components/RegFile/register_file.vhd proj/src/TopLevel/ryans_components/RegFile/mux_types.vhd proj/src/TopLevel/ryans_components/RegFile/mux_32t1.vhd proj/src/TopLevel/ryans_components/RegFile/tb_register_file.vhd proj/src/TopLevel/ryans_components/Extenders/extender_N.vhd proj/src/TopLevel/ryans_components/Extenders/tb_extender_N.vhd proj/src/TopLevel/ryans_components/Extenders/zero_appender_N.vhd proj/src/TopLevel/ryans_components/MyFirstRISCVDatapath/addsub_N_with_imm.vhd proj/src/TopLevel/ryans_components/MyFirstRISCVDatapath/datapath.vhd proj/src/TopLevel/ryans_components/MyFirstRISCVDatapath/tb_datapath.vhd proj/src/TopLevel/ryans_components/MySecondRISCVDatapath/datapath2.vhd proj/src/TopLevel/ryans_components/MySecondRISCVDatapath/tb_datapath2_demo.vhd proj/src/TopLevel/ryans_components/MySecondRISCVDatapath/tb_datapath2.vhd proj/src/TopLevel/ryans_components/Memory/tb_dmem.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
@@ -43,6 +43,9 @@ vcom -2008 -work internal/ModelSimContainer/work proj/src/RISCV_types.vhd intern
 -- Compiling architecture structural of fulladder
 -- Compiling entity invg
 -- Compiling architecture dataflow of invg
+-- Loading package RISCV_types
+-- Compiling entity RISCV_Processor
+-- Compiling architecture structure of RISCV_Processor
 -- Compiling entity adder_N
 -- Compiling architecture structural of adder_N
 -- Loading package mux_types
@@ -74,17 +77,6 @@ vcom -2008 -work internal/ModelSimContainer/work proj/src/RISCV_types.vhd intern
 -- Compiling entity addsub_N_with_imm
 ** Warning: proj/src/TopLevel/addsub_N_with_imm.vhd(30): (vcom-1615) Existing architecture 'addsub_N_with_imm(structural)' at /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ryans_components/MyFirstRISCVDatapath/addsub_N_with_imm.vhd(30) will be overwritten.
 -- Compiling architecture structural of addsub_N_with_imm
--- Loading package RISCV_types
--- Compiling entity RISCV_Processor
--- Compiling architecture structure of RISCV_Processor
-** Warning: proj/src/TopLevel/RISCV_Processor.vhd(282): (vcom-1615) Existing entity 'RISCV_Processor' at line 26 will be overwritten.
--- Compiling entity RISCV_Processor
-** Warning: proj/src/TopLevel/RISCV_Processor.vhd(294): (vcom-1615) Existing architecture 'RISCV_Processor(structure)' at line 38 will be overwritten.
--- Compiling architecture structure of RISCV_Processor
-** Warning: proj/src/TopLevel/RISCV_Processor.vhd(540): (vcom-1615) Existing entity 'RISCV_Processor' at line 282 will be overwritten.
--- Compiling entity RISCV_Processor
-** Warning: proj/src/TopLevel/RISCV_Processor.vhd(552): (vcom-1615) Existing architecture 'RISCV_Processor(structure)' at line 294 will be overwritten.
--- Compiling architecture structure of RISCV_Processor
 ** Warning: proj/src/TopLevel/register_N.vhd(6): (vcom-1615) Existing entity 'register_N' at /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ryans_components/RegFile/register_N.vhd(6) will be overwritten.
 -- Compiling entity register_N
 ** Warning: proj/src/TopLevel/register_N.vhd(13): (vcom-1615) Existing architecture 'register_N(dataflow)' at /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ryans_components/RegFile/register_N.vhd(13) will be overwritten.
@@ -165,5 +157,5 @@ vcom -2008 -work internal/ModelSimContainer/work proj/src/RISCV_types.vhd intern
 -- Compiling architecture behavior of tb_datapath2
 -- Compiling entity tb_dmem
 -- Compiling architecture behavior of tb_dmem
-vcom: End time: 15:02:46 on Oct 15,2026, Elapsed time: 0:00:00
-Errors: 0, Warnings: 49
+vcom: End time: 12:16:13 on Oct 21,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 45

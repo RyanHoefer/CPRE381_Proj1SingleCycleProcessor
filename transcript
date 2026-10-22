@@ -12,23 +12,10 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-run 300
+run 400
 # No Design Loaded!
 add wave *
-add wave RegWrite
-# (vish-4014) No objects found matching 'RegWrite'.
-add wave *
-vsim flcov_ce_lib.vl_flcov_ce_pkg -voptargs=+acc
-# ** Note: (vsim-220) '/usr/local/mentor/questasim/linux_x86_64/../questa.ini' is used as the ini file.
-# vsim flcov_ce_lib.vl_flcov_ce_pkg -voptargs="+acc" 
-# Start time: 14:12:40 on Oct 15,2026
-# ** Error: (vsim-1962) Library "/usr/local/mentor/questasim/flcov_ce_lib" is non-writable; implicit optimized design cannot be created.
-# Permission denied. (errno = EACCES)
-# Error loading design
-# vsim: End time: 14:12:40 on Oct 15,2026, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-quit -sim
-# Load canceled
+find drivers -source -time {52 ns} -cause vsim1:/tb/MyRiscv/ALUControl
 # Load canceled
 add wave *
 add wave *

@@ -22,7 +22,7 @@ architecture barrelShifter of barrelShifter is
             o_O          : out std_logic_vector(N-1 downto 0));
     end component;
 
-signal firstToSecond, secondToThird, thirdToFourth, fourthToFifth, reversedInput, firstInput : std_logic_vector(31 downto 0);
+signal firstToSecond, secondToThird, thirdToFourth, fourthToFifth, reversedInput, firstInput, shiftResult, reversedResult : std_logic_vector(31 downto 0);
 signal extendBit : std_logic;
 
 
@@ -30,7 +30,7 @@ begin
 
 reversedBits : for i in 0 to 31 generate 
     reversedInput(i) <= i_A(31 - i);
-    reversedResult(i) <= shift_result(31 - i);
+    reversedResult(i) <= shiftResult(31 - i);
 end generate reversedBits;
 
 
@@ -48,7 +48,7 @@ firstMux : mux2t1_N
     generic map(N => 32)
     port map (i_S => i_amt(0),
               i_D0 => firstInput,
-              i_D1 => extendBit & shift_input(31 downto 1),
+              i_D1 => extendBit & firstInput(31 downto 1),
               o_O => firstToSecond);
 
 secondMux : mux2t1_N
@@ -62,28 +62,28 @@ thirdMux : mux2t1_N
     generic map(N => 32)
     port map (i_S => i_amt(2),
               i_D0 => secondToThird,
-              i_D1 => extendBit & extendBit & extendBit & extendBit & thirdToFourth(31 downto 2),
+              i_D1 => extendBit & extendBit & extendBit & extendBit & secondToThird(31 downto 4),
               o_O => thirdToFourth);
 
 fourthMux : mux2t1_N
     generic map(N => 32)
     port map (i_S => i_amt(3),
               i_D0 => thirdToFourth,
-              i_D1 => extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & thirdToFourth(31 downto 2),
+              i_D1 => extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit &  thirdToFourth(31 downto 8),
               o_O => fourthToFifth);
 
 fifthMux : mux2t1_N
     generic map(N => 32)
     port map (i_S => i_amt(4),
               i_D0 => fourthToFifth,
-              i_D1 => extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & fourthThFifth(31 downto 2),
-              o_O => shiftREsult);
+              i_D1 => extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & fourthToFifth(31 downto 16),
+              o_O => shiftResult);
 
-selectInputMux : mux2t1_N
+selectOutputMux : mux2t1_N
     generic map(N => 32)
     port map (i_S => i_dir,
-              i_D0 => i_A,
-              i_D1 => reversedInput,
+              i_D0 => shiftResult,
+              i_D1 => reversedResult,
               o_O => firstInput);
 
 
