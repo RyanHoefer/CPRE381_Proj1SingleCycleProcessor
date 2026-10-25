@@ -135,7 +135,7 @@ architecture structure of RISCV_Processor is
   signal s_rs1, s_rs2  : std_logic_vector(4 downto 0);
   signal ResultSrc : std_logic_vector(1 downto 0);
 
-  signal rs1_data, rs2_data, pc_addr_imm, PCPlusFour,
+  signal pc_addr_imm, PCPlusFour,
          writeData, readData1, readData2, aluResult
          : std_logic_vector(31 downto 0);
 

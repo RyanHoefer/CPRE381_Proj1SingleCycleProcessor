@@ -4,8 +4,9 @@ use IEEE.std_logic_1164.all;
 -- entity
 entity barrelShifter is
     Port (  i_A : in std_logic_vector(31 downto 0);
-            i_amt : in std_logic_vector(4 downto 0);
+            i_amt : in std_logic_vector(4 downto 0); -- each corresponding bit enables the muxes for their respective level
             i_dir : in std_logic; --- 0 = right, 1 = left
+            i_arith: in std_logic; --- 0 = logical, 1 = arithmetic
 
             result : out std_logic_vector(31 downto 0));
 
@@ -22,6 +23,16 @@ architecture barrelShifter of barrelShifter is
             o_O          : out std_logic_vector(N-1 downto 0));
     end component;
 
+    component mux2t1 is
+      generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
+            port(i_S     : in std_logic;
+            i_D0         : in std_logic;
+            i_D1         : in std_logic;
+            o_O          : out std_logic);
+    end component;
+
+
+
 signal firstToSecond, secondToThird, thirdToFourth, fourthToFifth, reversedInput, firstInput, shiftResult, reversedResult : std_logic_vector(31 downto 0);
 signal extendBit : std_logic;
 
@@ -34,7 +45,13 @@ reversedBits : for i in 0 to 31 generate
 end generate reversedBits;
 
 
-extendBit <= i_A(31);
+
+selectExtendBit : mux2t1
+    generic map(N => 32)
+    port map (i_S => i_arith,
+              i_D0 => '0',
+              i_D1 => i_A(31),
+              o_O => extendBit);
 
 selectInputMux : mux2t1_N
     generic map(N => 32)
@@ -84,7 +101,7 @@ selectOutputMux : mux2t1_N
     port map (i_S => i_dir,
               i_D0 => shiftResult,
               i_D1 => reversedResult,
-              o_O => firstInput);
+              o_O => result);
 
 
 
