@@ -14,20 +14,18 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity ALU is
+entity addsub_N_for_alu is
   generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
   port(
        i_A           : in std_logic_vector(N-1 downto 0);
        i_B           : in std_logic_vector(N-1 downto 0);
-       i_imm         : in std_logic_vector(N-1 downto 0);
-       ctl           : in std_logic;
-       i_aluSrc      : in std_logic;
+       ctl          : in std_logic;
        s             : out std_logic_vector(N-1 downto 0);
        c_out         : out std_logic);
 
-end ALU;
+end addsub_N_for_alu;
 
-architecture structural of ALU is
+architecture structural of addsub_N_for_alu is
   component adder_N is
       generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
         port(
@@ -55,47 +53,27 @@ component mux2t1_N is
     end component;
 
 
-    signal BN, MuxB, muxImm: std_logic_vector(N-1 downto 0);
-    signal AddResult         : std_logic_vector(N-1 downto 0);
-    signal PassImmediate     : std_logic;
+    signal BN, MuxB: std_logic_vector(N-1 downto 0);
 
 begin
 
-t1 : onescomp_N
+t1 : onescomp_N 
     generic map(N => N)
     port map (i_A => i_B,
               o_F => BN);
-t2 : mux2t1_N
+t2 : mux2t1_N 
     generic map(N => N)
     port map (i_S => ctl,
               i_D0 => i_B,
               i_D1 => BN,
               o_O => MuxB);
-
-t3 : mux2t1_N
-	generic map(N => N)
-	port map (i_s => i_aluSrc,
-			  i_D0 => MuxB,
-			  i_D1 => i_imm,
-			  o_O => MuxImm);
-
-t4 : adder_N
+t3 : adder_N 
     generic map(N => N)
     port map (i_A => i_A,
-              i_B => MuxImm,
+              i_B => MuxB,
               c_in => ctl,
-              s => AddResult,
+              s => s,
               c_out => c_out);
-
-PassImmediate <= ctl and i_aluSrc;
-
-t5 : mux2t1_N
-  generic map (N => N)
-            port map (
-                i_s  => PassImmediate,
-                i_D0 => AddResult,
-                i_D1 => i_imm,
-                o_O  => s);
 
 
 
