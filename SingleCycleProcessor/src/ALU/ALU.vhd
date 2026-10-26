@@ -91,7 +91,6 @@ component mux2t1_N is
 
     signal s_input2        : std_logic_vector(N-1 downto 0);
     signal s_barrelOut, s_addSubOut, s_orOut, s_andOut, s_xorOut, s_sltOut   : std_logic_vector(N-1 downto 0);
-    signal PassImmediate     : std_logic;
 
 begin
 
