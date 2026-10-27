@@ -1,486 +1,317 @@
 
 library IEEE;
-use IEEE.std_logic_1164.all;
-use std.env.all;
+use IEEE.STD_LOGIC_1164.ALL;
 
-entity tb_ControlUnit is
-    generic (
-        gCLK_HPER : time := 10 ns;
-        DATA_WIDTH : integer := 32
+entity ControlUnit is
+    port (
+        i_Instruction    : in std_logic_vector(31 downto 0);
+
+        o_ALUSrc         : out std_logic;
+        o_ALUControl     : out std_logic;
+        o_ImmType        : out std_logic_vector(2 downto 0);
+        o_ResultSrc      : out std_logic_vector(2 downto 0);
+        o_MemWrite       : out std_logic;
+        o_RegWrite       : out std_logic;
+
+        o_sign           : out std_logic;
+        o_selectDataSize : out std_logic_vector(1 downto 0);
+        o_selectAluOut   : out std_logic_vector(2 downto 0);
+        o_dir            : out std_logic;
+        o_arith          : out std_logic
     );
-end tb_ControlUnit;
+end ControlUnit;
 
-architecture mixed of tb_ControlUnit is
+architecture Dataflow of ControlUnit is
 
-    component ControlUnit is
-        port (
-            i_Instruction    : in  std_logic_vector(31 downto 0);
-            o_ALUSrc         : out std_logic;
-            o_ALUControl     : out std_logic;
-            o_ImmType        : out std_logic_vector(2 downto 0);
-            o_ResultSrc      : out std_logic_vector(2 downto 0);
-            o_MemWrite       : out std_logic;
-            o_RegWrite       : out std_logic;
-            o_sign           : out std_logic;
-            o_selectDataSize : out std_logic_vector(1 downto 0);
-            o_selectAluOut   : out std_logic_vector(2 downto 0);
-            o_dir            : out std_logic;
-            o_arith          : out std_logic
-        );
-    end component;
+    signal opcode : std_logic_vector(6 downto 0);
+    signal funct3 : std_logic_vector(2 downto 0);
+    signal funct7 : std_logic_vector(6 downto 0);
 
-    signal CLK : std_logic := '0';
+    signal isRType  : std_logic;
+    signal isIType  : std_logic;
+    signal isLoad   : std_logic;
+    signal isStore  : std_logic;
+    signal isBranch : std_logic;
+    signal isJAL    : std_logic;
+    signal isJALR   : std_logic;
+    signal isLUI    : std_logic;
+    signal isAUIPC  : std_logic;
 
-    signal iInstruction : std_logic_vector(31 downto 0)
-                        := (others => '0');
+    signal validR     : std_logic;
+    signal validI     : std_logic;
+    signal validLoad  : std_logic;
+    signal validStore : std_logic;
 
-    signal ALUSrc         : std_logic;
-    signal ALUControl     : std_logic;
-    signal ImmType        : std_logic_vector(2 downto 0);
-    signal ResultSrc      : std_logic_vector(2 downto 0);
-    signal MemWrite       : std_logic;
-    signal RegWrite       : std_logic;
-    signal signMode       : std_logic;
-    signal selectDataSize : std_logic_vector(1 downto 0);
-    signal selectAluOut   : std_logic_vector(2 downto 0);
-    signal dir            : std_logic;
-    signal arith          : std_logic;
+    signal isADD  : std_logic;
+    signal isSUB  : std_logic;
+    signal isAND  : std_logic;
+    signal isOR   : std_logic;
+    signal isXOR  : std_logic;
+    signal isSLT  : std_logic;
+    signal isSLTU : std_logic;
+    signal isSLL  : std_logic;
+    signal isSRL  : std_logic;
+    signal isSRA  : std_logic;
+
+    signal isADDI  : std_logic;
+    signal isANDI  : std_logic;
+    signal isORI   : std_logic;
+    signal isXORI  : std_logic;
+    signal isSLTI  : std_logic;
+    signal isSLTIU : std_logic;
+    signal isSLLI  : std_logic;
+    signal isSRLI  : std_logic;
+    signal isSRAI  : std_logic;
+
+    signal isLW  : std_logic;
+    signal isLH  : std_logic;
+    signal isLB  : std_logic;
+    signal isLHU : std_logic;
+    signal isLBU : std_logic;
+
+    signal isSW : std_logic;
+    signal isSH : std_logic;
+    signal isSB : std_logic;
 
 begin
 
-    DUT: ControlUnit
-        port map (
-            i_Instruction    => iInstruction,
-            o_ALUSrc         => ALUSrc,
-            o_ALUControl     => ALUControl,
-            o_ImmType        => ImmType,
-            o_ResultSrc      => ResultSrc,
-            o_MemWrite       => MemWrite,
-            o_RegWrite       => RegWrite,
-            o_sign           => signMode,
-            o_selectDataSize => selectDataSize,
-            o_selectAluOut   => selectAluOut,
-            o_dir            => dir,
-            o_arith          => arith
-        );
-
-    -- Clock used only as a waveform timing reference.
-    P_CLK: process
-    begin
-        CLK <= '1';
-        wait for gCLK_HPER;
-        CLK <= '0';
-        wait for gCLK_HPER;
-    end process;
-
-    P_TEST_CASES: process
-
-        -- Apply one instruction and check all control signals.
-        -- Unspecified expected values default to zero.
-
-        procedure check_instruction (
-            constant test_name : in string;
-            constant instr     : in std_logic_vector(31 downto 0);
-            constant e_src     : in std_logic := '0';
-            constant e_sub     : in std_logic := '0';
-            constant e_imm     : in std_logic_vector(2 downto 0) := "000";
-            constant e_result  : in std_logic_vector(2 downto 0) := "000";
-            constant e_mem     : in std_logic := '0';
-            constant e_reg     : in std_logic := '0';
-            constant e_sign    : in std_logic := '0';
-            constant e_size    : in std_logic_vector(1 downto 0) := "00";
-            constant e_alu     : in std_logic_vector(2 downto 0) := "000";
-            constant e_dir     : in std_logic := '0';
-            constant e_arith   : in std_logic := '0'
-        ) is
-        begin
-
-            iInstruction <= instr;
-            wait for gCLK_HPER * 2;
-
-            assert ALUSrc = e_src
-                report test_name & ": ALUSrc incorrect"
-                severity error;
-
-            assert ALUControl = e_sub
-                report test_name & ": ALUControl incorrect"
-                severity error;
-
-            assert ImmType = e_imm
-                report test_name & ": ImmType incorrect"
-                severity error;
-
-            assert ResultSrc = e_result
-                report test_name & ": ResultSrc incorrect"
-                severity error;
-
-            assert MemWrite = e_mem
-                report test_name & ": MemWrite incorrect"
-                severity error;
-
-            assert RegWrite = e_reg
-                report test_name & ": RegWrite incorrect"
-                severity error;
-
-            assert signMode = e_sign
-                report test_name & ": signMode incorrect"
-                severity error;
-
-            assert selectDataSize = e_size
-                report test_name & ": selectDataSize incorrect"
-                severity error;
-
-            assert selectAluOut = e_alu
-                report test_name & ": selectAluOut incorrect"
-                severity error;
-
-            assert dir = e_dir
-                report test_name & ": dir incorrect"
-                severity error;
-
-            assert arith = e_arith
-                report test_name & ": arith incorrect"
-                severity error;
-
-            report "Completed test: " & test_name
-                severity note;
-
-        end procedure;
-
-    begin
-
-        wait for gCLK_HPER / 2;
-
-        --------------------------------------------------
-        -- R-TYPE INSTRUCTIONS
-        --------------------------------------------------
-
-        check_instruction(
-            "1 ADD", x"002081B3",
-            e_reg => '1'
-        );
-
-        check_instruction(
-            "2 SUB", x"402081B3",
-            e_sub => '1',
-            e_reg => '1'
-        );
-
-        check_instruction(
-            "3 AND", x"0020F1B3",
-            e_reg => '1',
-            e_alu => "010"
-        );
-
-        check_instruction(
-            "4 OR", x"0020E1B3",
-            e_reg => '1',
-            e_alu => "001"
-        );
-
-        check_instruction(
-            "5 XOR", x"0020C1B3",
-            e_reg => '1',
-            e_alu => "011"
-        );
-
-        check_instruction(
-            "6 SLT", x"0020A1B3",
-            e_reg => '1',
-            e_sign => '1',
-            e_alu => "101"
-        );
-
-        check_instruction(
-            "7 SLTU", x"0020B1B3",
-            e_reg => '1',
-            e_alu => "101"
-        );
-
-        check_instruction(
-            "8 SLL", x"002091B3",
-            e_reg => '1',
-            e_alu => "100",
-            e_dir => '1'
-        );
-
-        check_instruction(
-            "9 SRL", x"0020D1B3",
-            e_reg => '1',
-            e_alu => "100"
-        );
-
-        check_instruction(
-            "10 SRA", x"4020D1B3",
-            e_reg => '1',
-            e_alu => "100",
-            e_arith => '1'
-        );
-
-        --------------------------------------------------
-        -- I-TYPE ARITHMETIC AND LOGIC
-        --------------------------------------------------
-
-        check_instruction(
-            "11 ADDI", x"00508193",
-            e_src => '1',
-            e_reg => '1'
-        );
-
-        check_instruction(
-            "12 ADDI negative", x"FFF08193",
-            e_src => '1',
-            e_reg => '1'
-        );
-
-        check_instruction(
-            "13 ANDI", x"FFF0F193",
-            e_src => '1',
-            e_reg => '1',
-            e_alu => "010"
-        );
-
-        check_instruction(
-            "14 ORI", x"FFF0E193",
-            e_src => '1',
-            e_reg => '1',
-            e_alu => "001"
-        );
-
-        check_instruction(
-            "15 XORI", x"FFF0C193",
-            e_src => '1',
-            e_reg => '1',
-            e_alu => "011"
-        );
-
-        check_instruction(
-            "16 SLTI", x"FFF0A193",
-            e_src => '1',
-            e_reg => '1',
-            e_sign => '1',
-            e_alu => "101"
-        );
-
-        check_instruction(
-            "17 SLTIU", x"FFF0B193",
-            e_src => '1',
-            e_reg => '1',
-            e_alu => "101"
-        );
-
-        check_instruction(
-            "18 SLLI", x"01F09193",
-            e_src => '1',
-            e_reg => '1',
-            e_alu => "100",
-            e_dir => '1'
-        );
-
-        check_instruction(
-            "19 SRLI", x"01F0D193",
-            e_src => '1',
-            e_reg => '1',
-            e_alu => "100"
-        );
-
-        check_instruction(
-            "20 SRAI", x"41F0D193",
-            e_src => '1',
-            e_reg => '1',
-            e_alu => "100",
-            e_arith => '1'
-        );
-
-        --------------------------------------------------
-        -- LOAD INSTRUCTIONS
-        --------------------------------------------------
-
-        check_instruction(
-            "21 LB", x"00008183",
-            e_src => '1',
-            e_result => "001",
-            e_reg => '1',
-            e_sign => '1',
-            e_size => "10"
-        );
-
-        check_instruction(
-            "22 LBU", x"0000C183",
-            e_src => '1',
-            e_result => "001",
-            e_reg => '1',
-            e_size => "10"
-        );
-
-        check_instruction(
-            "23 LH", x"00009183",
-            e_src => '1',
-            e_result => "001",
-            e_reg => '1',
-            e_sign => '1',
-            e_size => "01"
-        );
-
-        check_instruction(
-            "24 LHU", x"0000D183",
-            e_src => '1',
-            e_result => "001",
-            e_reg => '1',
-            e_size => "01"
-        );
-
-        check_instruction(
-            "25 LW", x"0000A183",
-            e_src => '1',
-            e_result => "001",
-            e_reg => '1'
-        );
-
-        --------------------------------------------------
-        -- STORE INSTRUCTIONS
-        --------------------------------------------------
-
-        check_instruction(
-            "26 SB", x"00208023",
-            e_src => '1',
-            e_imm => "001",
-            e_mem => '1',
-            e_size => "10"
-        );
-
-        check_instruction(
-            "27 SH", x"00209023",
-            e_src => '1',
-            e_imm => "001",
-            e_mem => '1',
-            e_size => "01"
-        );
-
-        check_instruction(
-            "28 SW", x"0020A023",
-            e_src => '1',
-            e_imm => "001",
-            e_mem => '1'
-        );
-
-        --------------------------------------------------
-        -- BRANCH INSTRUCTIONS
-        -- Fetch Module handles branch decisions.
-        --------------------------------------------------
-
-        check_instruction(
-            "29 BEQ", x"00208463",
-            e_imm => "011"
-        );
-
-        check_instruction(
-            "30 BNE", x"00209463",
-            e_imm => "011"
-        );
-
-        check_instruction(
-            "31 BLT", x"0020C463",
-            e_imm => "011"
-        );
-
-        check_instruction(
-            "32 BGE", x"0020D463",
-            e_imm => "011"
-        );
-
-        check_instruction(
-            "33 BLTU", x"0020E463",
-            e_imm => "011"
-        );
-
-        check_instruction(
-            "34 BGEU", x"0020F463",
-            e_imm => "011"
-        );
-
-        --------------------------------------------------
-        -- JUMPS AND UPPER IMMEDIATES
-        --------------------------------------------------
-
-        check_instruction(
-            "35 JAL", x"008001EF",
-            e_imm => "100",
-            e_result => "011",
-            e_reg => '1'
-        );
-
-        check_instruction(
-            "36 JALR", x"000081E7",
-            e_result => "011",
-            e_reg => '1'
-        );
-
-        check_instruction(
-            "37 LUI", x"123451B7",
-            e_imm => "010",
-            e_result => "010",
-            e_reg => '1'
-        );
-
-        check_instruction(
-            "38 AUIPC", x"12345197",
-            e_imm => "010",
-            e_result => "100",
-            e_reg => '1'
-        );
-
-        --------------------------------------------------
-        -- HALT AND INVALID INSTRUCTIONS
-        --------------------------------------------------
-
-        check_instruction(
-            "39 WFI", x"10500073"
-        );
-
-        check_instruction(
-            "40 Invalid opcode", x"FFFFFFFF"
-        );
-
-        check_instruction(
-            "41 Unsupported MUL", x"022081B3"
-        );
-
-        check_instruction(
-            "42 Invalid SLLI", x"02009193"
-        );
-
-        check_instruction(
-            "43 Invalid JALR", x"000091E7"
-        );
-
-        --------------------------------------------------
-        -- CONTROL SIGNAL RESET TEST
-        --------------------------------------------------
-
-        check_instruction(
-            "44 SH before invalid", x"00209023",
-            e_src => '1',
-            e_imm => "001",
-            e_mem => '1',
-            e_size => "01"
-        );
-
-        check_instruction(
-            "45 Invalid after SH", x"FFFFFFFF"
-        );
-
-        --------------------------------------------------
-        -- END OF TESTING
-        --------------------------------------------------
-
-        report "All 45 test cases completed."
-            severity note;
-
-        finish;
-
-        wait;
-
-    end process;
-
-end mixed;
+    --------------------------------------------------
+    -- Instruction fields
+    --------------------------------------------------
+
+    opcode <= i_Instruction(6 downto 0);
+    funct3 <= i_Instruction(14 downto 12);
+    funct7 <= i_Instruction(31 downto 25);
+
+    --------------------------------------------------
+    -- Opcode decoding
+    --------------------------------------------------
+
+    isRType  <= '1' when opcode = "0110011" else '0';
+    isIType  <= '1' when opcode = "0010011" else '0';
+    isLoad   <= '1' when opcode = "0000011" else '0';
+    isStore  <= '1' when opcode = "0100011" else '0';
+    isBranch <= '1' when opcode = "1100011" else '0';
+    isJAL    <= '1' when opcode = "1101111" else '0';
+    isJALR   <= '1' when opcode = "1100111" and
+                         funct3 = "000" else '0';
+    isLUI    <= '1' when opcode = "0110111" else '0';
+    isAUIPC  <= '1' when opcode = "0010111" else '0';
+
+    --------------------------------------------------
+    -- R-type instruction decoding
+    --------------------------------------------------
+
+    isADD <= '1' when isRType = '1' and
+                      funct3 = "000" and
+                      funct7 = "0000000" else '0';
+
+    isSUB <= '1' when isRType = '1' and
+                      funct3 = "000" and
+                      funct7 = "0100000" else '0';
+
+    isAND <= '1' when isRType = '1' and
+                      funct3 = "111" and
+                      funct7 = "0000000" else '0';
+
+    isOR <= '1' when isRType = '1' and
+                     funct3 = "110" and
+                     funct7 = "0000000" else '0';
+
+    isXOR <= '1' when isRType = '1' and
+                      funct3 = "100" and
+                      funct7 = "0000000" else '0';
+
+    isSLT <= '1' when isRType = '1' and
+                      funct3 = "010" and
+                      funct7 = "0000000" else '0';
+
+    isSLTU <= '1' when isRType = '1' and
+                       funct3 = "011" and
+                       funct7 = "0000000" else '0';
+
+    isSLL <= '1' when isRType = '1' and
+                      funct3 = "001" and
+                      funct7 = "0000000" else '0';
+
+    isSRL <= '1' when isRType = '1' and
+                      funct3 = "101" and
+                      funct7 = "0000000" else '0';
+
+    isSRA <= '1' when isRType = '1' and
+                      funct3 = "101" and
+                      funct7 = "0100000" else '0';
+
+    --------------------------------------------------
+    -- I-type arithmetic instruction decoding
+    --------------------------------------------------
+
+    isADDI <= '1' when isIType = '1' and
+                       funct3 = "000" else '0';
+
+    isANDI <= '1' when isIType = '1' and
+                       funct3 = "111" else '0';
+
+    isORI <= '1' when isIType = '1' and
+                      funct3 = "110" else '0';
+
+    isXORI <= '1' when isIType = '1' and
+                       funct3 = "100" else '0';
+
+    isSLTI <= '1' when isIType = '1' and
+                       funct3 = "010" else '0';
+
+    isSLTIU <= '1' when isIType = '1' and
+                        funct3 = "011" else '0';
+
+    isSLLI <= '1' when isIType = '1' and
+                       funct3 = "001" and
+                       funct7 = "0000000" else '0';
+
+    isSRLI <= '1' when isIType = '1' and
+                       funct3 = "101" and
+                       funct7 = "0000000" else '0';
+
+    isSRAI <= '1' when isIType = '1' and
+                       funct3 = "101" and
+                       funct7 = "0100000" else '0';
+
+    --------------------------------------------------
+    -- Load instruction decoding
+    --------------------------------------------------
+
+    isLW <= '1' when isLoad = '1' andquit 
+                     funct3 = "010" else '0';
+
+    isLH <= '1' when isLoad = '1' and
+                     funct3 = "001" else '0';
+
+    isLB <= '1' when isLoad = '1' and
+                     funct3 = "000" else '0';
+
+    isLHU <= '1' when isLoad = '1' and
+                      funct3 = "101" else '0';
+
+    isLBU <= '1' when isLoad = '1' and
+                      funct3 = "100" else '0';
+
+    --------------------------------------------------
+    -- Store instruction decoding
+    --------------------------------------------------
+
+    isSW <= '1' when isStore = '1' and
+                     funct3 = "010" else '0';
+
+    isSH <= '1' when isStore = '1' and
+                     funct3 = "001" else '0';
+
+    isSB <= '1' when isStore = '1' and
+                     funct3 = "000" else '0';
+
+    --------------------------------------------------
+    -- Valid instruction groups
+    --------------------------------------------------
+
+    validR <= isADD or isSUB or isAND or isOR or
+              isXOR or isSLT or isSLTU or
+              isSLL or isSRL or isSRA;
+
+    validI <= isADDI or isANDI or isORI or isXORI or
+              isSLTI or isSLTIU or isSLLI or
+              isSRLI or isSRAI;
+
+    validLoad <= isLW or isLH or isLB or isLHU or isLBU;
+
+    validStore <= isSW or isSH or isSB;
+
+    --------------------------------------------------
+    -- Control signal outputs
+    -- Taria: Replaced the process and case statements
+    -- with dataflow logic to match the TA's instructions.
+    --------------------------------------------------
+
+    -- ALU second operand
+    o_ALUSrc <= isIType or isLoad or isStore;
+
+    -- Subtract only for SUB
+    o_ALUControl <= isSUB;
+
+    -- Immediate type:
+    -- 000 = I, 001 = S, 010 = U
+    -- 011 = B, 100 = J
+
+    o_ImmType <= "001" when isStore = '1' else
+                 "010" when isLUI = '1' or
+                            isAUIPC = '1' else
+                 "011" when isBranch = '1' else
+                 "100" when isJAL = '1' else
+                 "000";
+
+    -- Writeback selection:
+    -- 000 = ALU
+    -- 001 = Memory
+    -- 010 = Immediate (LUI)
+    -- 011 = PC + 4
+    -- 100 = PC + Immediate
+
+    o_ResultSrc <= "001" when isLoad = '1' else
+                   "010" when isLUI = '1' else
+                   "011" when isJAL = '1' or
+                              isJALR = '1' else
+                   "100" when isAUIPC = '1' else
+                   "000";
+
+    -- Memory write enable
+    o_MemWrite <= validStore;
+
+    -- Register write enable
+    o_RegWrite <= validR or validI or validLoad or
+                  isJAL or isJALR or isLUI or isAUIPC;
+
+    -- Signed comparison / signed loads
+    o_sign <= isSLT or isSLTI or isLH or isLB;
+
+    -- Memory data size:
+    -- 00 = Word, 01 = Halfword, 10 = Byte
+
+    o_selectDataSize <= "01" when isLH = '1' or
+                                  isLHU = '1' or
+                                  isSH = '1' else
+                        "10" when isLB = '1' or
+                                  isLBU = '1' or
+                                  isSB = '1' else
+                        "00";
+
+    -- ALU output selection:
+    -- 000 = Add/Sub
+    -- 001 = OR
+    -- 010 = AND
+    -- 011 = XOR
+    -- 100 = Shift
+    -- 101 = Less than
+
+    o_selectAluOut <= "001" when isOR = '1' or
+                                isORI = '1' else
+                      "010" when isAND = '1' or
+                                isANDI = '1' else
+                      "011" when isXOR = '1' or
+                                isXORI = '1' else
+                      "100" when isSLL = '1' or
+                                isSRL = '1' or
+                                isSRA = '1' or
+                                isSLLI = '1' or
+                                isSRLI = '1' or
+                                isSRAI = '1' else
+                      "101" when isSLT = '1' or
+                                isSLTU = '1' or
+                                isSLTI = '1' or
+                                isSLTIU = '1' else
+                      "000";
+
+    -- Shift direction: 1 = Left, 0 = Right
+    o_dir <= isSLL or isSLLI;
+
+    -- Arithmetic shift enable
+    o_arith <= isSRA or isSRAI;
+
+end Dataflow;
