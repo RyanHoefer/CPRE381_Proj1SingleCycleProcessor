@@ -107,15 +107,15 @@ begin
         -- SB-TYPE INSTRUCTIONS
         --------------------------------------------------
 
-         -- SW x1, 4(x3)
+        -- SW x1, 4(x3)
         check_immediate(
-            "I-type positive", x"0830A223",
+            "SB-type positive", x"0011A223",
             "001", x"00000004"
         );
 
-        -- sh x2, 2047(x10)
+        -- SH x2, 2047(x10)
         check_immediate(
-            "I-type negative", x"FEA11FA3",
+            "SB-type maximum", x"7E251FA3",
             "001", x"000007FF"
         );
 
@@ -123,15 +123,15 @@ begin
         -- U-TYPE INSTRUCTIONS
         --------------------------------------------------
 
-         -- LUI x1, 0x10010
+        -- LUI x1, 0x10010
         check_immediate(
-            "I-type base", x"008880B7",
+            "U-type base", x"100100B7",
             "010", x"10010000"
         );
 
         -- auipc x1, 0xFFFFF
         check_immediate(
-            "B-type minumum", x"FFFFF097",
+            "U-type minumum", x"FFFFF097",
             "010", x"FFFFF000"
         );
 
