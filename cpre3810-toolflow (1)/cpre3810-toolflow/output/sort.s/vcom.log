@@ -1,0 +1,87 @@
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+Start time: 17:31:05 on Oct 28,2026
+vcom -2008 -work internal/ModelSimContainer/work proj/src/RISCV_types.vhd internal/testpy/tb.vhd proj/src/extender_N.vhd proj/src/RISCV_types.vhd proj/src/TopLevel/RISCV_Processor_Tariq.vhd proj/src/TopLevel/Formatters/LoadFormatter.vhd proj/src/TopLevel/Formatters/StoreFormatter.vhd proj/src/TopLevel/ALU/addsub_N_for_alu.vhd proj/src/TopLevel/ALU/or_N.vhd proj/src/TopLevel/ALU/and_N.vhd proj/src/TopLevel/ALU/adder_N.vhd proj/src/TopLevel/ALU/Adder.vhd proj/src/TopLevel/ALU/ALU.vhd proj/src/TopLevel/ALU/fulladder.vhd proj/src/TopLevel/ALU/xor_N.vhd proj/src/TopLevel/ALU/onescomp_N.vhd proj/src/TopLevel/ALU/barrelshifter_Tariq.vhd proj/src/TopLevel/ControlUnit/ControlUnit_Tariq.vhd proj/src/TopLevel/Fetch/FetchModule.vhd proj/src/TopLevel/ImmediateGenerator/ImmediateGenerator.vhd proj/src/TopLevel/RegisterFile/decoder_5t32.vhd proj/src/TopLevel/RegisterFile/register_file.vhd proj/src/TopLevel/RegisterFile/register_N.vhd proj/src/TopLevel/BasicGates/dffg.vhd proj/src/TopLevel/BasicGates/org2.vhd proj/src/TopLevel/BasicGates/mem.vhd proj/src/TopLevel/BasicGates/andg2.vhd proj/src/TopLevel/BasicGates/xorg2.vhd proj/src/TopLevel/BasicGates/invg.vhd proj/src/TopLevel/Muxes/mux_32t1.vhd proj/src/TopLevel/Muxes/mux4t1_N.vhd proj/src/TopLevel/Muxes/mux2t1_N.vhd proj/src/TopLevel/Muxes/mux2t1.vhd 
+** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package mux_types
+-- Compiling package RISCV_types
+-- Compiling package body RISCV_types
+-- Loading package RISCV_types
+-- Loading package std_logic_textio
+-- Loading package ENV
+-- Compiling entity tb
+-- Compiling architecture mixed of tb
+-- Compiling entity extender_N
+-- Compiling architecture dataflow of extender_N
+** Warning: proj/src/RISCV_types.vhd(15): (vcom-1615) Existing package 'mux_types' at line 18 will be overwritten.
+-- Compiling package mux_types
+** Warning: proj/src/RISCV_types.vhd(32): (vcom-1615) Existing package 'RISCV_types' at line 33 will be overwritten.
+-- Compiling package RISCV_types
+** Warning: proj/src/RISCV_types.vhd(37): (vcom-1615) Existing package body 'RISCV_types(body)' at line 37 will be overwritten.
+-- Compiling package body RISCV_types
+-- Loading package RISCV_types
+-- Loading package RISCV_types
+-- Compiling entity RISCV_Processor
+-- Compiling architecture structureTopLevel of RISCV_Processor
+-- Compiling entity LoadFormatter
+-- Compiling architecture structural of LoadFormatter
+-- Compiling entity StoreFormatter
+-- Compiling architecture structural of StoreFormatter
+-- Compiling entity addsub_N_for_alu
+-- Compiling architecture structural of addsub_N_for_alu
+-- Loading package NUMERIC_STD
+-- Compiling entity or_N
+-- Compiling architecture structural of or_N
+-- Compiling entity and_N
+-- Compiling architecture structural of and_N
+-- Compiling entity adder_N
+-- Compiling architecture structural of adder_N
+-- Compiling entity Adder
+-- Compiling architecture behavior of Adder
+-- Compiling entity ALU
+-- Compiling architecture structural_alu of ALU
+-- Compiling entity fulladder
+-- Compiling architecture structural of fulladder
+-- Compiling entity xor_N
+-- Compiling architecture structural of xor_N
+-- Compiling entity onescomp_N
+-- Compiling architecture structural of onescomp_N
+-- Compiling entity barrelShifter
+-- Compiling architecture barrelShifterArc of barrelShifter
+-- Compiling entity ControlUnit
+-- Compiling architecture Dataflow of ControlUnit
+-- Compiling entity FetchModule
+-- Compiling architecture structural of FetchModule
+-- Compiling entity ImmediateGenerator
+-- Compiling architecture Behavioral of ImmediateGenerator
+-- Compiling entity decoder_5t32
+-- Compiling architecture dataflow of decoder_5t32
+-- Loading package mux_types
+-- Compiling entity register_file
+-- Compiling architecture mixed of register_file
+-- Compiling entity register_N
+-- Compiling architecture dataflow of register_N
+-- Compiling entity dffg
+-- Compiling architecture mixed of dffg
+-- Compiling entity org2
+-- Compiling architecture dataflow of org2
+-- Compiling entity mem
+-- Compiling architecture rtl of mem
+-- Compiling entity andg2
+-- Compiling architecture dataflow of andg2
+-- Compiling entity xorg2
+-- Compiling architecture dataflow of xorg2
+-- Compiling entity invg
+-- Compiling architecture dataflow of invg
+-- Compiling entity mux_32t1
+-- Compiling architecture dataflow of mux_32t1
+-- Compiling entity mux4t1_N
+-- Compiling architecture structural of mux4t1_N
+-- Compiling entity mux2t1_N
+-- Compiling architecture structural of mux2t1_N
+-- Compiling entity mux2t1
+-- Compiling architecture structure of mux2t1
+vcom: End time: 17:31:05 on Oct 28,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 4

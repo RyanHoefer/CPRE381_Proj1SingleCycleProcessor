@@ -177,7 +177,7 @@ architecture structureTopLevel of RISCV_Processor is
          s_selectByteToStore : std_logic_vector(1 downto 0);
 
   signal s_sign, s_dir, s_arith,
-         s_storeHalfWordSelect : std_logic;
+         s_storeHalfWordSelect, s_unsigned : std_logic;
 
   signal s_selectedByte : std_logic_vector(7 downto 0);
   signal s_selectedHalf : std_logic_vector(15 downto 0);
@@ -274,7 +274,7 @@ begin
       i_ImmType     => ImmType,
       o_Immediate   => pc_addr_imm
     );
-
+	s_unsigned <= not s_sign;
   -- ALU
   ALU_inst: ALU
     generic map(N => N)
@@ -285,7 +285,7 @@ begin
       i_selectOutput => s_selectAluOut,
       i_aluSrc       => ALUSrc,
       i_addSub       => ALUControl,
-      i_unsigned     => not s_sign,
+      i_unsigned     => s_unsigned,
       i_dir          => s_dir,
       i_arith        => s_arith,
       alu_out        => aluResult
