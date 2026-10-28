@@ -12,7 +12,7 @@ entity barrelShifter is
 
 end barrelShifter;
 -- architecture
-architecture barrelShifterArc of barrelShifter is
+architecture barrelShifter of barrelShifter is
 
 
     component mux2t1_N is
@@ -67,7 +67,7 @@ thirdMux : mux2t1_N
               o_O => thirdToFourth);
 
 fourthMux : mux2t1_N
-    generic map(N => 24)
+    generic map(N => 32)
     port map (i_S => i_amt(3),
               i_D0 => thirdToFourth,
               i_D1 => extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit &  thirdToFourth(31 downto 8),
@@ -90,4 +90,4 @@ selectOutputMux : mux2t1_N
 
 
    
-end barrelShifterArc;
+end barrelShifter;

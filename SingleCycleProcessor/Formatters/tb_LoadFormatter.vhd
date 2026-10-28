@@ -28,10 +28,10 @@ architecture mixed of tb_LoadFormatter is
                         := (others => '0');
 
 
-       signal addr       : std_logic_vector(1 downto 0);
-       signal dataSize   : std_logic_vector(1 downto 0);
-       signal s_sign       : std_logic;
-      signal  loadData   : std_logic_vector(31 downto 0);
+    signal addr     : std_logic_vector(1 downto 0) := (others => '0');
+    signal dataSize : std_logic_vector(1 downto 0) := (others => '0');
+    signal s_sign   : std_logic := '0';
+    signal  loadData   : std_logic_vector(31 downto 0);
 
 begin
 
@@ -217,7 +217,7 @@ begin
         -- END OF TESTING
         --------------------------------------------------
 
-        report "All 2 test cases completed."
+        report "All 18 test cases completed."
             severity note;
 
         finish;
