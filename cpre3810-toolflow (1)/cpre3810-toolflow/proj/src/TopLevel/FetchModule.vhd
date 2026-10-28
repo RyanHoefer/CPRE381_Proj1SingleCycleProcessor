@@ -40,11 +40,16 @@ end component;
 
    
 
-signal pc_current, pc_next, base_pc, pcPlusFour, base_plus_imm, jalr_clear_zero: std_logic_vector(31 downto 0);
+signal pc_current, pc_next, base_pc, pcPlusFour, base_plus_imm, jalr_clear_zero, pc_reg_out, pc_reg_in: std_logic_vector(31 downto 0);
 
 signal equal, less_than_unsigned, less_than_signed, branch_condition, branch_taken : std_logic;
 
 signal branch, jal, jalr : std_logic;
+
+constant PC_RESET_VALUE : STD_LOGIC_VECTOR(31 downto 0) := x"00400000";
+
+
+
 
 begin
 
@@ -88,14 +93,18 @@ with i_instruction(14 downto 12) select
 -- and gate with the instruction bit that specifies whether the instruction is branch or not 
 branch_taken <= branch and branch_condition;
 
+pc_reg_in <= pc_next xor PC_RESET_VALUE;
 
 PC : register_N
     generic map(N => 32)
-        port map (  REG_IN => pc_next,
+        port map (  REG_IN => pc_reg_in,
                     LD => '1',
                     CLK => CLK,
                     RST => reset,
-                    REG_OUT => pc_current);
+                    REG_OUT => pc_reg_out);
+
+pc_current <= pc_reg_out xor PC_RESET_VALUE;
+
 
 
 IncrementPCPlusFour : adder_N
