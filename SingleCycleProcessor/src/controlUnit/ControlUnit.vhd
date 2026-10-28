@@ -49,7 +49,9 @@ begin
 
         case opcode is
 
+            -- ========================================
             -- R-type instructions
+            -- ========================================
             when "0110011" =>
                 case funct3 is
 
@@ -87,9 +89,18 @@ begin
 
                     when "010" =>
                         if funct7 = "0000000" then
-                            -- SLT
+                            -- SLT (signed)
                             o_selectAluOut <= "101";
                             o_sign         <= '1';
+                            o_RegWrite     <= '1';
+                        end if;
+
+                    -- FIX: Added missing SLTU instruction
+                    when "011" =>
+                        if funct7 = "0000000" then
+                            -- SLTU (unsigned)
+                            o_selectAluOut <= "101";
+                            o_sign         <= '0';
                             o_RegWrite     <= '1';
                         end if;
 
@@ -121,7 +132,9 @@ begin
                         null;
                 end case;
 
+            -- ========================================
             -- I-type arithmetic and logic
+            -- ========================================
             when "0010011" =>
                 o_ALUSrc  <= '1';
                 o_ImmType <= "000";
@@ -148,13 +161,13 @@ begin
                         o_RegWrite     <= '1';
 
                     when "010" =>
-                        -- SLTI
+                        -- SLTI (signed)
                         o_selectAluOut <= "101";
                         o_sign         <= '1';
                         o_RegWrite     <= '1';
 
                     when "011" =>
-                        -- SLTIU
+                        -- SLTIU (unsigned)
                         o_selectAluOut <= "101";
                         o_sign         <= '0';
                         o_RegWrite     <= '1';
@@ -187,15 +200,18 @@ begin
                         null;
                 end case;
 
+            -- ========================================
             -- Load instructions
+            -- ========================================
             when "0000011" =>
-                o_ALUSrc       <= '1';
-                o_ALUControl   <= '0';
-                o_ImmType      <= "000";
-                o_ResultSrc    <= "001";
-                o_selectAluOut <= "000";
+                o_ALUSrc        <= '1';
+                o_ALUControl    <= '0';
+                o_ImmType       <= "000";
+                o_ResultSrc     <= "001";
+                o_selectAluOut  <= "000";
 
                 case funct3 is
+
                     when "010" =>
                         -- LW
                         o_selectDataSize <= "00";
@@ -229,14 +245,17 @@ begin
                         null;
                 end case;
 
+            -- ========================================
             -- Store instructions
+            -- ========================================
             when "0100011" =>
-                o_ALUSrc       <= '1';
-                o_ALUControl   <= '0';
-                o_ImmType      <= "001";
-                o_selectAluOut <= "000";
+                o_ALUSrc        <= '1';
+                o_ALUControl    <= '0';
+                o_ImmType       <= "001";
+                o_selectAluOut  <= "000";
 
                 case funct3 is
+
                     when "010" =>
                         -- SW
                         o_selectDataSize <= "00";
@@ -256,21 +275,26 @@ begin
                         null;
                 end case;
 
+            -- ========================================
             -- Branch instructions
+            -- ========================================
             when "1100011" =>
                 o_ImmType <= "011";
 
                 -- Branch conditions are decoded
-                -- directly inside Ryan's FetchModule.
-                -- No register or memory write.
+                -- inside FetchModule.
 
+            -- ========================================
             -- JAL
+            -- ========================================
             when "1101111" =>
                 o_ImmType   <= "100";
                 o_ResultSrc <= "011";
                 o_RegWrite  <= '1';
 
+            -- ========================================
             -- JALR
+            -- ========================================
             when "1100111" =>
                 if funct3 = "000" then
                     o_ImmType   <= "000";
@@ -278,19 +302,25 @@ begin
                     o_RegWrite  <= '1';
                 end if;
 
+            -- ========================================
             -- LUI
+            -- ========================================
             when "0110111" =>
                 o_ImmType   <= "010";
                 o_ResultSrc <= "010";
                 o_RegWrite  <= '1';
 
+            -- ========================================
             -- AUIPC
+            -- ========================================
             when "0010111" =>
                 o_ImmType   <= "010";
                 o_ResultSrc <= "100";
                 o_RegWrite  <= '1';
 
-            -- WFI: halt is detected in the top-level
+            -- ========================================
+            -- WFI
+            -- ========================================
             when "1110011" =>
                 null;
 
