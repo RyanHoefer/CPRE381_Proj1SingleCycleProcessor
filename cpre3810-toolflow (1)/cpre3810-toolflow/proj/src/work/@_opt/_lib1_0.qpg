@@ -1,0 +1,1613 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2026.2 2026.05, May 18 2026
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src
+T_opt
+!i145 1
+!i144 0
+!s110 1793230204
+V;AKB3hO[S5`5ZZC4fIoRm1
+04 16 5 work tb_loadformatter mixed 1
+=1-005056b6281b-6ae2857b-b5926-a769
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+!i152 0
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2026.2;84
+Eadder
+Z2 w1793214223
+Z3 DPx4 ieee 11 numeric_std 0 22 m=kP7jRZW]kY;6MU;0z<22
+Z4 DPx3 std 6 textio 0 22 <UlP6K1@RDQa_MJ[:UEnP2
+Z5 DPx4 ieee 14 std_logic_1164 0 22 TDbGXLH=YSoj9JRY2gkNY0
+!i122 3
+R1
+Z6 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/Adder.vhd
+Z7 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/Adder.vhd
+l0
+L26 1
+V^7N`<I^9=57]8kAZnoHSb3
+!s100 kfPW^o^7FEWRe`V][JAj@0
+Z8 OL;C;2026.2;84
+32
+Z9 !s110 1793229604
+!i10b 1
+!i113 0
+Z10 o-work work
+Z11 tExplicit 1 CvgOpt 0
+Abehavior
+R3
+R4
+R5
+DEx4 work 5 adder 0 22 ^7N`<I^9=57]8kAZnoHSb3
+!i122 3
+l40
+L39 11
+V3>8I6MzOK7J3WjGkbWMVQ1
+!s100 kZHIb07f4nb8HBjm2M1;`1
+R8
+32
+R9
+!i10b 1
+!i113 0
+R10
+R11
+Eadder_n
+R2
+R4
+R5
+!i122 4
+R1
+Z12 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/adder_N.vhd
+Z13 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/adder_N.vhd
+l0
+Z14 L17 1
+VcGWc82c?ncAbf31<PFUzL3
+!s100 >B@4P_bd08]lOB179G=530
+R8
+32
+Z15 !s110 1793229605
+!i10b 1
+!i113 0
+R10
+R11
+Astructural
+R4
+R5
+DEx4 work 7 adder_n 0 22 cGWc82c?ncAbf31<PFUzL3
+!i122 4
+l39
+L28 29
+VCYNPkAC@=g4;89O25SnCT1
+!s100 E<RQdB_RUGe9UPn3<Wcj22
+R8
+32
+R15
+!i10b 1
+!i113 0
+R10
+R11
+Eaddsub_n_for_alu
+Z16 w1793161545
+R4
+R5
+!i122 5
+R1
+Z17 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/addsub_N_for_alu.vhd
+Z18 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/addsub_N_for_alu.vhd
+l0
+R14
+VF`6OPn<81HFl@0CFNh`PU2
+!s100 Gf=FCf=^MoChSPhOh6H0L3
+R8
+32
+R15
+!i10b 1
+!i113 0
+R10
+R11
+Astructural
+R4
+R5
+DEx4 work 16 addsub_n_for_alu 0 22 F`6OPn<81HFl@0CFNh`PU2
+!i122 5
+l58
+L28 54
+VcnRb]9^[`KVB4Kj:D84SU1
+!s100 G5[ZOeX_3n8>db<Q2e[ZI3
+R8
+32
+R15
+!i10b 1
+!i113 0
+R10
+R11
+Ealu
+R16
+R3
+R4
+R5
+!i122 6
+R1
+Z19 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/ALU.vhd
+Z20 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/ALU.vhd
+l0
+L18 1
+VOHP4SLRS2aF0aX5zAgIbo2
+!s100 <[AM<M082FK@TjMW<Cl;21
+R8
+32
+Z21 !s110 1793229606
+!i10b 1
+!i113 0
+R10
+R11
+Astructural_alu
+R3
+R4
+R5
+DEx4 work 3 alu 0 22 OHP4SLRS2aF0aX5zAgIbo2
+!i122 6
+l95
+L34 121
+V;T1P>M2J=:`CIh;T2IM4B2
+!s100 ]2KS@:>nEREED==Uj74CM3
+R8
+32
+R21
+!i10b 1
+!i113 0
+R10
+R11
+Eand_n
+R16
+R3
+R4
+R5
+!i122 7
+R1
+Z22 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/and_N.vhd
+Z23 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/and_N.vhd
+l0
+L5 1
+V1<H?ec[T1R`Y74=30LQSZ2
+!s100 @jLEQQ]?[g^>Cn[A6CI?Z3
+R8
+32
+Z24 !s110 1793229607
+!i10b 1
+!i113 0
+R10
+R11
+Astructural
+R3
+R4
+R5
+DEx4 work 5 and_n 0 22 1<H?ec[T1R`Y74=30LQSZ2
+!i122 7
+l25
+Z25 L16 19
+V>VkDm^MQXVhXaW736oAS=1
+!s100 c=<h^914SmjeF5oe_;AVB2
+R8
+32
+R24
+!i10b 1
+!i113 0
+R10
+R11
+Eandg2
+R2
+R4
+R5
+!i122 13
+R1
+Z26 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/andg2.vhd
+Z27 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/andg2.vhd
+l0
+Z28 L23 1
+VQ@<<<@nlJ=eiIl4BJDFzW2
+!s100 YT?bGzEmcFo:DlnoC^B4_0
+R8
+32
+Z29 !s110 1793229614
+!i10b 1
+!i113 0
+R10
+R11
+Adataflow
+R4
+R5
+DEx4 work 5 andg2 0 22 Q@<<<@nlJ=eiIl4BJDFzW2
+!i122 13
+l32
+Z30 L31 6
+VJVOzCk?IH:iJ5bCRU`CK13
+!s100 I`@Z@UBObS]<7m8bPgKUS1
+R8
+32
+R29
+!i10b 1
+!i113 0
+R10
+R11
+Ebarrelshifter
+R16
+R4
+R5
+!i122 8
+R1
+Z31 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/barrelshifter_Tariq.vhd
+Z32 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/barrelshifter_Tariq.vhd
+l0
+L7 1
+V0M?=6iS;jHF3VoK^HCh<@3
+!s100 i8cUGFgoSSdkmc]PgoQYd3
+R8
+32
+Z33 !s110 1793229608
+!i10b 1
+!i113 0
+R10
+R11
+Abarrelshifterarc
+R4
+R5
+Z34 DEx4 work 13 barrelshifter 0 22 0M?=6iS;jHF3VoK^HCh<@3
+!i122 8
+l47
+L19 124
+VNFm?@09_;d<X[>EHm:djc0
+!s100 P2G=nDZ2;OHc6GOO7;N]d3
+R8
+32
+R33
+!i10b 1
+!i113 0
+R10
+R11
+Econtrolunit
+R2
+R4
+R5
+!i122 19
+R1
+Z35 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ControlUnit/ControlUnit_Tariq.vhd
+Z36 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ControlUnit/ControlUnit_Tariq.vhd
+l0
+L5 1
+VaoXi_8H_@_<o:XORZ5Z:J0
+!s100 ajA;=z=lR=adWjPfPWC5`1
+R8
+32
+Z37 !s110 1793229622
+!i10b 1
+!i113 0
+R10
+R11
+Adataflow
+R4
+R5
+Z38 DEx4 work 11 controlunit 0 22 aoXi_8H_@_<o:XORZ5Z:J0
+!i122 19
+l76
+L24 294
+VY0JT861k[In5<;UUUX4:S3
+!s100 Y`V]9gdRLBJ39AWJ9PXGQ3
+R8
+32
+R37
+!i10b 1
+!i113 0
+R10
+R11
+Edecoder_5t32
+R2
+R4
+R5
+!i122 29
+R1
+Z39 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RegisterFile/decoder_5t32.vhd
+Z40 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RegisterFile/decoder_5t32.vhd
+l0
+R14
+V5Y9kmfZf9<9iOCPzGmD7>0
+!s100 M:0SfIf`8^NgnH`d52EGZ3
+R8
+32
+Z41 !s110 1793229647
+!i10b 1
+!i113 0
+R10
+R11
+Adataflow
+R4
+R5
+DEx4 work 12 decoder_5t32 0 22 5Y9kmfZf9<9iOCPzGmD7>0
+!i122 29
+l23
+L22 38
+VP0h;N3;f_L=:]S6ib9dUn3
+!s100 R2e]PI4k`ME[8<oAn4=i@0
+R8
+32
+R41
+!i10b 1
+!i113 0
+R10
+R11
+Edffg
+R2
+R4
+R5
+!i122 14
+R1
+Z42 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/dffg.vhd
+Z43 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/dffg.vhd
+l0
+R28
+V<]b9Vm3e`GAN;Cnj:57L>2
+!s100 T4gcXQGMCgKJbn8XhBM;b0
+R8
+32
+Z44 !s110 1793229615
+!i10b 1
+!i113 0
+R10
+R11
+Amixed
+R4
+R5
+DEx4 work 4 dffg 0 22 <]b9Vm3e`GAN;Cnj:57L>2
+!i122 14
+l37
+L33 29
+V`CHXPZKVEek`3gFWL_zFm2
+!s100 iOdlTUid@@]UimFK_53^C1
+R8
+32
+R44
+!i10b 1
+!i113 0
+R10
+R11
+Eextender_n
+R2
+R4
+R5
+!i122 1
+R1
+Z45 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/extender_N.vhd
+Z46 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/extender_N.vhd
+l0
+R14
+V@jCQnD_KL0L0eDWWJIhl=1
+!s100 4M[]2jWAZ>jn:7I79I1[00
+R8
+32
+Z47 !s110 1793229589
+!i10b 1
+!i113 0
+R10
+R11
+Adataflow
+R4
+R5
+DEx4 work 10 extender_n 0 22 @jCQnD_KL0L0eDWWJIhl=1
+!i122 1
+l27
+L26 9
+VgE>lCgooDZc1Kl7@`n0zX1
+!s100 ORgM^]Y:?ldbDXSoE=SOf1
+R8
+32
+R47
+!i10b 1
+!i113 0
+R10
+R11
+Efetchmodule
+R2
+R5
+R4
+R3
+!i122 20
+R1
+Z48 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Fetch/FetchModule.vhd
+Z49 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Fetch/FetchModule.vhd
+l0
+L6 1
+V:R5WOchPS3`X<Wb>nWf]M3
+!s100 5WFZH9MY5J:b]o5I;Tl2J3
+R8
+32
+Z50 !s110 1793229626
+!i10b 1
+!i113 0
+R10
+R11
+Astructural
+R5
+R4
+R3
+DEx4 work 11 fetchmodule 0 22 :R5WOchPS3`X<Wb>nWf]M3
+!i122 20
+l54
+L22 109
+VbRlA<7O4f<A7Q7V2L=`I>1
+!s100 bLoehH[>NVZnV9ice[O]f0
+R8
+32
+R50
+!i10b 1
+!i113 0
+R10
+R11
+Efulladder
+R2
+R4
+R5
+!i122 9
+R1
+Z51 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/fulladder.vhd
+Z52 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/fulladder.vhd
+l0
+R14
+VcRmVS<kYHGHLZN<HcR:ai2
+!s100 cT>B:jZLKSCDXV3e`L<UK2
+R8
+32
+Z53 !s110 1793229609
+!i10b 1
+!i113 0
+R10
+R11
+Astructural
+R4
+R5
+DEx4 work 9 fulladder 0 22 cRmVS<kYHGHLZN<HcR:ai2
+!i122 9
+l45
+L26 45
+VMNd>3:9kb>hNEXY@HZY7i1
+!s100 M_T>]Ok[zFamU^:RG;TK13
+R8
+32
+R53
+!i10b 1
+!i113 0
+R10
+R11
+Eimmediategenerator
+R2
+R4
+R5
+!i122 24
+R1
+Z54 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ImmediateGenerator/ImmediateGenerator.vhd
+Z55 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ImmediateGenerator/ImmediateGenerator.vhd
+l0
+L5 1
+ViTY3>g[^IfE;RYE[BZlMd1
+!s100 ]`N[0VPD6[;f<iJg^L7kf1
+R8
+32
+Z56 !s110 1793229639
+!i10b 1
+!i113 0
+R10
+R11
+Abehavioral
+R4
+R5
+DEx4 work 18 immediategenerator 0 22 iTY3>g[^IfE;RYE[BZlMd1
+!i122 24
+l14
+L13 54
+VoF@?7UJD0kG1T[8TcLll83
+!s100 LA2kK]b6nem[3RZY]LG;z3
+R8
+32
+R56
+!i10b 1
+!i113 0
+R10
+R11
+Einvg
+R2
+R4
+R5
+!i122 15
+R1
+Z57 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/invg.vhd
+Z58 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/invg.vhd
+l0
+R28
+VQ?6hb9ePk@>kZZ9k]hNSO3
+!s100 _XK?_^5z0Rm1<k12?;5R?2
+R8
+32
+Z59 !s110 1793229616
+!i10b 1
+!i113 0
+R10
+R11
+Adataflow
+R4
+R5
+DEx4 work 4 invg 0 22 Q?6hb9ePk@>kZZ9k]hNSO3
+!i122 15
+l31
+L30 6
+Vch>li:oKYZkCO5]GamViK1
+!s100 bk7I76o8e1LURdoZEQb8H0
+R8
+32
+R59
+!i10b 1
+!i113 0
+R10
+R11
+Eloadformatter
+Z60 w1793212342
+R4
+R5
+!i122 21
+R1
+Z61 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Formatters/LoadFormatter.vhd
+Z62 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Formatters/LoadFormatter.vhd
+l0
+L4 1
+V_>zE?bJm=7^>L9k^aMZBX1
+!s100 JXLRhbES9c43GRA?2k0`N1
+R8
+32
+Z63 !s110 1793229632
+!i10b 1
+!i113 0
+R10
+R11
+Astructural
+R4
+R5
+Z64 DEx4 work 13 loadformatter 0 22 _>zE?bJm=7^>L9k^aMZBX1
+!i122 21
+l53
+L14 92
+V<61F3GJ;U:?90giPh:18f0
+!s100 QhU@B9VEnC58TA3HK]7zA3
+R8
+32
+R63
+!i10b 1
+!i113 0
+R10
+R11
+Emem
+R2
+R3
+R4
+R5
+!i122 16
+R1
+Z65 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/mem.vhd
+Z66 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/mem.vhd
+l0
+L8 1
+VlCAXd9ViN1OA1BDIKS8@Q0
+!s100 <FE^5`c6G[DN?g3EGE^:f0
+R8
+32
+R59
+!i10b 1
+!i113 0
+R10
+R11
+Artl
+R3
+R4
+R5
+DEx4 work 3 mem 0 22 lCAXd9ViN1OA1BDIKS8@Q0
+!i122 16
+l40
+L29 39
+VUG]iNzD_>URZW`fJ>8@lZ0
+!s100 M8@fCBfhYoIU@PkXS=DFb3
+R8
+32
+R59
+!i10b 1
+!i113 0
+R10
+R11
+Emux2t1
+R2
+R3
+R4
+R5
+!i122 25
+R1
+Z67 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux2t1.vhd
+Z68 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux2t1.vhd
+l0
+L5 1
+VAb`zjX@IM488J9HhI7BOo0
+!s100 U_SfQYJDmH2a9B^m7zXVK1
+R8
+32
+Z69 !s110 1793229642
+!i10b 1
+!i113 0
+R10
+R11
+Astructure
+R3
+R4
+R5
+DEx4 work 6 mux2t1 0 22 Ab`zjX@IM488J9HhI7BOo0
+!i122 25
+l39
+L14 44
+V_h?F1:;k9?bTjnCFKHlIz1
+!s100 <1GI?T@4^0WQLH;768VZ43
+R8
+32
+R69
+!i10b 1
+!i113 0
+R10
+R11
+Emux2t1_n
+R2
+R4
+R5
+!i122 26
+R1
+Z70 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux2t1_N.vhd
+Z71 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux2t1_N.vhd
+l0
+L21 1
+VVXi7X3UiclkB06DNQaZ]K0
+!s100 6WH1kRd<eiGeF78;iL:LL0
+R8
+32
+R69
+!i10b 1
+!i113 0
+R10
+R11
+Astructural
+R4
+R5
+DEx4 work 8 mux2t1_n 0 22 VXi7X3UiclkB06DNQaZ]K0
+!i122 26
+l39
+L30 21
+V:Qbl?_l?a5g]hoBk[[Ymk3
+!s100 C[H9ST2aIzLmhQj_c;20B0
+R8
+32
+R69
+!i10b 1
+!i113 0
+R10
+R11
+Emux4t1_n
+R2
+R4
+R5
+!i122 27
+R1
+Z72 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux4t1_N.vhd
+Z73 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux4t1_N.vhd
+l0
+L4 1
+VSE?Rk4G26R>[E7NcVa2:T0
+!s100 T<6^0`WE@?6@AkEA6f^:20
+R8
+32
+Z74 !s110 1793229643
+!i10b 1
+!i113 0
+R10
+R11
+Astructural
+R4
+R5
+DEx4 work 8 mux4t1_n 0 22 SE?Rk4G26R>[E7NcVa2:T0
+!i122 27
+l30
+L16 44
+Vc1R1_g5=fYfZ1GO^gh3jP3
+!s100 <mzgG0AG4XND[OG9c?Yma1
+R8
+32
+R74
+!i10b 1
+!i113 0
+R10
+R11
+Emux_32t1
+R2
+Z75 DPx4 work 9 mux_types 0 22 >QZAYTW_^>cANdOb1Gk?40
+R3
+R4
+R5
+!i122 28
+R1
+Z76 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux_32t1.vhd
+Z77 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux_32t1.vhd
+l0
+R28
+V[<WW=A6U:OTN8;fbz<gJC0
+!s100 <>k1iL]hfX7RSDY[ZK`XO2
+R8
+32
+Z78 !s110 1793229644
+!i10b 1
+!i113 0
+R10
+R11
+Adataflow
+R75
+R3
+R4
+R5
+DEx4 work 8 mux_32t1 0 22 [<WW=A6U:OTN8;fbz<gJC0
+!i122 28
+l30
+L29 4
+V:R^bCB2>JaK4<J4@KU7aV3
+!s100 mgWf]ZPc:VllW`7h6fzWd3
+R8
+32
+R78
+!i10b 1
+!i113 0
+R10
+R11
+Pmux_types
+R4
+R5
+!i122 0
+R2
+R1
+Z79 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/RISCV_types.vhd
+Z80 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/RISCV_types.vhd
+l0
+L15 16
+V>QZAYTW_^>cANdOb1Gk?40
+!s100 iekLLU@P5T4EEbIh<FekS0
+R8
+32
+Z81 !s110 1793229581
+!i10b 1
+!i113 0
+R10
+R11
+Eonescomp_n
+R2
+R4
+R5
+!i122 12
+R1
+Z82 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/onescomp_N.vhd
+Z83 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/onescomp_N.vhd
+l0
+R14
+V:gW8ogom>5k_;XbnX<A_83
+!s100 GbM;zbFaD6chJN_eZz_bn2
+R8
+32
+Z84 !s110 1793229611
+!i10b 1
+!i113 0
+R10
+R11
+Astructural
+R4
+R5
+DEx4 work 10 onescomp_n 0 22 :gW8ogom>5k_;XbnX<A_83
+!i122 12
+l32
+L25 17
+VdB[IWMEOX4U3oQQ_0hP8P1
+!s100 ;3SQIABO3Ri?Gn[D3E>OQ0
+R8
+32
+R84
+!i10b 1
+!i113 0
+R10
+R11
+Eor_n
+R16
+R3
+R4
+R5
+!i122 11
+R1
+Z85 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/or_N.vhd
+Z86 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/or_N.vhd
+l0
+L5 1
+VgH27n;NOhH93=5DDdV:X?0
+!s100 >KS;jFkn=Kmadd572XBMH1
+R8
+32
+Z87 !s110 1793229610
+!i10b 1
+!i113 0
+R10
+R11
+Astructural
+R3
+R4
+R5
+DEx4 work 4 or_n 0 22 gH27n;NOhH93=5DDdV:X?0
+!i122 11
+l25
+R25
+VJFi1B>3ZkPYkb7[FNkfQH2
+!s100 ;R<CRih[>;z56Me[SG`hQ2
+R8
+32
+R87
+!i10b 1
+!i113 0
+R10
+R11
+Eorg2
+R2
+R4
+R5
+!i122 17
+R1
+Z88 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/org2.vhd
+Z89 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/org2.vhd
+l0
+R28
+V[C`FCj=kL0CTBYLlbjJzD3
+!s100 bGQ1F9eW^Q17OoL9h4g7z2
+R8
+32
+Z90 !s110 1793229617
+!i10b 1
+!i113 0
+R10
+R11
+Adataflow
+R4
+R5
+DEx4 work 4 org2 0 22 [C`FCj=kL0CTBYLlbjJzD3
+!i122 17
+l32
+R30
+VNHGn>Kh:]BEh4o]ImiG<d3
+!s100 h5_AzR3TdRA0a_K=dQ>mI2
+R8
+32
+R90
+!i10b 1
+!i113 0
+R10
+R11
+Eregister_file
+R2
+R75
+R4
+R5
+!i122 30
+R1
+Z91 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RegisterFile/register_file.vhd
+Z92 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RegisterFile/register_file.vhd
+l0
+L6 1
+VAmo5LGCRLmY<e;mc>35=i3
+!s100 R1D380@ZaDBEk3B_=251P2
+R8
+32
+Z93 !s110 1793229648
+!i10b 1
+!i113 0
+R10
+R11
+Amixed
+R75
+R4
+R5
+DEx4 work 13 register_file 0 22 Amo5LGCRLmY<e;mc>35=i3
+!i122 30
+l42
+L17 54
+V2BGc5SnZmmH<>Afon@Vnb2
+!s100 STLL8JKYTfKEab=5J:O]92
+R8
+32
+R93
+!i10b 1
+!i113 0
+R10
+R11
+Eregister_n
+R2
+R4
+R5
+!i122 31
+R1
+Z94 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RegisterFile/regism255
+K4
+z2
+!s8c locked
+!s11f vlog 2026.2 2026.05, May 18 2026
+!s11e vcom 2026.2 2026.05, May 18 2026
+!s95 MTI
+cModel Technology Builtin Library
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+d/bata/qbnr/buildsites/2026.p/builds/linux/modeltech
+/electrical_systems
+Z0 DPx4 ieee 9 math_real 0 22 gX5]bdK:=X>G2OzF9:A2j0
+Z1 DPx4 ieee 21 fundamental_constants 0 22 ZR5;S2^@0Gf31K>GbdPjD0
+35
+Z2 !s110 1779126996
+!i10b 1
+Z3 OL;C;2026.2;84
+!i122 14
+Z4 w1779126429
+Z5 d$QUESTASIM_DIR/..
+Z6 8vhdl_src/ieee/ieee_ams_context.vhd
+Z7 Fvhdl_src/ieee/ieee_ams_context.vhd
+l0
+L218 88
+Vg?XHkUFEGK<FiEz02jfga2
+!s100 g?XHkUFEGK<FiEz02jfga2
+Z8 OE;C;2026.2;84
+!i113 1
+Z9 o-suppress 15011 -debuglib -ams07 -work ieee -dirpath {$QUESTASIM_DIR/..} -nowarn 3
+Z10 tExplicit 1 CvgOpt 0
+/energy_systems
+R0
+R1
+35
+R2
+!i10b 1
+R3
+!i122 14
+R4
+R5
+R6
+R7
+l0
+L145 28
+V`1oa]EFkUH]k657ATPzi71
+!s100 `1oa]EFkUH]k657ATPzi71
+R8
+!i113 1
+R9
+R10
+Pfixed_float_types
+33
+Z11 !s110 1779126995
+!i10b 1
+R3
+!i122 8
+R4
+R5
+8vhdl_src/ieee/fixed_float_types.vhdl
+Fvhdl_src/ieee/fixed_float_types.vhdl
+l0
+L43 19
+Vj<WD5SZ6`I4KC;8P]h@_10
+!s100 j<WD5SZ6`I4KC;8P]h@_10
+R8
+!i113 1
+Z12 o-debuglib -2008 -work ieee -dirpath {$QUESTASIM_DIR/..} -nowarn 3
+R10
+Pfixed_generic_pkg
+Z13 DPx4 ieee 17 fixed_float_types 0 22 j<WD5SZ6`I4KC;8P]h@_10
+Z14 DPx4 ieee 11 numeric_std 0 22 m=kP7jRZW]kY;6MU;0z<22
+Z15 DPx4 ieee 14 std_logic_1164 0 22 TDbGXLH=YSoj9JRY2gkNY0
+Z16 DPx3 std 6 textio 0 22 <UlP6K1@RDQa_MJ[:UEnP2
+33
+b1
+!i109 1
+R11
+!i10b 1
+R3
+b1
+!i109 1
+!i122 9
+R4
+R5
+8vhdl_src/ieee/fixed_generic_pkg.vhdl
+Fvhdl_src/ieee/fixed_generic_pkg.vhdl
+l0
+L49 1417
+VWLhW>c;A5KzAo?lA3@gjJ1
+!s100 WLhW>c;A5KzAo?lA3@gjJ1
+R8
+b1
+!i109 1
+!i113 1
+R12
+R10
+Bbody
+DPx4 work 17 fixed_generic_pkg 0 22 WLhW>c;A5KzAo?lA3@gjJ1
+R0
+R13
+R14
+R15
+R16
+33
+!i109 1
+R11
+!i10b 1
+R3
+!i109 1
+!i122 9
+8vhdl_src/ieee/fixed_generic_pkg-body.vhdl
+Fvhdl_src/ieee/fixed_generic_pkg-body.vhdl
+l0
+L46 6325
+V]3k3M4<hVHOoT19ff?Yf[0
+!s100 ]3k3M4<hVHOoT19ff?Yf[0
+R8
+!i109 1
+!i113 1
+R12
+R10
+Pfixed_pkg
+R13
+R14
+R15
+R16
+Z17 DBx4 ieee 17 fixed_generic_pkg 4 body 22 ]3k3M4<hVHOoT19ff?Yf[0
+33
+!i109 2
+R11
+!i10b 1
+R3
+!i109 2
+!i122 10
+R4
+R5
+8vhdl_src/ieee/fixed_pkg.vhdl
+Fvhdl_src/ieee/fixed_pkg.vhdl
+l0
+Z18 L45 1
+VM^`[eC@i[F0R@5Nl1zB2G1
+!s100 M^`[eC@i[F0R@5Nl1zB2G1
+R8
+!i109 2
+!i113 1
+R12
+R10
+Pfloat_generic_pkg
+R17
+R13
+R14
+R15
+R16
+33
+b1
+!i109 1
+R11
+!i10b 1
+R3
+b1
+!i109 1
+!i122 11
+R4
+R5
+8vhdl_src/ieee/float_generic_pkg.vhdl
+Fvhdl_src/ieee/float_generic_pkg.vhdl
+l0
+L49 1200
+Vn5nHi9dYQ;k;Oi;Ff=G[42
+!s100 n5nHi9dYQ;k;Oi;Ff=G[42
+R8
+b1
+!i109 1
+!i113 1
+R12
+R10
+Bbody
+DPx4 work 17 float_generic_pkg 0 22 n5nHi9dYQ;k;Oi;Ff=G[42
+R17
+R13
+R14
+R15
+R16
+33
+!i109 1
+R2
+!i10b 1
+R3
+!i109 1
+!i122 11
+8vhdl_src/ieee/float_generic_pkg-body.vhdl
+Fvhdl_src/ieee/float_generic_pkg-body.vhdl
+l0
+L43 5673
+VA@<Ne1dh<mV=4iJCgEk[83
+!s100 A@<Ne1dh<mV=4iJCgEk[83
+R8
+!i109 1
+!i113 1
+R12
+R10
+Pfloat_pkg
+DPx4 ieee 9 fixed_pkg 0 22 M^`[eC@i[F0R@5Nl1zB2G1
+R17
+R13
+R14
+R15
+R16
+DBx4 ieee 17 float_generic_pkg 4 body 22 A@<Ne1dh<mV=4iJCgEk[83
+33
+!i109 2
+R2
+!i10b 1
+R3
+!i109 2
+!i122 12
+R4
+R5
+8vhdl_src/ieee/float_pkg.vhdl
+Fvhdl_src/ieee/float_pkg.vhdl
+l0
+R18
+VQ^K`oHjQf1=DTYo_?SNAf2
+!s100 Q^K`oHjQf1=DTYo_?SNAf2
+R8
+!i109 2
+!i113 1
+R12
+R10
+/fluidic_systems
+R0
+R1
+35
+R2
+!i10b 1
+R3
+!i122 14
+R4
+R5
+R6
+R7
+l0
+L662 84
+V[;lHOj7EJ6d8P^[`gFlPb0
+!s100 [;lHOj7EJ6d8P^[`gFlPb0
+R8
+!i113 1
+R9
+R10
+/fundamental_constants
+R0
+35
+R2
+!i10b 1
+R3
+!i122 14
+R4
+R5
+R6
+R7
+l0
+L56 46
+VZR5;S2^@0Gf31K>GbdPjD0
+!s100 ZR5;S2^@0Gf31K>GbdPjD0
+R8
+!i113 1
+R9
+R10
+^#ieee_bit_context
+33
+Z19 !s110 1779126998
+!i10b 0
+R3
+R4
+!i122 23
+R5
+8vhdl_src/ieee/ieee_bit_context.vhd
+Fvhdl_src/ieee/ieee_bit_context.vhd
+l0
+L1 1
+V8;nmf^<<Q;TXX7lB^BofF3
+!s100 8;nmf^<<Q;TXX7lB^BofF3
+R8
+!i113 1
+Z20 o-debuglib -2008 -work ieee -dirpath {$QUESTASIM_DIR/..}
+R10
+^#ieee_std_context
+33
+R19
+!i10b 0
+R3
+R4
+!i122 24
+R5
+8vhdl_src/ieee/ieee_std_context.vhd
+Fvhdl_src/ieee/ieee_std_context.vhd
+l0
+L1 1
+V7m;SE_P[R@HSc<;N29LfO0
+!s100 7m;SE_P[R@HSc<;N29LfO0
+R8
+!i113 1
+R20
+R10
+Pmath_complex
+R0
+33
+b1
+Z21 !s110 1779126994
+!i10b 1
+R3
+b1
+!i122 5
+R4
+R5
+Z22 8vhdl_src/ieee/1076-2code.vhd
+Z23 Fvhdl_src/ieee/1076-2code.vhd
+l0
+L677 1032
+Z24 V<iVULlNIQSE_Oal3GOF4;2
+!s100 <iVULlNIQSE_Oal3GOF4;2
+R8
+b1
+!i113 1
+Z25 o-debuglib -2008 -mixedsvvh -work ieee -dirpath {$QUESTASIM_DIR/..} -nowarn 3
+R10
+Bbody
+DPx4 work 12 math_complex 0 22 <iVULlNIQSE_Oal3GOF4;2
+R0
+33
+R21
+!i10b 1
+R3
+!i122 5
+l0
+L3695 1551
+VmjZCeZRfFCcnK8j_zZ9FD1
+!s100 mjZCeZRfFCcnK8j_zZ9FD1
+R8
+!i113 1
+R25
+R10
+XMATH_COMPLEX__mti__sv__equiv__implct__pack
+Z26 DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
+R11
+R24
+r1
+!s85 0
+Z27 OL;L;2026.2;84
+R23
+I<iVULlNIQSE_Oal3GOF4;2
+!i10b 1
+!s100 G^<>09C`XFQDhz?dk^>k?3
+S1
+R5
+Z28 w1779126994
+8/bata/qbnr/buildsites/2026.p/builds/linux/modeltech/ieee/_data/exemptxyRO6I
+!i122 7
+Z29 L0 1 0
+Z30 OE;L;2026.2;84
+31
+!i113 1
+Z31 o-suppress 12110 -quiet -sv -work ieee -s -dirpath {$QUESTASIM_DIR/..} -internalacc -nolock -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z32 tCvgOpt 0
+n@m@a@t@h_@c@o@m@p@l@e@x__mti__sv__equiv__implct__pack
+Pmath_real
+33
+b1
+R21
+!i10b 1
+R3
+b1
+!i122 5
+R4
+R5
+R22
+R23
+l0
+L51 575
+Z33 VgX5]bdK:=X>G2OzF9:A2j0
+!s100 gX5]bdK:=X>G2OzF9:A2j0
+R8
+b1
+!i113 1
+R25
+R10
+Bbody
+DPx4 work 9 math_real 0 22 gX5]bdK:=X>G2OzF9:A2j0
+33
+R21
+!i10b 1
+R3
+!i122 5
+l0
+L1759 1884
+VC6]Y5K;BoHV3>c[V`@>Z02
+!s100 C6]Y5K;BoHV3>c[V`@>Z02
+R8
+!i113 1
+R25
+R10
+XMATH_REAL__mti__sv__equiv__implct__pack
+R26
+R11
+R33
+r1
+!s85 0
+R27
+R23
+IgX5]bdK:=X>G2OzF9:A2j0
+!i10b 1
+!s100 eZd;<nGJi48YI[hS;=3dS0
+S1
+R5
+R28
+8/bata/qbnr/buildsites/2026.p/builds/linux/modeltech/ieee/_data/exemptFHPqOi
+!i122 6
+R29
+R30
+31
+!i113 1
+R31
+R32
+n@m@a@t@h_@r@e@a@l__mti__sv__equiv__implct__pack
+/mechanical_systems
+R0
+R1
+35
+R2
+!i10b 1
+R3
+!i122 14
+R4
+R5
+R6
+R7
+l0
+L349 115
+V_F<D8EcD6`2^_l0aeiTm41
+!s100 _F<D8EcD6`2^_l0aeiTm41
+R8
+!i113 1
+R9
+R10
+Pnumeric_bit
+R16
+33
+b1
+R21
+!i10b 1
+R3
+b1
+!i122 1
+R4
+R5
+Z34 8vhdl_src/ieee/mti_numeric_bit.vhd
+Z35 Fvhdl_src/ieee/mti_numeric_bit.vhd
+l0
+L59 1967
+V=Q=?OZ=cEEe4;9Uk4I0Va0
+!s100 =Q=?OZ=cEEe4;9Uk4I0Va0
+R8
+b1
+!i113 1
+R12
+R10
+Bbody
+DPx4 work 11 numeric_bit 0 22 =Q=?OZ=cEEe4;9Uk4I0Va0
+R16
+33
+R21
+!i10b 1
+R3
+!i122 1
+l0
+L2079 2989
+VQB>i;:DBMe[APl04RS5cF3
+!s100 QB>i;:DBMe[APl04RS5cF3
+R8
+!i113 1
+R12
+R10
+Pnumeric_bit_unsigned
+33
+b1
+R21
+!i10b 1
+R3
+b1
+!i122 3
+R4
+R5
+Z36 8vhdl_src/ieee/mti_numeric_bit_unsigned.vhd
+Z37 Fvhdl_src/ieee/mti_numeric_bit_unsigned.vhd
+l0
+L53 732
+VfQPIgHhiDaHPI@GGmF4c92
+!s100 fQPIgHhiDaHPI@GGmF4c92
+R8
+b1
+!i113 1
+R12
+R10
+Bbody
+DPx4 work 20 numeric_bit_unsigned 0 22 fQPIgHhiDaHPI@GGmF4c92
+R16
+Z38 DPx4 ieee 11 numeric_bit 0 22 =Q=?OZ=cEEe4;9Uk4I0Va0
+33
+R21
+!i10b 1
+R3
+!i122 3
+l0
+L840 537
+VnVSD=ARbFJSQgci5YRnWT1
+!s100 nVSD=ARbFJSQgci5YRnWT1
+R8
+!i113 1
+R12
+R10
+Pnumeric_std
+R15
+R16
+33
+b1
+R21
+!i10b 1
+R3
+b1
+!i122 2
+R4
+R5
+Z39 8vhdl_src/ieee/mti_numeric_std.vhd
+Z40 Fvhdl_src/ieee/mti_numeric_std.vhd
+l0
+L69 2080
+Vm=kP7jRZW]kY;6MU;0z<22
+!s100 m=kP7jRZW]kY;6MU;0z<22
+R8
+b1
+!i113 1
+R12
+R10
+Bbody
+DPx4 work 11 numeric_std 0 22 m=kP7jRZW]kY;6MU;0z<22
+R15
+R16
+33
+R21
+!i10b 1
+R3
+!i122 2
+l0
+L2213 4026
+VZ5=?I2=j1]f2zDB3WTIQ21
+!s100 Z5=?I2=j1]f2zDB3WTIQ21
+R8
+!i113 1
+R12
+R10
+Pnumeric_std_unsigned
+R16
+R15
+33
+b1
+R21
+!i10b 1
+R3
+b1
+!i122 4
+R4
+R5
+Z41 8vhdl_src/ieee/mti_numeric_std_unsigned.vhd
+Z42 Fvhdl_src/ieee/mti_numeric_std_unsigned.vhd
+l0
+L55 719
+VL9z`>=>LNY9h8oAIomUKm3
+!s100 L9z`>=>LNY9h8oAIomUKm3
+R8
+b1
+!i113 1
+R12
+R10
+Bbody
+DPx4 work 20 numeric_std_unsigned 0 22 L9z`>=>LNY9h8oAIomUKm3
+R14
+R16
+R15
+33
+R21
+!i10b 1
+R3
+!i122 4
+l0
+L829 540
+VeOJ`:nc;DaI8h=UK0_jRL3
+!s100 eOJ`:nc;DaI8h=UK0_jRL3
+R8
+!i113 1
+R12
+R10
+/radiant_systems
+R0
+R1
+35
+R2
+!i10b 1
+R3
+!i122 14
+R4
+R5
+R6
+R7
+l0
+L507 29
+VIh@HH8zCVTWYiFhU25AaU0
+!s100 Ih@HH8zCVTWYiFhU25AaU0
+R8
+!i113 1
+R9
+R10
+Pstd_logic_1164
+R16
+33
+b1
+Z43 !s110 1779126993
+!i10b 1
+R3
+b1
+!i122 0
+d.
+Z44 8$QUESTASIM_DIR/../vhdl_src/ieee/stdlogic.vhd
+Z45 F$QUESTASIM_DIR/../vhdl_src/ieee/stdlogic.vhd
+l0
+L56 319
+VTDbGXLH=YSoj9JRY2gkNY0
+!s100 TDbGXLH=YSoj9JRY2gkNY0
+R8
+b1
+!i113 1
+Z46 o-debuglib -2008 -path {$QUESTASIM_DIR/../vhdl_src/ieee/stdlogic.vhd} -work ieee -dirpath {$QUESTASIM_DIR/..} -nowarn 3
+R10
+Bbody
+DPx4 work 14 std_logic_1164 0 22 TDbGXLH=YSoj9JRY2gkNY0
+R16
+33
+R43
+!i10b 1
+R3
+!i122 0
+l0
+L428 2020
+Vl04?HlDW[2l8B>11U_C7h2
+!s100 l04?HlDW[2l8B>11U_C7h2
+R8
+!i113 1
+R46
+R10
+Pstd_logic_a

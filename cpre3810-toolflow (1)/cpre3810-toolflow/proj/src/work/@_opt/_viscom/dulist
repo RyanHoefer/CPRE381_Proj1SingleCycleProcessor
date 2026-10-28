@@ -1,0 +1,13 @@
+1 4 org2 8 dataflow 110 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/work 1 65 0 0 7 0
+1 5 andg2 8 dataflow 110 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/work 1 65 0 0 7 0
+1 4 invg 8 dataflow 110 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/work 1 65 0 0 5 0
+1 6 mux2t1 9 structure 110 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/work 1 65 0 0 56 0
+1 8 mux2t1_n 10 structural 110 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/work 1 65 0 0 65 0
+1 8 mux4t1_n 10 structural 110 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/work 1 65 0 0 148 0
+1 8 mux2t1_n 10 structural 110 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/work 2 65 0 0 73 0
+1 10 extender_n 8 dataflow 110 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/work 1 65 0 0 335 0
+1 10 extender_n 8 dataflow 110 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/work 2 65 0 0 231 0
+1 8 mux2t1_n 10 structural 110 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/work 3 65 0 0 89 0
+1 8 mux4t1_n 10 structural 110 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/work 2 65 0 0 148 0
+1 13 loadformatter 10 structural 110 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/work 1 65 0 0 221 0
+1 16 tb_loadformatter 5 mixed 110 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/work 1 65 0 0 291 0

@@ -11,7 +11,7 @@ architecture Behavioral of tb_ControlUnit is
     signal s_ALUSrc      : std_logic;
     signal s_ALUControl  : std_logic;
     signal s_ImmType     : std_logic_vector(2 downto 0);
-    signal s_ResultSrc   : std_logic_vector(1 downto 0);
+    signal s_ResultSrc   : std_logic_vector(2 downto 0);
     signal s_MemWrite    : std_logic;
     signal s_RegWrite    : std_logic;
 
