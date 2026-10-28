@@ -180,7 +180,7 @@ begin
     -- Load instruction decoding
     --------------------------------------------------
 
-    isLW <= '1' when isLoad = '1' andquit 
+    isLW <= '1' when isLoad = '1' and 
                      funct3 = "010" else '0';
 
     isLH <= '1' when isLoad = '1' and
