@@ -31,7 +31,7 @@ architecture mixed of tb_ImmediateGenerator is
 
 begin
 
-    DUT: ImmediateGenerator
+    DUT: entity work.ImmediateGenerator
         port map (
             i_Instruction    => Instruction,
             i_ImmType         => ImmType,
