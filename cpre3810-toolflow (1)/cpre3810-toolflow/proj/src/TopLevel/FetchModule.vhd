@@ -13,7 +13,8 @@ generic(N : integer := 32); -- Generic of type integer for input/output data wid
             CLK, reset : in std_logic;
 
             o_pc : out std_logic_vector(31 downto 0); -- to the instruciton memory for the next instruction
-            o_pc_plus4 : out std_logic_vector(31 downto 0)); -- to write back to register for jal and jalr
+            o_pc_plus4 : out std_logic_vector(31 downto 0);
+            o_pc_plus_imm : out std_logic_vector(31 downto 0)); -- to write back to register for jal and jalr
 
 end FetchModule;
 
@@ -115,5 +116,6 @@ pc_next <= jalr_clear_zero when jal = '1' or jalr = '1' or branch_taken = '1' el
 
 o_pc <= pc_current;
 o_pc_plus4 <= pcPlusFour;
+o_pc_plus_imm <= base_plus_imm;
    
 end structural;
