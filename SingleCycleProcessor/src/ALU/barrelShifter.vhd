@@ -67,7 +67,7 @@ thirdMux : mux2t1_N
               o_O => thirdToFourth);
 
 fourthMux : mux2t1_N
-    generic map(N => 32)
+    generic map(N => 24)
     port map (i_S => i_amt(3),
               i_D0 => thirdToFourth,
               i_D1 => extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit & extendBit &  thirdToFourth(31 downto 8),
