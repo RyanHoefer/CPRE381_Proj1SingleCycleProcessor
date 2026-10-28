@@ -69,9 +69,6 @@ begin
             assert Immediate = c_Immediate
                 report test_name & ": Immediate incorrect"
                 severity error;
-
-            
-
             report "Completed test: " & test_name
                 severity note;
 
