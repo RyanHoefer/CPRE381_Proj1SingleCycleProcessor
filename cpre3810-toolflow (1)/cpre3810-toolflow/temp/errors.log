@@ -1,0 +1,27 @@
+
+Exception caught at 2026-10-28 13:36:37.745050:
+Traceback (most recent call last):
+  File "/usr/local/mentor/calibre/pkgs/icv_python/asp/lib/python3.11/configparser.py", line 805, in get
+    value = d[option]
+            ~^^^^^^^^
+  File "/usr/local/mentor/calibre/pkgs/icv_python/asp/lib/python3.11/collections/__init__.py", line 1006, in __getitem__
+    return self.__missing__(key)            # support subclasses that define __missing__
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/mentor/calibre/pkgs/icv_python/asp/lib/python3.11/collections/__init__.py", line 998, in __missing__
+    raise KeyError(key)
+KeyError: 'lm_license_file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/internal/snthpy/synthesis.py", line 89, in <module>
+    main(args)
+  File "/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/internal/snthpy/synthesis.py", line 34, in main
+    config_parameters, env = config_parser.read_config(args.config)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/internal/snthpy/config_parser.py", line 68, in read_config
+    license = json.loads(c.get(config, "lm_license_file"))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/mentor/calibre/pkgs/icv_python/asp/lib/python3.11/configparser.py", line 808, in get
+    raise NoOptionError(option, section)
+configparser.NoOptionError: No option 'lm_license_file' in section: 'Lab'

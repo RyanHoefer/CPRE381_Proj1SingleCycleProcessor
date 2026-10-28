@@ -12,11 +12,671 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-run 400
-# No Design Loaded!
-add wave *
-find drivers -source -time {52 ns} -cause vsim1:/tb/MyRiscv/ALUControl
 # Load canceled
+ls
+# cpre3810-toolflow (1)
+# cpre3810-toolflow (1).zip
+# docs
+# First_demo
+# First_Demo(Oct-13th)
+# Processor
+# README.md
+# SingleCycleProcessor
+# Tariqs_lab2
+# transcript
+cd SingleCycleProcessor
+ls
+# dmem.hex
+# Formatters
+# Lab1
+# Lab2.pdf
+# Lab2_report(1).odt
+# Lab2_report(1).pdf
+# RISCV_Processor_Tariq.vhd
+# ryans_components
+# src
+# transcript
+# vsim.wlf
+# work
+# Load canceled
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/SingleCycleProcessor/src/ALU/barrelShifter.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 17:34:51 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/SingleCycleProcessor/src/ALU/barrelShifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity barrelShifter
+# -- Compiling architecture barrelShifterArc of barrelShifter
+# ** Error: /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/SingleCycleProcessor/src/ALU/barrelShifter.vhd(52): (vcom-1436) Actual expression (infix expression) of formal "i_D1" is not globally static.
+# ** Error: /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/SingleCycleProcessor/src/ALU/barrelShifter.vhd(59): (vcom-1436) Actual expression (infix expression) of formal "i_D1" is not globally static.
+# ** Error: /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/SingleCycleProcessor/src/ALU/barrelShifter.vhd(66): (vcom-1436) Actual expression (infix expression) of formal "i_D1" is not globally static.
+# ** Error: /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/SingleCycleProcessor/src/ALU/barrelShifter.vhd(73): (vcom-1436) Actual expression (infix expression) of formal "i_D1" is not globally static.
+# ** Error: /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/SingleCycleProcessor/src/ALU/barrelShifter.vhd(80): (vcom-1436) Actual expression (infix expression) of formal "i_D1" is not globally static.
+# ** Note: /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/SingleCycleProcessor/src/ALU/barrelShifter.vhd(93): VHDL Compiler exiting
+# vcom: End time: 17:34:51 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/SingleCycleProcessor/Formatters/LoadFormatter.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:13:20 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/SingleCycleProcessor/Formatters/LoadFormatter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity LoadFormatter
+# -- Compiling architecture structural of LoadFormatter
+# vcom: End time: 18:13:20 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/SingleCycleProcessor/Formatters/StoreFormatter.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:13:22 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/SingleCycleProcessor/Formatters/StoreFormatter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity StoreFormatter
+# -- Compiling architecture structural of StoreFormatter
+# vcom: End time: 18:13:22 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/SingleCycleProcessor/Formatters/tb_LoadFormatter.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:13:24 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/SingleCycleProcessor/Formatters/tb_LoadFormatter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package ENV
+# ** Warning: /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/SingleCycleProcessor/Formatters/tb_LoadFormatter.vhd(4): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_LoadFormatter
+# -- Compiling architecture mixed of tb_LoadFormatter
+# -- Loading entity LoadFormatter
+# vcom: End time: 18:13:24 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/SingleCycleProcessor/Formatters/tb_StoreFormatter.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:13:25 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/SingleCycleProcessor/Formatters/tb_StoreFormatter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package ENV
+# ** Warning: /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/SingleCycleProcessor/Formatters/tb_StoreFormatter.vhd(3): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_StoreFormatter
+# -- Compiling architecture mixed of tb_StoreFormatter
+# vcom: End time: 18:13:25 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim work.tb_loadformatter -voptargs=+acc
+# ** Note: (vsim-220) '/usr/local/mentor/questasim/linux_x86_64/../questa.ini' is used as the ini file.
+# vsim work.tb_loadformatter -voptargs="+acc" 
+# Start time: 18:13:40 on Oct 28,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Warning: /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/SingleCycleProcessor/Formatters/LoadFormatter.vhd(56): (vopt-3473) Component instance "byteMux : mux4t1_N" is not bound.
+#         Region: /tb_LoadFormatter/DUT
+# ** Warning: /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/SingleCycleProcessor/Formatters/LoadFormatter.vhd(94): (vopt-3473) Component instance "selectDataFromMemory : mux4t1_N" is not bound.
+#         Region: /tb_LoadFormatter/DUT
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading std.env(body)
+# Loading work.tb_loadformatter(mixed)#1
+# Loading work.loadformatter(structural)#1
+# ** Warning: (vsim-3473) Component instance "byteMux : mux4t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_loadformatter/DUT File: /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/SingleCycleProcessor/Formatters/LoadFormatter.vhd
+# Loading work.mux2t1_n(structural)#1
+# Loading ieee.numeric_std(body)
+# Loading work.mux2t1(structure)#1
+# Loading work.invg(dataflow)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+# Loading work.extender_n(dataflow)#1
+# Loading work.extender_n(dataflow)#2
+# ** Warning: (vsim-3473) Component instance "selectDataFromMemory : mux4t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_loadformatter/DUT File: /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/SingleCycleProcessor/Formatters/LoadFormatter.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_loadformatter/DUT/o_loadData, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb_loadformatter/loadData.
+wave add *
+add weave *
+# ** Error: bad option "weave": should be one of...
+#   add atv ?options? ?arg arg ...?
+#   add button text action ?disable? ?options? ?help?
+#   add dataflow ?options? ?arg arg ...?
+#   add lists ?options? ?arg arg ...?
+#   add log ?options? ?arg arg ...?
+#   add memory options ?arg arg ...?
+#   add message ?options? ?arg arg ...?
+#   add monitor ?options? ?arg arg ...?
+#   add schematic ?options? ?arg arg ...?
+#   add testbrowser ?options? ?arg arg ...?
+#   add virtual ?options? ?arg arg ...?
+#   add watch ?options? ?arg arg ...?
+#   add wave ?options? ?arg arg ...?
 add wave *
-add wave *
-add wave *
+run 400
+# ** Error: Load Full Word from mem: Load Data incorrect
+#    Time: 25 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Note: Completed test: Load Full Word from mem
+#    Time: 25 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Error: Load Full Word from mem max: Load Data incorrect
+#    Time: 45 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Note: Completed test: Load Full Word from mem max
+#    Time: 45 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Error: LBU byte 0: Load Data incorrect
+#    Time: 65 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Note: Completed test: LBU byte 0
+#    Time: 65 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Error: LBU byte 1: Load Data incorrect
+#    Time: 85 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Note: Completed test: LBU byte 1
+#    Time: 85 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Error: LBU byte 2: Load Data incorrect
+#    Time: 105 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Note: Completed test: LBU byte 2
+#    Time: 105 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Error: LBU byte 3: Load Data incorrect
+#    Time: 125 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Note: Completed test: LBU byte 3
+#    Time: 125 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Error: LB byte 0 : Load Data incorrect
+#    Time: 145 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Note: Completed test: LB byte 0 
+#    Time: 145 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Error: LB byte 1 : Load Data incorrect
+#    Time: 165 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Note: Completed test: LB byte 1 
+#    Time: 165 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Error: LB byte 2 : Load Data incorrect
+#    Time: 185 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Note: Completed test: LB byte 2 
+#    Time: 185 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Error: LB byte 3 : Load Data incorrect
+#    Time: 205 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Note: Completed test: LB byte 3 
+#    Time: 205 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Error: LHU lower half: Load Data incorrect
+#    Time: 225 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Note: Completed test: LHU lower half
+#    Time: 225 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Error: LHU upper half: Load Data incorrect
+#    Time: 245 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Note: Completed test: LHU upper half
+#    Time: 245 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Error: 13 LH lower half negative: Load Data incorrect
+#    Time: 265 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Note: Completed test: 13 LH lower half negative
+#    Time: 265 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Error: 14 LH upper half negative: Load Data incorrect
+#    Time: 285 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Note: Completed test: 14 LH upper half negative
+#    Time: 285 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Error: 15 LH lower half maximum positive: Load Data incorrect
+#    Time: 305 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Note: Completed test: 15 LH lower half maximum positive
+#    Time: 305 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Error: 16 LH upper half minimum negative: Load Data incorrect
+#    Time: 325 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Note: Completed test: 16 LH upper half minimum negative
+#    Time: 325 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Error: 17 LH lower half positive: Load Data incorrect
+#    Time: 345 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Note: Completed test: 17 LH lower half positive
+#    Time: 345 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Error: 18 LH upper half positive: Load Data incorrect
+#    Time: 365 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Note: Completed test: 18 LH upper half positive
+#    Time: 365 ns  Iteration: 0  Instance: /tb_loadformatter
+# ** Note: All 18 test cases completed.
+#    Time: 365 ns  Iteration: 0  Instance: /tb_loadformatter
+# 1
+# Break in Process P_TEST_CASES at /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/SingleCycleProcessor/Formatters/tb_LoadFormatter.vhd line 223
+ls
+# dmem.hex
+# Formatters
+# Lab1
+# Lab2.pdf
+# Lab2_report(1).odt
+# Lab2_report(1).pdf
+# RISCV_Processor_Tariq.vhd
+# ryans_components
+# src
+# transcript
+# vsim.wlf
+# work
+cd ..
+# Cannot change directory while a simulation is in progress.
+# Use the "quit -sim" command to unload the design first.
+quit -sim
+# vsim: End time: 18:17:48 on Oct 28,2026, Elapsed time: 0:04:08
+# Errors: 18, Warnings: 6
+cd ..
+ls
+# cpre3810-toolflow (1)
+# cpre3810-toolflow (1).zip
+# docs
+# First_demo
+# First_Demo(Oct-13th)
+# Processor
+# README.md
+# SingleCycleProcessor
+# Tariqs_lab2
+# transcript
+cd cpre3810-toolflow (1)
+# wrong # args: should be "cd ?dirName?"
+cd "cpre3810-toolflow (1)"
+ls
+# cpre3810-toolflow
+cd cpre3810-toolflow
+ls
+# 3810_tf.sh
+# config.ini
+# cpre3810-toolflow.pdf
+# internal
+# output
+# proj
+# submissions
+# temp
+# transcript
+cd proj
+ls
+# Proj1_report.pdf
+# riscv
+# src
+# test
+cd src
+vlib work
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/RISCV_types.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:19:40 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/RISCV_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package mux_types
+# -- Compiling package RISCV_types
+# -- Compiling package body RISCV_types
+# -- Loading package RISCV_types
+# vcom: End time: 18:19:41 on Oct 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/extender_N.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:19:49 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/extender_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity extender_N
+# -- Compiling architecture dataflow of extender_N
+# vcom: End time: 18:19:49 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor_Tariq.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:19:53 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor_Tariq.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package RISCV_types
+# -- Compiling entity RISCV_Processor
+# -- Compiling architecture structureTopLevel of RISCV_Processor
+# ** Error: /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor_Tariq.vhd(288): (vcom-1436) Actual expression (prefix expression) of formal "i_unsigned" is not globally static.
+# ** Note: /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor_Tariq.vhd(358): VHDL Compiler exiting
+# vcom: End time: 18:19:53 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/Adder.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:04 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/Adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Adder
+# -- Compiling architecture behavior of Adder
+# vcom: End time: 18:20:04 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/adder_N.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:05 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/adder_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder_N
+# -- Compiling architecture structural of adder_N
+# vcom: End time: 18:20:05 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/addsub_N_for_alu.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:05 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/addsub_N_for_alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity addsub_N_for_alu
+# -- Compiling architecture structural of addsub_N_for_alu
+# vcom: End time: 18:20:05 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/ALU.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:06 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU
+# -- Compiling architecture structural_alu of ALU
+# vcom: End time: 18:20:06 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/and_N.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:07 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/and_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity and_N
+# -- Compiling architecture structural of and_N
+# vcom: End time: 18:20:07 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/barrelshifter_Tariq.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:08 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/barrelshifter_Tariq.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity barrelShifter
+# -- Compiling architecture barrelShifterArc of barrelShifter
+# vcom: End time: 18:20:08 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/fulladder.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:09 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/fulladder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fulladder
+# -- Compiling architecture structural of fulladder
+# vcom: End time: 18:20:09 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/xor_N.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:10 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/xor_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity xor_N
+# -- Compiling architecture structural of xor_N
+# vcom: End time: 18:20:10 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/or_N.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:10 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/or_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity or_N
+# -- Compiling architecture structural of or_N
+# vcom: End time: 18:20:10 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/onescomp_N.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:11 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/onescomp_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity onescomp_N
+# -- Compiling architecture structural of onescomp_N
+# vcom: End time: 18:20:11 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/andg2.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:14 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 18:20:14 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/dffg.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:15 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/dffg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# vcom: End time: 18:20:15 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/invg.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:16 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 18:20:16 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/mem.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:16 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mem
+# -- Compiling architecture rtl of mem
+# vcom: End time: 18:20:16 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/org2.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:17 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 18:20:17 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/xorg2.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:18 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# vcom: End time: 18:20:18 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ControlUnit/ControlUnit_Tariq.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:22 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ControlUnit/ControlUnit_Tariq.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ControlUnit
+# -- Compiling architecture Dataflow of ControlUnit
+# vcom: End time: 18:20:22 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Fetch/FetchModule.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:26 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Fetch/FetchModule.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity FetchModule
+# -- Compiling architecture structural of FetchModule
+# vcom: End time: 18:20:26 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Formatters/LoadFormatter.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:32 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Formatters/LoadFormatter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity LoadFormatter
+# -- Compiling architecture structural of LoadFormatter
+# vcom: End time: 18:20:32 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Formatters/StoreFormatter.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:32 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Formatters/StoreFormatter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity StoreFormatter
+# -- Compiling architecture structural of StoreFormatter
+# vcom: End time: 18:20:32 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ImmediateGenerator/ImmediateGenerator.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:35 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ImmediateGenerator/ImmediateGenerator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ImmediateGenerator
+# -- Compiling architecture Behavioral of ImmediateGenerator
+# vcom: End time: 18:20:35 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ImmediateGenerator/ImmediateGenerator.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:39 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ImmediateGenerator/ImmediateGenerator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ImmediateGenerator
+# -- Compiling architecture Behavioral of ImmediateGenerator
+# vcom: End time: 18:20:39 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux2t1.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:42 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux2t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mux2t1
+# -- Compiling architecture structure of mux2t1
+# vcom: End time: 18:20:42 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux2t1_N.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:42 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# vcom: End time: 18:20:42 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux4t1_N.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:43 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux4t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux4t1_N
+# -- Compiling architecture structural of mux4t1_N
+# vcom: End time: 18:20:43 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux_32t1.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:44 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux_32t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mux_types
+# -- Compiling entity mux_32t1
+# -- Compiling architecture dataflow of mux_32t1
+# vcom: End time: 18:20:44 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RegisterFile/decoder_5t32.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:47 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RegisterFile/decoder_5t32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder_5t32
+# -- Compiling architecture dataflow of decoder_5t32
+# vcom: End time: 18:20:47 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RegisterFile/register_file.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:47 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RegisterFile/register_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package mux_types
+# -- Compiling entity register_file
+# -- Compiling architecture mixed of register_file
+# vcom: End time: 18:20:48 on Oct 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RegisterFile/register_N.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:48 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RegisterFile/register_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity register_N
+# -- Compiling architecture dataflow of register_N
+# vcom: End time: 18:20:48 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor_Tariq.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:20:54 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor_Tariq.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package RISCV_types
+# -- Compiling entity RISCV_Processor
+# -- Compiling architecture structureTopLevel of RISCV_Processor
+# ** Error: /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor_Tariq.vhd(288): (vcom-1436) Actual expression (prefix expression) of formal "i_unsigned" is not globally static.
+# ** Note: /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor_Tariq.vhd(358): VHDL Compiler exiting
+# vcom: End time: 18:20:54 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work {/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor_Tariq.vhd}
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 18:23:19 on Oct 28,2026
+# vcom -reportprogress 300 -work work /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor_Tariq.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package RISCV_types
+# -- Compiling entity RISCV_Processor
+# -- Compiling architecture structureTopLevel of RISCV_Processor
+# vcom: End time: 18:23:19 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

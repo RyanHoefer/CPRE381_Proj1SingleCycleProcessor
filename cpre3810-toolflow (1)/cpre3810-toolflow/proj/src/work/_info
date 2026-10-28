@@ -1,0 +1,1324 @@
+m255
+K4
+z2
+!s11e vcom 2026.2 2026.05, May 18 2026
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src
+Eadder
+Z1 w1793214223
+Z2 DPx4 ieee 11 numeric_std 0 22 m=kP7jRZW]kY;6MU;0z<22
+Z3 DPx3 std 6 textio 0 22 <UlP6K1@RDQa_MJ[:UEnP2
+Z4 DPx4 ieee 14 std_logic_1164 0 22 TDbGXLH=YSoj9JRY2gkNY0
+!i122 3
+R0
+Z5 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/Adder.vhd
+Z6 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/Adder.vhd
+l0
+L26 1
+V^7N`<I^9=57]8kAZnoHSb3
+!s100 kfPW^o^7FEWRe`V][JAj@0
+Z7 OL;C;2026.2;84
+32
+Z8 !s110 1793229604
+!i10b 1
+Z9 !s108 1793229604.000000
+Z10 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/Adder.vhd|
+Z11 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/Adder.vhd|
+!i113 0
+Z12 o-work work
+Z13 tExplicit 1 CvgOpt 0
+Abehavior
+R2
+R3
+R4
+DEx4 work 5 adder 0 22 ^7N`<I^9=57]8kAZnoHSb3
+!i122 3
+l40
+L39 11
+V3>8I6MzOK7J3WjGkbWMVQ1
+!s100 kZHIb07f4nb8HBjm2M1;`1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Eadder_n
+R1
+R3
+R4
+!i122 4
+R0
+Z14 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/adder_N.vhd
+Z15 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/adder_N.vhd
+l0
+Z16 L17 1
+VcGWc82c?ncAbf31<PFUzL3
+!s100 >B@4P_bd08]lOB179G=530
+R7
+32
+Z17 !s110 1793229605
+!i10b 1
+Z18 !s108 1793229605.000000
+Z19 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/adder_N.vhd|
+Z20 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/adder_N.vhd|
+!i113 0
+R12
+R13
+Astructural
+R3
+R4
+DEx4 work 7 adder_n 0 22 cGWc82c?ncAbf31<PFUzL3
+!i122 4
+l39
+L28 29
+VCYNPkAC@=g4;89O25SnCT1
+!s100 E<RQdB_RUGe9UPn3<Wcj22
+R7
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 0
+R12
+R13
+Eaddsub_n_for_alu
+Z21 w1793161545
+R3
+R4
+!i122 5
+R0
+Z22 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/addsub_N_for_alu.vhd
+Z23 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/addsub_N_for_alu.vhd
+l0
+R16
+VF`6OPn<81HFl@0CFNh`PU2
+!s100 Gf=FCf=^MoChSPhOh6H0L3
+R7
+32
+R17
+!i10b 1
+R18
+Z24 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/addsub_N_for_alu.vhd|
+Z25 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/addsub_N_for_alu.vhd|
+!i113 0
+R12
+R13
+Astructural
+R3
+R4
+DEx4 work 16 addsub_n_for_alu 0 22 F`6OPn<81HFl@0CFNh`PU2
+!i122 5
+l58
+L28 54
+VcnRb]9^[`KVB4Kj:D84SU1
+!s100 G5[ZOeX_3n8>db<Q2e[ZI3
+R7
+32
+R17
+!i10b 1
+R18
+R24
+R25
+!i113 0
+R12
+R13
+Ealu
+R21
+R2
+R3
+R4
+!i122 6
+R0
+Z26 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/ALU.vhd
+Z27 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/ALU.vhd
+l0
+L18 1
+VOHP4SLRS2aF0aX5zAgIbo2
+!s100 <[AM<M082FK@TjMW<Cl;21
+R7
+32
+Z28 !s110 1793229606
+!i10b 1
+Z29 !s108 1793229606.000000
+Z30 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/ALU.vhd|
+Z31 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/ALU.vhd|
+!i113 0
+R12
+R13
+Astructural_alu
+R2
+R3
+R4
+DEx4 work 3 alu 0 22 OHP4SLRS2aF0aX5zAgIbo2
+!i122 6
+l95
+L34 121
+V;T1P>M2J=:`CIh;T2IM4B2
+!s100 ]2KS@:>nEREED==Uj74CM3
+R7
+32
+R28
+!i10b 1
+R29
+R30
+R31
+!i113 0
+R12
+R13
+Eand_n
+R21
+R2
+R3
+R4
+!i122 7
+R0
+Z32 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/and_N.vhd
+Z33 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/and_N.vhd
+l0
+L5 1
+V1<H?ec[T1R`Y74=30LQSZ2
+!s100 @jLEQQ]?[g^>Cn[A6CI?Z3
+R7
+32
+Z34 !s110 1793229607
+!i10b 1
+Z35 !s108 1793229607.000000
+Z36 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/and_N.vhd|
+Z37 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/and_N.vhd|
+!i113 0
+R12
+R13
+Astructural
+R2
+R3
+R4
+DEx4 work 5 and_n 0 22 1<H?ec[T1R`Y74=30LQSZ2
+!i122 7
+l25
+Z38 L16 19
+V>VkDm^MQXVhXaW736oAS=1
+!s100 c=<h^914SmjeF5oe_;AVB2
+R7
+32
+R34
+!i10b 1
+R35
+R36
+R37
+!i113 0
+R12
+R13
+Eandg2
+R1
+R3
+R4
+!i122 13
+R0
+Z39 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/andg2.vhd
+Z40 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/andg2.vhd
+l0
+Z41 L23 1
+VQ@<<<@nlJ=eiIl4BJDFzW2
+!s100 YT?bGzEmcFo:DlnoC^B4_0
+R7
+32
+Z42 !s110 1793229614
+!i10b 1
+Z43 !s108 1793229614.000000
+Z44 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/andg2.vhd|
+Z45 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/andg2.vhd|
+!i113 0
+R12
+R13
+Adataflow
+R3
+R4
+DEx4 work 5 andg2 0 22 Q@<<<@nlJ=eiIl4BJDFzW2
+!i122 13
+l32
+Z46 L31 6
+VJVOzCk?IH:iJ5bCRU`CK13
+!s100 I`@Z@UBObS]<7m8bPgKUS1
+R7
+32
+R42
+!i10b 1
+R43
+R44
+R45
+!i113 0
+R12
+R13
+Ebarrelshifter
+R21
+R3
+R4
+!i122 8
+R0
+Z47 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/barrelshifter_Tariq.vhd
+Z48 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/barrelshifter_Tariq.vhd
+l0
+L7 1
+V0M?=6iS;jHF3VoK^HCh<@3
+!s100 i8cUGFgoSSdkmc]PgoQYd3
+R7
+32
+Z49 !s110 1793229608
+!i10b 1
+Z50 !s108 1793229608.000000
+Z51 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/barrelshifter_Tariq.vhd|
+Z52 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/barrelshifter_Tariq.vhd|
+!i113 0
+R12
+R13
+Abarrelshifterarc
+R3
+R4
+DEx4 work 13 barrelshifter 0 22 0M?=6iS;jHF3VoK^HCh<@3
+!i122 8
+l47
+L19 124
+VNFm?@09_;d<X[>EHm:djc0
+!s100 P2G=nDZ2;OHc6GOO7;N]d3
+R7
+32
+R49
+!i10b 1
+R50
+R51
+R52
+!i113 0
+R12
+R13
+Econtrolunit
+R1
+R3
+R4
+!i122 19
+R0
+Z53 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ControlUnit/ControlUnit_Tariq.vhd
+Z54 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ControlUnit/ControlUnit_Tariq.vhd
+l0
+L5 1
+VaoXi_8H_@_<o:XORZ5Z:J0
+!s100 ajA;=z=lR=adWjPfPWC5`1
+R7
+32
+Z55 !s110 1793229622
+!i10b 1
+Z56 !s108 1793229622.000000
+Z57 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ControlUnit/ControlUnit_Tariq.vhd|
+Z58 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ControlUnit/ControlUnit_Tariq.vhd|
+!i113 0
+R12
+R13
+Adataflow
+R3
+R4
+DEx4 work 11 controlunit 0 22 aoXi_8H_@_<o:XORZ5Z:J0
+!i122 19
+l76
+L24 294
+VY0JT861k[In5<;UUUX4:S3
+!s100 Y`V]9gdRLBJ39AWJ9PXGQ3
+R7
+32
+R55
+!i10b 1
+R56
+R57
+R58
+!i113 0
+R12
+R13
+Edecoder_5t32
+R1
+R3
+R4
+!i122 29
+R0
+Z59 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RegisterFile/decoder_5t32.vhd
+Z60 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RegisterFile/decoder_5t32.vhd
+l0
+R16
+V5Y9kmfZf9<9iOCPzGmD7>0
+!s100 M:0SfIf`8^NgnH`d52EGZ3
+R7
+32
+Z61 !s110 1793229647
+!i10b 1
+Z62 !s108 1793229647.000000
+Z63 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RegisterFile/decoder_5t32.vhd|
+Z64 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RegisterFile/decoder_5t32.vhd|
+!i113 0
+R12
+R13
+Adataflow
+R3
+R4
+DEx4 work 12 decoder_5t32 0 22 5Y9kmfZf9<9iOCPzGmD7>0
+!i122 29
+l23
+L22 38
+VP0h;N3;f_L=:]S6ib9dUn3
+!s100 R2e]PI4k`ME[8<oAn4=i@0
+R7
+32
+R61
+!i10b 1
+R62
+R63
+R64
+!i113 0
+R12
+R13
+Edffg
+R1
+R3
+R4
+!i122 14
+R0
+Z65 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/dffg.vhd
+Z66 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/dffg.vhd
+l0
+R41
+V<]b9Vm3e`GAN;Cnj:57L>2
+!s100 T4gcXQGMCgKJbn8XhBM;b0
+R7
+32
+Z67 !s110 1793229615
+!i10b 1
+Z68 !s108 1793229615.000000
+Z69 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/dffg.vhd|
+Z70 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/dffg.vhd|
+!i113 0
+R12
+R13
+Amixed
+R3
+R4
+DEx4 work 4 dffg 0 22 <]b9Vm3e`GAN;Cnj:57L>2
+!i122 14
+l37
+L33 29
+V`CHXPZKVEek`3gFWL_zFm2
+!s100 iOdlTUid@@]UimFK_53^C1
+R7
+32
+R67
+!i10b 1
+R68
+R69
+R70
+!i113 0
+R12
+R13
+Eextender_n
+R1
+R3
+R4
+!i122 1
+R0
+Z71 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/extender_N.vhd
+Z72 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/extender_N.vhd
+l0
+R16
+V@jCQnD_KL0L0eDWWJIhl=1
+!s100 4M[]2jWAZ>jn:7I79I1[00
+R7
+32
+Z73 !s110 1793229589
+!i10b 1
+Z74 !s108 1793229589.000000
+Z75 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/extender_N.vhd|
+Z76 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/extender_N.vhd|
+!i113 0
+R12
+R13
+Adataflow
+R3
+R4
+DEx4 work 10 extender_n 0 22 @jCQnD_KL0L0eDWWJIhl=1
+!i122 1
+l27
+L26 9
+VgE>lCgooDZc1Kl7@`n0zX1
+!s100 ORgM^]Y:?ldbDXSoE=SOf1
+R7
+32
+R73
+!i10b 1
+R74
+R75
+R76
+!i113 0
+R12
+R13
+Efetchmodule
+R1
+R4
+R3
+R2
+!i122 20
+R0
+Z77 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Fetch/FetchModule.vhd
+Z78 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Fetch/FetchModule.vhd
+l0
+L6 1
+V:R5WOchPS3`X<Wb>nWf]M3
+!s100 5WFZH9MY5J:b]o5I;Tl2J3
+R7
+32
+Z79 !s110 1793229626
+!i10b 1
+Z80 !s108 1793229626.000000
+Z81 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Fetch/FetchModule.vhd|
+Z82 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Fetch/FetchModule.vhd|
+!i113 0
+R12
+R13
+Astructural
+R4
+R3
+R2
+DEx4 work 11 fetchmodule 0 22 :R5WOchPS3`X<Wb>nWf]M3
+!i122 20
+l54
+L22 109
+VbRlA<7O4f<A7Q7V2L=`I>1
+!s100 bLoehH[>NVZnV9ice[O]f0
+R7
+32
+R79
+!i10b 1
+R80
+R81
+R82
+!i113 0
+R12
+R13
+Efulladder
+R1
+R3
+R4
+!i122 9
+R0
+Z83 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/fulladder.vhd
+Z84 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/fulladder.vhd
+l0
+R16
+VcRmVS<kYHGHLZN<HcR:ai2
+!s100 cT>B:jZLKSCDXV3e`L<UK2
+R7
+32
+Z85 !s110 1793229609
+!i10b 1
+Z86 !s108 1793229609.000000
+Z87 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/fulladder.vhd|
+Z88 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/fulladder.vhd|
+!i113 0
+R12
+R13
+Astructural
+R3
+R4
+DEx4 work 9 fulladder 0 22 cRmVS<kYHGHLZN<HcR:ai2
+!i122 9
+l45
+L26 45
+VMNd>3:9kb>hNEXY@HZY7i1
+!s100 M_T>]Ok[zFamU^:RG;TK13
+R7
+32
+R85
+!i10b 1
+R86
+R87
+R88
+!i113 0
+R12
+R13
+Eimmediategenerator
+R1
+R3
+R4
+!i122 24
+R0
+Z89 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ImmediateGenerator/ImmediateGenerator.vhd
+Z90 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ImmediateGenerator/ImmediateGenerator.vhd
+l0
+L5 1
+ViTY3>g[^IfE;RYE[BZlMd1
+!s100 ]`N[0VPD6[;f<iJg^L7kf1
+R7
+32
+Z91 !s110 1793229639
+!i10b 1
+Z92 !s108 1793229639.000000
+Z93 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ImmediateGenerator/ImmediateGenerator.vhd|
+Z94 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ImmediateGenerator/ImmediateGenerator.vhd|
+!i113 0
+R12
+R13
+Abehavioral
+R3
+R4
+DEx4 work 18 immediategenerator 0 22 iTY3>g[^IfE;RYE[BZlMd1
+!i122 24
+l14
+L13 54
+VoF@?7UJD0kG1T[8TcLll83
+!s100 LA2kK]b6nem[3RZY]LG;z3
+R7
+32
+R91
+!i10b 1
+R92
+R93
+R94
+!i113 0
+R12
+R13
+Einvg
+R1
+R3
+R4
+!i122 15
+R0
+Z95 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/invg.vhd
+Z96 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/invg.vhd
+l0
+R41
+VQ?6hb9ePk@>kZZ9k]hNSO3
+!s100 _XK?_^5z0Rm1<k12?;5R?2
+R7
+32
+Z97 !s110 1793229616
+!i10b 1
+Z98 !s108 1793229616.000000
+Z99 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/invg.vhd|
+Z100 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/invg.vhd|
+!i113 0
+R12
+R13
+Adataflow
+R3
+R4
+DEx4 work 4 invg 0 22 Q?6hb9ePk@>kZZ9k]hNSO3
+!i122 15
+l31
+L30 6
+Vch>li:oKYZkCO5]GamViK1
+!s100 bk7I76o8e1LURdoZEQb8H0
+R7
+32
+R97
+!i10b 1
+R98
+R99
+R100
+!i113 0
+R12
+R13
+Eloadformatter
+Z101 w1793212342
+R3
+R4
+!i122 21
+R0
+Z102 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Formatters/LoadFormatter.vhd
+Z103 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Formatters/LoadFormatter.vhd
+l0
+L4 1
+V_>zE?bJm=7^>L9k^aMZBX1
+!s100 JXLRhbES9c43GRA?2k0`N1
+R7
+32
+Z104 !s110 1793229632
+!i10b 1
+Z105 !s108 1793229632.000000
+Z106 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Formatters/LoadFormatter.vhd|
+Z107 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Formatters/LoadFormatter.vhd|
+!i113 0
+R12
+R13
+Astructural
+R3
+R4
+DEx4 work 13 loadformatter 0 22 _>zE?bJm=7^>L9k^aMZBX1
+!i122 21
+l53
+L14 92
+V<61F3GJ;U:?90giPh:18f0
+!s100 QhU@B9VEnC58TA3HK]7zA3
+R7
+32
+R104
+!i10b 1
+R105
+R106
+R107
+!i113 0
+R12
+R13
+Emem
+R1
+R2
+R3
+R4
+!i122 16
+R0
+Z108 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/mem.vhd
+Z109 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/mem.vhd
+l0
+L8 1
+VlCAXd9ViN1OA1BDIKS8@Q0
+!s100 <FE^5`c6G[DN?g3EGE^:f0
+R7
+32
+R97
+!i10b 1
+R98
+Z110 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/mem.vhd|
+Z111 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/mem.vhd|
+!i113 0
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 3 mem 0 22 lCAXd9ViN1OA1BDIKS8@Q0
+!i122 16
+l40
+L29 39
+VUG]iNzD_>URZW`fJ>8@lZ0
+!s100 M8@fCBfhYoIU@PkXS=DFb3
+R7
+32
+R97
+!i10b 1
+R98
+R110
+R111
+!i113 0
+R12
+R13
+Emux2t1
+R1
+R2
+R3
+R4
+!i122 25
+R0
+Z112 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux2t1.vhd
+Z113 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux2t1.vhd
+l0
+L5 1
+VAb`zjX@IM488J9HhI7BOo0
+!s100 U_SfQYJDmH2a9B^m7zXVK1
+R7
+32
+Z114 !s110 1793229642
+!i10b 1
+Z115 !s108 1793229642.000000
+Z116 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux2t1.vhd|
+Z117 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux2t1.vhd|
+!i113 0
+R12
+R13
+Astructure
+R2
+R3
+R4
+DEx4 work 6 mux2t1 0 22 Ab`zjX@IM488J9HhI7BOo0
+!i122 25
+l39
+L14 44
+V_h?F1:;k9?bTjnCFKHlIz1
+!s100 <1GI?T@4^0WQLH;768VZ43
+R7
+32
+R114
+!i10b 1
+R115
+R116
+R117
+!i113 0
+R12
+R13
+Emux2t1_n
+R1
+R3
+R4
+!i122 26
+R0
+Z118 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux2t1_N.vhd
+Z119 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux2t1_N.vhd
+l0
+L21 1
+VVXi7X3UiclkB06DNQaZ]K0
+!s100 6WH1kRd<eiGeF78;iL:LL0
+R7
+32
+R114
+!i10b 1
+R115
+Z120 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux2t1_N.vhd|
+Z121 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux2t1_N.vhd|
+!i113 0
+R12
+R13
+Astructural
+R3
+R4
+DEx4 work 8 mux2t1_n 0 22 VXi7X3UiclkB06DNQaZ]K0
+!i122 26
+l39
+L30 21
+V:Qbl?_l?a5g]hoBk[[Ymk3
+!s100 C[H9ST2aIzLmhQj_c;20B0
+R7
+32
+R114
+!i10b 1
+R115
+R120
+R121
+!i113 0
+R12
+R13
+Emux4t1_n
+R1
+R3
+R4
+!i122 27
+R0
+Z122 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux4t1_N.vhd
+Z123 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux4t1_N.vhd
+l0
+L4 1
+VSE?Rk4G26R>[E7NcVa2:T0
+!s100 T<6^0`WE@?6@AkEA6f^:20
+R7
+32
+Z124 !s110 1793229643
+!i10b 1
+Z125 !s108 1793229643.000000
+Z126 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux4t1_N.vhd|
+Z127 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux4t1_N.vhd|
+!i113 0
+R12
+R13
+Astructural
+R3
+R4
+DEx4 work 8 mux4t1_n 0 22 SE?Rk4G26R>[E7NcVa2:T0
+!i122 27
+l30
+L16 44
+Vc1R1_g5=fYfZ1GO^gh3jP3
+!s100 <mzgG0AG4XND[OG9c?Yma1
+R7
+32
+R124
+!i10b 1
+R125
+R126
+R127
+!i113 0
+R12
+R13
+Emux_32t1
+R1
+Z128 DPx4 work 9 mux_types 0 22 >QZAYTW_^>cANdOb1Gk?40
+R2
+R3
+R4
+!i122 28
+R0
+Z129 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux_32t1.vhd
+Z130 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux_32t1.vhd
+l0
+R41
+V[<WW=A6U:OTN8;fbz<gJC0
+!s100 <>k1iL]hfX7RSDY[ZK`XO2
+R7
+32
+Z131 !s110 1793229644
+!i10b 1
+Z132 !s108 1793229644.000000
+Z133 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux_32t1.vhd|
+Z134 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Muxes/mux_32t1.vhd|
+!i113 0
+R12
+R13
+Adataflow
+R128
+R2
+R3
+R4
+DEx4 work 8 mux_32t1 0 22 [<WW=A6U:OTN8;fbz<gJC0
+!i122 28
+l30
+L29 4
+V:R^bCB2>JaK4<J4@KU7aV3
+!s100 mgWf]ZPc:VllW`7h6fzWd3
+R7
+32
+R131
+!i10b 1
+R132
+R133
+R134
+!i113 0
+R12
+R13
+Pmux_types
+R3
+R4
+!i122 0
+R1
+R0
+Z135 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/RISCV_types.vhd
+Z136 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/RISCV_types.vhd
+l0
+L15 16
+V>QZAYTW_^>cANdOb1Gk?40
+!s100 iekLLU@P5T4EEbIh<FekS0
+R7
+32
+Z137 !s110 1793229581
+!i10b 1
+Z138 !s108 1793229580.000000
+Z139 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/RISCV_types.vhd|
+Z140 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/RISCV_types.vhd|
+!i113 0
+R12
+R13
+Eonescomp_n
+R1
+R3
+R4
+!i122 12
+R0
+Z141 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/onescomp_N.vhd
+Z142 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/onescomp_N.vhd
+l0
+R16
+V:gW8ogom>5k_;XbnX<A_83
+!s100 GbM;zbFaD6chJN_eZz_bn2
+R7
+32
+Z143 !s110 1793229611
+!i10b 1
+Z144 !s108 1793229611.000000
+Z145 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/onescomp_N.vhd|
+Z146 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/onescomp_N.vhd|
+!i113 0
+R12
+R13
+Astructural
+R3
+R4
+DEx4 work 10 onescomp_n 0 22 :gW8ogom>5k_;XbnX<A_83
+!i122 12
+l32
+L25 17
+VdB[IWMEOX4U3oQQ_0hP8P1
+!s100 ;3SQIABO3Ri?Gn[D3E>OQ0
+R7
+32
+R143
+!i10b 1
+R144
+R145
+R146
+!i113 0
+R12
+R13
+Eor_n
+R21
+R2
+R3
+R4
+!i122 11
+R0
+Z147 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/or_N.vhd
+Z148 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/or_N.vhd
+l0
+L5 1
+VgH27n;NOhH93=5DDdV:X?0
+!s100 >KS;jFkn=Kmadd572XBMH1
+R7
+32
+Z149 !s110 1793229610
+!i10b 1
+Z150 !s108 1793229610.000000
+Z151 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/or_N.vhd|
+Z152 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/or_N.vhd|
+!i113 0
+R12
+R13
+Astructural
+R2
+R3
+R4
+DEx4 work 4 or_n 0 22 gH27n;NOhH93=5DDdV:X?0
+!i122 11
+l25
+R38
+VJFi1B>3ZkPYkb7[FNkfQH2
+!s100 ;R<CRih[>;z56Me[SG`hQ2
+R7
+32
+R149
+!i10b 1
+R150
+R151
+R152
+!i113 0
+R12
+R13
+Eorg2
+R1
+R3
+R4
+!i122 17
+R0
+Z153 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/org2.vhd
+Z154 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/org2.vhd
+l0
+R41
+V[C`FCj=kL0CTBYLlbjJzD3
+!s100 bGQ1F9eW^Q17OoL9h4g7z2
+R7
+32
+Z155 !s110 1793229617
+!i10b 1
+Z156 !s108 1793229617.000000
+Z157 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/org2.vhd|
+Z158 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/org2.vhd|
+!i113 0
+R12
+R13
+Adataflow
+R3
+R4
+DEx4 work 4 org2 0 22 [C`FCj=kL0CTBYLlbjJzD3
+!i122 17
+l32
+R46
+VNHGn>Kh:]BEh4o]ImiG<d3
+!s100 h5_AzR3TdRA0a_K=dQ>mI2
+R7
+32
+R155
+!i10b 1
+R156
+R157
+R158
+!i113 0
+R12
+R13
+Eregister_file
+R1
+R128
+R3
+R4
+!i122 30
+R0
+Z159 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RegisterFile/register_file.vhd
+Z160 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RegisterFile/register_file.vhd
+l0
+L6 1
+VAmo5LGCRLmY<e;mc>35=i3
+!s100 R1D380@ZaDBEk3B_=251P2
+R7
+32
+Z161 !s110 1793229648
+!i10b 1
+R62
+Z162 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RegisterFile/register_file.vhd|
+Z163 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RegisterFile/register_file.vhd|
+!i113 0
+R12
+R13
+Amixed
+R128
+R3
+R4
+DEx4 work 13 register_file 0 22 Amo5LGCRLmY<e;mc>35=i3
+!i122 30
+l42
+L17 54
+V2BGc5SnZmmH<>Afon@Vnb2
+!s100 STLL8JKYTfKEab=5J:O]92
+R7
+32
+R161
+!i10b 1
+R62
+R162
+R163
+!i113 0
+R12
+R13
+Eregister_n
+R1
+R3
+R4
+!i122 31
+R0
+Z164 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RegisterFile/register_N.vhd
+Z165 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RegisterFile/register_N.vhd
+l0
+L6 1
+VncBNmcYO3n>?ZO6gnTCT<0
+!s100 zBe0I_zib]2^3BDkXWL<Q1
+R7
+32
+R161
+!i10b 1
+Z166 !s108 1793229648.000000
+Z167 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RegisterFile/register_N.vhd|
+Z168 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RegisterFile/register_N.vhd|
+!i113 0
+R12
+R13
+Adataflow
+R3
+R4
+DEx4 work 10 register_n 0 22 ncBNmcYO3n>?ZO6gnTCT<0
+!i122 31
+l22
+L13 19
+VYBZn8UDSjoWn>B_<n5kM41
+!s100 8D1?HgPY=7bh3f8LEB>@k3
+R7
+32
+R161
+!i10b 1
+R166
+R167
+R168
+!i113 0
+R12
+R13
+Eriscv_processor
+Z169 w1793229798
+Z170 DPx4 work 11 riscv_types 0 22 2`]bJV^<zn^<0z[c<Ado11
+R3
+R4
+!i122 33
+R0
+Z171 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor_Tariq.vhd
+Z172 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor_Tariq.vhd
+l0
+L24 1
+VTBH8SjW=O9AoKKcSn[[in0
+!s100 G`;[6Y7J7W8H;8hZozfF81
+R7
+32
+Z173 !s110 1793229799
+!i10b 1
+Z174 !s108 1793229799.000000
+Z175 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor_Tariq.vhd|
+!s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor_Tariq.vhd|
+!i113 0
+R12
+R13
+Astructuretoplevel
+R170
+R3
+R4
+DEx4 work 15 riscv_processor 0 22 TBH8SjW=O9AoKKcSn[[in0
+!i122 33
+l205
+L36 323
+VM3j6Qd_n=NAO]1a]T?0QX3
+!s100 HT<6F7J4CW??jYBOBOFKi3
+R7
+32
+R173
+!i10b 1
+R174
+R175
+Z176 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor_Tariq.vhd|
+!i113 0
+R12
+R13
+Priscv_types
+!i122 0
+R1
+R0
+R135
+R136
+l0
+L32 4
+V2`]bJV^<zn^<0z[c<Ado11
+!s100 CL]mcVK:ZhUHUK[TWFeFU0
+R7
+32
+R137
+!i10b 1
+R138
+R139
+R140
+!i113 0
+R12
+R13
+Bbody
+R170
+!i122 0
+l0
+L37 3
+VHcji_`4Gz;2VYlP6mQa163
+!s100 DhVA9Re5U=3A;f0YJfMjR0
+R7
+32
+R137
+!i10b 1
+R138
+R139
+R140
+!i113 0
+R12
+R13
+Estoreformatter
+R101
+R3
+R4
+!i122 22
+R0
+Z177 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Formatters/StoreFormatter.vhd
+Z178 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Formatters/StoreFormatter.vhd
+l0
+L4 1
+VU8d@=g9QT<XYX:nK=@I:33
+!s100 <MQ363DFIoDKG2;=FJldh0
+R7
+32
+R104
+!i10b 1
+R105
+Z179 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Formatters/StoreFormatter.vhd|
+Z180 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/Formatters/StoreFormatter.vhd|
+!i113 0
+R12
+R13
+Astructural
+R3
+R4
+DEx4 work 14 storeformatter 0 22 U8d@=g9QT<XYX:nK=@I:33
+!i122 22
+l46
+L14 110
+VF;0eFMGE<f3;1EEWfFHUb2
+!s100 :5h_XA7YnGN2?mJd[ok`j3
+R7
+32
+R104
+!i10b 1
+R105
+R179
+R180
+!i113 0
+R12
+R13
+Exor_n
+R21
+R2
+R3
+R4
+!i122 10
+R0
+Z181 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/xor_N.vhd
+Z182 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/xor_N.vhd
+l0
+L5 1
+VaVe:kd]Mi:Q3beSKY21221
+!s100 WlfV;`ae]6I>kH=hdAYWS2
+R7
+32
+R149
+!i10b 1
+R150
+Z183 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/xor_N.vhd|
+Z184 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/ALU/xor_N.vhd|
+!i113 0
+R12
+R13
+Astructural
+R2
+R3
+R4
+DEx4 work 5 xor_n 0 22 aVe:kd]Mi:Q3beSKY21221
+!i122 10
+l25
+R38
+VU;2T5kLd^1WR5VZFB:=io0
+!s100 6LEKSX4m8AZXL3Sa]K_=B2
+R7
+32
+R149
+!i10b 1
+R150
+R183
+R184
+!i113 0
+R12
+R13
+Exorg2
+R1
+R3
+R4
+!i122 18
+R0
+Z185 8/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/xorg2.vhd
+Z186 F/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/xorg2.vhd
+l0
+R41
+V;hb`C0MKik;h36`3`SzM60
+!s100 [hI[mXFH4_j16U;>U1Lfn2
+R7
+32
+Z187 !s110 1793229618
+!i10b 1
+Z188 !s108 1793229618.000000
+Z189 !s90 -reportprogress|300|-work|work|/home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/xorg2.vhd|
+Z190 !s107 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/TopLevel/BasicGates/xorg2.vhd|
+!i113 0
+R12
+R13
+Adataflow
+R3
+R4
+DEx4 work 5 xorg2 0 22 ;hb`C0MKik;h36`3`SzM60
+!i122 18
+l32
+R46
+VbmLohbkYjJQ`?EHUY>LoL1
+!s100 Z6[FAPS4fBLB`F?OO<AY72
+R7
+32
+R187
+!i10b 1
+R188
+R189
+R190
+!i113 0
+R12
+R13

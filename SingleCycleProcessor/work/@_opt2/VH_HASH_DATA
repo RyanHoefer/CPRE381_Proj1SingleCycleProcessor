@@ -1,15 +1,15 @@
 [N
 5
+1
+82 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/SingleCycleProcessor/work
 3
-8 behavior
+5 mixed
 2
-12 tb_datapath2
+21 tb_immediategenerator
 5
 10 DATA_WIDTH
 4
 9 gCLK_HPER
-1
-32 /home/rhoefer/cpre3810/Lab2/work
 ]
 [G
 1
@@ -37,9 +37,9 @@
 0
 8 8
 -128
--16
--6
-2
+-106
+-104
+0
 0
 0
 0
