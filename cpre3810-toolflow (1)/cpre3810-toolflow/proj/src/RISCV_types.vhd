@@ -29,6 +29,11 @@ package mux_types is
 
 end package mux_types;
 
+package RISCV_types is
+    constant DATA_WIDTH : integer := 32;
+    constant ADDR_WIDTH : integer := 10;
+end package RISCV_types;
+
 package body RISCV_types is
   -- Probably won't need anything here... function bodies, etc.
 end package body RISCV_types;

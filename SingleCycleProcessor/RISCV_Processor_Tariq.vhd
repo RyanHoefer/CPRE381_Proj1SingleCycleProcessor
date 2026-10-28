@@ -107,28 +107,6 @@ architecture structureTopLevel of RISCV_Processor is
     );
   end component;
 
-  component mux2t1_N is
-    generic(N : integer := 16);
-    port(
-      i_S  : in std_logic;
-      i_D0 : in std_logic_vector(N-1 downto 0);
-      i_D1 : in std_logic_vector(N-1 downto 0);
-      o_O  : out std_logic_vector(N-1 downto 0)
-    );
-  end component;
-
-  component mux4t1_N is
-    generic(N : integer := 16);
-    port(
-      i_S  : in std_logic_vector(1 downto 0);
-      i_D0 : in std_logic_vector(N-1 downto 0);
-      i_D1 : in std_logic_vector(N-1 downto 0);
-      i_D2 : in std_logic_vector(N-1 downto 0);
-      i_D3 : in std_logic_vector(N-1 downto 0);
-      o_O  : out std_logic_vector(N-1 downto 0)
-    );
-  end component;
-
   component register_file is
     generic(N : integer := 32);
     port(
@@ -167,12 +145,23 @@ architecture structureTopLevel of RISCV_Processor is
     );
   end component;
 
-  component extender_N is
-    generic(N : integer := 12);
+  component LoadFormatter is
     port(
-      i_A    : in std_logic_vector(N-1 downto 0);
-      i_sign : in std_logic;
-      o_F    : out std_logic_vector(31 downto 0)
+        i_memData    : in std_logic_vector(31 downto 0);
+        i_addr       : in std_logic_vector(1 downto 0);
+        i_dataSize   : in std_logic_vector(1 downto 0);
+        i_sign       : in std_logic;
+        o_loadData   : out std_logic_vector(31 downto 0)
+    );
+  end component;
+
+  component StoreFormatter is
+    port(
+        i_rs2Data   : in std_logic_vector(31 downto 0);
+        i_addr      : in std_logic_vector(1 downto 0);
+        i_dataSize  : in std_logic_vector(1 downto 0);
+        o_storeData : out std_logic_vector(31 downto 0);
+        o_byteEnable : out std_logic_vector(3 downto 0)
     );
   end component;
 
@@ -335,148 +324,22 @@ begin
       q    => s_DMemOut
     );
 
-  -- Byte extender
-  byteExtender: extender_N
-    generic map(N => 8)
+ loadFormatter_inst : LoadFormatter
     port map(
-      i_A    => s_selectedByte,
-      i_sign => s_sign,
-      o_F    => s_extendedByte
+        i_memData  => s_DMemOut,
+        i_addr     => s_DMemAddr(1 downto 0),
+        i_dataSize => s_selectDataSize,
+        i_sign     => s_sign,
+        o_loadData => s_dataFromMemory
     );
 
-  -- Halfword extender
-  halfExtender: extender_N
-    generic map(N => 16)
+storeFormatter_inst : StoreFormatter
     port map(
-      i_A    => s_selectedHalf,
-      i_sign => s_sign,
-      o_F    => s_extendedHalf
-    );
-
-  -- Select halfword from memory
-  s_memBottomHalf <= s_DMemOut(15 downto 0);
-  s_memTopHalf <= s_DMemOut(31 downto 16);
-
-  s_memHalfSelect <= s_DMemAddr(1);
-
-  halfwordMux: mux2t1_N
-    generic map(N => 16)
-    port map(
-      i_S  => s_memHalfSelect,
-      i_D0 => s_memBottomHalf,
-      i_D1 => s_memTopHalf,
-      o_O  => s_selectedHalf
-    );
-
-  -- Select byte from memory
-  s_firstByte  <= s_DMemOut(7 downto 0);
-  s_secondByte <= s_DMemOut(15 downto 8);
-  s_thirdByte  <= s_DMemOut(23 downto 16);
-  s_fourthByte <= s_DMemOut(31 downto 24);
-
-  s_selectByte <= s_DMemAddr(1 downto 0);
-
-  byteMux: mux4t1_N
-    generic map(N => 8)
-    port map(
-      i_S  => s_selectByte,
-      i_D0 => s_firstByte,
-      i_D1 => s_secondByte,
-      i_D2 => s_thirdByte,
-      i_D3 => s_fourthByte,
-      o_O  => s_selectedByte
-    );
-
-  -- Select loaded word, halfword, or byte
-  selectDataFromMemory: mux4t1_N
-    generic map(N => 32)
-    port map(
-      i_S  => s_selectDataSize,
-      i_D0 => s_DMemOut,
-      i_D1 => s_extendedHalf,
-      i_D2 => s_extendedByte,
-      i_D3 => (others => '0'),
-      o_O  => s_dataFromMemory
-    );
-
-  -- Position byte for store
-  s_storeByte0 <= X"000000" & readData2(7 downto 0);
-  s_storeByte1 <= X"0000" & readData2(7 downto 0) & X"00";
-  s_storeByte2 <= X"00" & readData2(7 downto 0) & X"0000";
-  s_storeByte3 <= readData2(7 downto 0) & X"000000";
-
-  s_selectByteToStore <= s_DMemAddr(1 downto 0);
-
-  selectByteToStore: mux4t1_N
-    generic map(N => 32)
-    port map(
-      i_S  => s_selectByteToStore,
-      i_D0 => s_storeByte0,
-      i_D1 => s_storeByte1,
-      i_D2 => s_storeByte2,
-      i_D3 => s_storeByte3,
-      o_O  => s_selectedByteToStore
-    );
-
-  -- Position halfword for store
-  s_storeHalfWord0 <= X"0000" & readData2(15 downto 0);
-  s_storeHalfWord1 <= readData2(15 downto 0) & X"0000";
-
-  s_storeHalfWordSelect <= s_DMemAddr(1);
-
-  SelecthalfwordToStore: mux2t1_N
-    generic map(N => 32)
-    port map(
-      i_S  => s_storeHalfWordSelect,
-      i_D0 => s_storeHalfWord0,
-      i_D1 => s_storeHalfWord1,
-      o_O  => s_selectedHalfToStore
-    );
-
-  -- Select store data size
-  selectByteHalfOrWordToStore: mux4t1_N
-    generic map(N => 32)
-    port map(
-      i_S  => s_selectDataSize,
-      i_D0 => readData2,
-      i_D1 => s_selectedHalfToStore,
-      i_D2 => s_selectedByteToStore,
-      i_D3 => (others => '0'),
-      o_O  => s_DMemData
-    );
-
-  -- Byte enables
-  byteEnableMux: mux4t1_N
-    generic map(N => 4)
-    port map(
-      i_S  => s_DMemAddr(1 downto 0),
-      i_D0 => "0001",
-      i_D1 => "0010",
-      i_D2 => "0100",
-      i_D3 => "1000",
-      o_O  => s_byteBE
-    );
-
-  -- Halfword enables
-  halfEnableMux: mux2t1_N
-    generic map(N => 4)
-    port map(
-      i_S  => s_DMemAddr(1),
-      i_D0 => "0011",
-      i_D1 => "1100",
-      o_O  => s_halfBE
-    );
-
-  -- Select memory byte enables
-  storeSizeEnableMux: mux4t1_N
-    generic map(N => 4)
-    port map(
-      i_S  => s_selectDataSize,
-      i_D0 => "1111",
-      i_D1 => s_halfBE,
-      i_D2 => s_byteBE,
-      i_D3 => "0000",
-      o_O  => s_DMemBE
+        i_rs2Data    => readData2,
+        i_addr       => s_DMemAddr(1 downto 0),
+        i_dataSize   => s_selectDataSize,
+        o_storeData  => s_DMemData,
+        o_byteEnable => s_DMemBE
     );
 
   -- Detect WFI instruction
