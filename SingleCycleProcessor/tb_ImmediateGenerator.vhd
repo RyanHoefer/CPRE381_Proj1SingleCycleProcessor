@@ -103,6 +103,94 @@ begin
             "000", x"FFFFF800"
         );
 
+        --------------------------------------------------
+        -- SB-TYPE INSTRUCTIONS
+        --------------------------------------------------
+
+         -- SW x1, 4(x3)
+        check_immediate(
+            "I-type positive", x"0830A223",
+            "001", x"00000004"
+        );
+
+        -- sh x2, 2047(x10)
+        check_immediate(
+            "I-type negative", x"FEA11FA3",
+            "001", x"000007FF"
+        );
+
+        --------------------------------------------------
+        -- U-TYPE INSTRUCTIONS
+        --------------------------------------------------
+
+         -- LUI x1, 0x10010
+        check_immediate(
+            "I-type base", x"008880B7",
+            "010", x"10010000"
+        );
+
+        -- auipc x1, 0xFFFFF
+        check_immediate(
+            "B-type minumum", x"FFFFF097",
+            "010", x"FFFFF000"
+        );
+
+        --------------------------------------------------
+        -- B-TYPE INSTRUCTIONS
+        --------------------------------------------------
+
+        -- BEQ x1, x2, 8
+        check_immediate(
+            "B-type positive", x"00208463",
+            "011", x"00000008"
+        );
+
+        -- BEQ x1, x2, -4
+        check_immediate(
+            "B-type negative", x"FE208EE3",
+            "011", x"FFFFFFFC"
+        );
+
+        -- BEQ x1, x2, 4094
+        check_immediate(
+            "B-type maximum", x"7E208FE3",
+            "011", x"00000FFE"
+        );
+
+        -- BEQ x1, x2, -4096
+        check_immediate(
+            "B-type minimum", x"80208063",
+            "011", x"FFFFF000"
+        );
+
+        --------------------------------------------------
+        -- J-TYPE INSTRUCTIONS
+        --------------------------------------------------
+
+        -- JAL x1, 8
+        check_immediate(
+            "J-type positive", x"008000EF",
+            "100", x"00000008"
+        );
+
+        -- JAL x1, -4
+        check_immediate(
+            "J-type negative", x"FFDFF0EF",
+            "100", x"FFFFFFFC"
+        );
+
+        -- JAL x1, 1048574
+        check_immediate(
+            "J-type maximum", x"7FFFF0EF",
+            "100", x"000FFFFE"
+        );
+
+        -- JAL x1, -1048576
+        check_immediate(
+            "J-type minimum", x"800000EF",
+            "100", x"FFF00000"
+        );
+
 
         --------------------------------------------------
         -- END OF TESTING
