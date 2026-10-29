@@ -26,7 +26,7 @@ main:
     addi sp, sp, 4
     
     # Exit program
-    wfi
+    jal x0, program_exit
 
 # void sort(int* array, int size);
 .globl sort
@@ -136,3 +136,6 @@ next_width:
 sort_done:
     # return;
     jalr x0, 0(ra)
+
+program_exit:
+    wfi
