@@ -1,0 +1,40 @@
+Instruction,Opcode (Binary),Funct3 (Binary),Funct7 / immediate,Control Signals,,,,,,,,,,,
+,,,,ALUSrc,ALUControl,ImmType,ResultSrc,MemWrite,RegWrite,sign,selectDataSize,selectAluOut,dir,arith,Notes / integration
+addi,0010011,000,I-type,1,0,000,000,0,1,x,xx,000,x,x,
+add,0110011,000,0000000,0,0,xxx,000,0,1,x,xx,000,x,x,
+sub,0110011,000,0100000,0,1,xxx,000,0,1,x,xx,000,x,x,
+lw,0000011,010,I-type,1,0,000,001,0,1,x,00,000,x,x,
+sw,0100011,010,S-type,1,0,001,xxx,1,0,x,00,000,x,x,
+lui,0110111,---,U-type,x,x,010,010,0,1,x,xx,xxx,x,x,Write U-immediate directly; 3-bit ResultSrc 010 
+and,0110011,111,0000000,0,x,xxx,000,0,1,x,xx,010,x,x,
+andi,0010011,111,I-type,1,x,000,000,0,1,x,xx,010,x,x,
+or,0110011,110,0000000,0,x,xxx,000,0,1,x,xx,001,x,x,
+ori,0010011,110,I-type,1,x,000,000,0,1,x,xx,001,x,x,
+xor,0110011,100,0000000,0,x,xxx,000,0,1,x,xx,011,x,x,
+xori,0010011,100,I-type,1,x,000,000,0,1,x,xx,011,x,x,
+slt,0110011,010,0000000,0,x,xxx,000,0,1,1,xx,101,x,x,
+slti,0010011,010,I-type,1,x,000,000,0,1,1,xx,101,x,x,
+sltiu,0010011,011,I-type (sign-extended),1,x,000,000,0,1,0,xx,101,x,x,"I-immediate is sign-extended, then operands compared as unsigned"
+sll,0110011,001,0000000,0,x,xxx,000,0,1,x,xx,100,1,0,
+srl,0110011,101,0000000,0,x,xxx,000,0,1,x,xx,100,0,0,
+sra,0110011,101,0100000,0,x,xxx,000,0,1,x,xx,100,0,1,
+slli,0010011,001,0000000 / shamt,1,x,000,000,0,1,x,xx,100,1,0,ALUSrc=1; barrel shifter uses immediate[4:0] as shift amount
+srli,0010011,101,0000000 / shamt,1,x,000,000,0,1,x,xx,100,0,0,ALUSrc=1; barrel shifter uses immediate[4:0] as shift amount
+srai,0010011,101,0100000 / shamt,1,x,000,000,0,1,x,xx,100,0,1,ALUSrc=1; barrel shifter uses immediate[4:0] as shift amount
+lb,0000011,000,I-type,1,0,000,001,0,1,1,10,000,x,x,
+lh,0000011,001,I-type,1,0,000,001,0,1,1,01,000,x,x,
+lbu,0000011,100,I-type,1,0,000,001,0,1,0,10,000,x,x,
+lhu,0000011,101,I-type,1,0,000,001,0,1,0,01,000,x,x,
+sb,0100011,000,S-type,1,0,001,xxx,1,0,x,10,000,x,x,
+sh,0100011,001,S-type,1,0,001,xxx,1,0,x,01,000,x,x,
+beq,1100011,000,B-type,x,x,011,xxx,0,0,x,xx,xxx,x,x,FetchModule decodes opcode/funct3 and compares rs1/rs2; ImmType 011 
+bne,1100011,001,B-type,x,x,011,xxx,0,0,x,xx,xxx,x,x,FetchModule decodes opcode/funct3 and compares rs1/rs2; ImmType 011 
+blt,1100011,100,B-type,x,x,011,xxx,0,0,x,xx,xxx,x,x,FetchModule decodes opcode/funct3 and compares rs1/rs2; ImmType 011 
+bge,1100011,101,B-type,x,x,011,xxx,0,0,x,xx,xxx,x,x,FetchModule decodes opcode/funct3 and compares rs1/rs2; ImmType 011 
+bltu,1100011,110,B-type,x,x,011,xxx,0,0,x,xx,xxx,x,x,FetchModule decodes opcode/funct3 and compares rs1/rs2; ImmType 011 
+bgeu,1100011,111,B-type,x,x,011,xxx,0,0,x,xx,xxx,x,x,FetchModule decodes opcode/funct3 and compares rs1/rs2; ImmType 011
+jal,1101111,---,J-type,x,x,100,011,0,1,x,xx,xxx,x,x,FetchModule computes PC+J-offset; write-back PC+4; ImmType 100 
+jalr,1100111,000,I-type,x,x,000,011,0,1,x,xx,xxx,x,x,FetchModule computes (rs1+I-offset)&~1; write-back PC+4
+auipc,0010111,---,U-type,x,x,010,100,0,1,x,xx,xxx,x,x,FetchModule PC+U-immediate output; 3-bit ResultSrc 100 
+wfi,wfi,wfi,wfi,wfi,wfi,wfi,wfi,wfi,wfi,wfi,wfi,wfi,wfi,wfi,wfi
+sltu,110011,11,0,0,0,0,0,0,1,0,0,101,0,0,
