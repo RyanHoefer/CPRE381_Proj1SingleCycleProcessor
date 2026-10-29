@@ -13,6 +13,10 @@
 
 main:
     # Save return address
+    lui sp, 0x7FFFF
+    addi sp, sp, -4         # sp = 0x7FFFEFFC
+    addi ra, x0, 0
+
     addi sp, sp, -4
     sw ra, 0(sp)
     
