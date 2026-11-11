@@ -269,6 +269,17 @@ architecture structureTopLevel of RISCV_Processor is
   -- MEM-stage write enable
   signal MEM_MemWriteEnable : std_logic;
 
+  -- WB-stage write enable
+  signal WB_RegWriteEnable : std_logic;
+
+  -- PC-related pipeline datapath registers
+  signal ID_EX_PCPlus4     : std_logic_vector(31 downto 0);
+  signal ID_EX_PCPlusImm   : std_logic_vector(31 downto 0);
+  signal EX_MEM_PCPlus4    : std_logic_vector(31 downto 0);
+  signal EX_MEM_PCPlusImm  : std_logic_vector(31 downto 0);
+  signal MEM_WB_PCPlus4    : std_logic_vector(31 downto 0);
+  signal MEM_WB_PCPlusImm  : std_logic_vector(31 downto 0);
+
 begin
 
   -- ============================================================
@@ -288,6 +299,14 @@ begin
       IF_ID_Instruction <= x"00000013";
       IF_ID_PC          <= (others => '0');
       IF_ID_PCPlus4     <= (others => '0');
+
+      -- PC-related pipeline register reset
+      ID_EX_PCPlus4    <= (others => '0');
+      ID_EX_PCPlusImm  <= (others => '0');
+      EX_MEM_PCPlus4   <= (others => '0');
+      EX_MEM_PCPlusImm <= (others => '0');
+      MEM_WB_PCPlus4   <= (others => '0');
+      MEM_WB_PCPlusImm <= (others => '0');
 
       -- ID/EX datapath reset
       ID_EX_readData1 <= (others => '0');
@@ -352,6 +371,10 @@ begin
       ID_EX_Immediate <= pc_addr_imm;
       ID_EX_rd        <= IF_ID_Instruction(11 downto 7);
 
+      -- ID -> EX PC-related datapath
+      ID_EX_PCPlus4   <= IF_ID_PCPlus4;
+      ID_EX_PCPlusImm <= s_PCPlusImm;
+
       -- ID -> EX
       ID_EX_ALUSrc         <= ALUSrc;
       ID_EX_ALUControl     <= ALUControl;
@@ -371,6 +394,10 @@ begin
       EX_MEM_Immediate <= ID_EX_Immediate;
       EX_MEM_rd        <= ID_EX_rd;
 
+      -- EX -> MEM PC-related datapath
+      EX_MEM_PCPlus4   <= ID_EX_PCPlus4;
+      EX_MEM_PCPlusImm <= ID_EX_PCPlusImm;
+
       -- EX -> MEM
       EX_MEM_MemWrite       <= ID_EX_MemWrite;
       EX_MEM_selectDataSize <= ID_EX_selectDataSize;
@@ -384,6 +411,10 @@ begin
       MEM_WB_LoadData  <= s_dataFromMemory;
       MEM_WB_Immediate <= EX_MEM_Immediate;
       MEM_WB_rd        <= EX_MEM_rd;
+
+      -- MEM -> WB PC-related datapath
+      MEM_WB_PCPlus4   <= EX_MEM_PCPlus4;
+      MEM_WB_PCPlusImm <= EX_MEM_PCPlusImm;
 
       -- MEM -> WB
       MEM_WB_RegWrite  <= EX_MEM_RegWrite;
@@ -399,6 +430,9 @@ begin
   -- Connect ALU output for synthesis
   oALUOut <= aluResult;
   s_RegWrData <= writeData;
+
+  -- WB-stage register write enable
+  WB_RegWriteEnable <= MEM_WB_RegWrite and not iInstLd;
 
   -- Instruction memory address selection
   with iInstLd select
@@ -438,7 +472,7 @@ begin
     );
 
   -- Register addresses
-  s_RegWrAddr <= IF_ID_Instruction(11 downto 7);
+  s_RegWrAddr <= MEM_WB_rd;
   s_rs1 <= IF_ID_Instruction(19 downto 15);
   s_rs2 <= IF_ID_Instruction(24 downto 20);
 
@@ -450,7 +484,7 @@ begin
       i_r2          => s_rs2,
       i_w           => s_RegWrAddr,
       i_writeData   => s_RegWrData,
-      i_writeEnable => s_RegWr,
+      i_writeEnable => WB_RegWriteEnable,
       CLK           => iCLK,
       o_data1       => readData1,
       o_data2       => readData2
@@ -539,12 +573,12 @@ begin
 
   -- Tariq: Expanded writeback to five sources
   -- for LUI, jumps, and AUIPC.
-  with ResultSrc select
-    writeData <= aluResult        when "000",
-                 s_dataFromMemory when "001",
-                 pc_addr_imm      when "010",
-                 PCPlusFour       when "011",
-                 s_PCPlusImm      when "100",
+  with MEM_WB_ResultSrc select
+    writeData <= MEM_WB_ALUResult when "000",
+                 MEM_WB_LoadData  when "001",
+                 MEM_WB_Immediate when "010",
+                 MEM_WB_PCPlus4   when "011",
+                 MEM_WB_PCPlusImm when "100",
                  (others => '0')  when others;
 
 end structureTopLevel;
