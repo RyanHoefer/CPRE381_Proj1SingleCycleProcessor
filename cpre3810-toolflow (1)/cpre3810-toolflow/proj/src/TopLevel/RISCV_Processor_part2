@@ -266,6 +266,9 @@ architecture structureTopLevel of RISCV_Processor is
   signal IF_ID_PC          : std_logic_vector(31 downto 0);
   signal IF_ID_PCPlus4     : std_logic_vector(31 downto 0);
 
+  -- MEM-stage write enable
+  signal MEM_MemWriteEnable : std_logic;
+
 begin
 
   -- ============================================================
@@ -274,6 +277,8 @@ begin
 
   -- Detect WFI in the decode stage
   ID_Halt <= '1' when IF_ID_Instruction = x"10500073" else '0';
+
+  MEM_MemWriteEnable <= EX_MEM_MemWrite and not iInstLd;
 
   process(iCLK, iRST)
   begin
@@ -494,7 +499,7 @@ begin
     );
 
   -- Data memory address
-  s_DMemAddr <= aluResult;
+  s_DMemAddr <= EX_MEM_ALUResult;
 
   -- Data memory
   DMem: mem
@@ -507,24 +512,24 @@ begin
       addr => s_DMemAddr(11 downto 2),
       data => s_DMemData,
       be   => s_DMemBE,
-      we   => s_DMemWr,
+      we   => MEM_MemWriteEnable,
       q    => s_DMemOut
     );
 
   loadFormatter_inst : LoadFormatter
     port map(
       i_memData  => s_DMemOut,
-      i_addr     => s_DMemAddr(1 downto 0),
-      i_dataSize => s_selectDataSize,
-      i_sign     => s_sign,
+      i_addr     => EX_MEM_ALUResult(1 downto 0),
+      i_dataSize => EX_MEM_selectDataSize,
+      i_sign     => EX_MEM_sign,
       o_loadData => s_dataFromMemory
     );
 
   storeFormatter_inst : StoreFormatter
     port map(
-      i_rs2Data    => readData2,
-      i_addr       => s_DMemAddr(1 downto 0),
-      i_dataSize   => s_selectDataSize,
+      i_rs2Data    => EX_MEM_StoreData,
+      i_addr       => EX_MEM_ALUResult(1 downto 0),
+      i_dataSize   => EX_MEM_selectDataSize,
       o_storeData  => s_DMemData,
       o_byteEnable => s_DMemBE
     );
