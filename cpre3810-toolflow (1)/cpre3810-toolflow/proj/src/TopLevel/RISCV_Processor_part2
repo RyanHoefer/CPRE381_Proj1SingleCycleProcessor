@@ -259,6 +259,13 @@ architecture structureTopLevel of RISCV_Processor is
   signal MEM_WB_Immediate : std_logic_vector(31 downto 0);
   signal MEM_WB_rd        : std_logic_vector(4 downto 0);
 
+  -- =============================================================
+  -- PART 2: IF/ID Pipeline Register Declarations
+  -- =============================================================
+  signal IF_ID_Instruction : std_logic_vector(31 downto 0);
+  signal IF_ID_PC          : std_logic_vector(31 downto 0);
+  signal IF_ID_PCPlus4     : std_logic_vector(31 downto 0);
+
 begin
 
   -- ============================================================
@@ -271,6 +278,11 @@ begin
   process(iCLK, iRST)
   begin
     if iRST = '1' then
+
+      -- IF/ID datapath reset
+      IF_ID_Instruction <= x"00000013";
+      IF_ID_PC          <= (others => '0');
+      IF_ID_PCPlus4     <= (others => '0');
 
       -- ID/EX datapath reset
       ID_EX_readData1 <= (others => '0');
@@ -317,6 +329,17 @@ begin
       MEM_WB_Halt      <= '0';
 
     elsif rising_edge(iCLK) then
+
+      -- IF -> ID datapath
+      if iInstLd = '0' then
+        IF_ID_Instruction <= s_Inst;
+        IF_ID_PC          <= s_PC;
+        IF_ID_PCPlus4     <= PCPlusFour;
+      else
+        IF_ID_Instruction <= x"00000013";
+        IF_ID_PC          <= (others => '0');
+        IF_ID_PCPlus4     <= (others => '0');
+      end if;
 
       -- ID -> EX datapath
       ID_EX_readData1 <= readData1;
