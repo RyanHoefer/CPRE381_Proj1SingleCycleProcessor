@@ -273,7 +273,7 @@ begin
   -- ============================================================
 
   -- Detect WFI in the decode stage
-  ID_Halt <= '1' when s_Inst = x"10500073" else '0';
+  ID_Halt <= '1' when IF_ID_Instruction = x"10500073" else '0';
 
   process(iCLK, iRST)
   begin
@@ -345,7 +345,7 @@ begin
       ID_EX_readData1 <= readData1;
       ID_EX_readData2 <= readData2;
       ID_EX_Immediate <= pc_addr_imm;
-      ID_EX_rd        <= s_Inst(11 downto 7);
+      ID_EX_rd        <= IF_ID_Instruction(11 downto 7);
 
       -- ID -> EX
       ID_EX_ALUSrc         <= ALUSrc;
@@ -404,7 +404,7 @@ begin
   -- to the existing processor datapath.
   instructionDecoder: ControlUnit
     port map(
-      i_Instruction    => s_Inst,
+      i_Instruction    => IF_ID_Instruction,
       o_ALUSrc         => ALUSrc,
       o_ALUControl     => ALUControl,
       o_ImmType        => ImmType,
@@ -433,9 +433,9 @@ begin
     );
 
   -- Register addresses
-  s_RegWrAddr <= s_Inst(11 downto 7);
-  s_rs1 <= s_Inst(19 downto 15);
-  s_rs2 <= s_Inst(24 downto 20);
+  s_RegWrAddr <= IF_ID_Instruction(11 downto 7);
+  s_rs1 <= IF_ID_Instruction(19 downto 15);
+  s_rs2 <= IF_ID_Instruction(24 downto 20);
 
   -- Register file
   registerFile: register_file
@@ -454,26 +454,27 @@ begin
   -- Immediate Generator
   immeGenerator: ImmediateGenerator
     port map(
-      i_Instruction => s_Inst,
+      i_Instruction => IF_ID_Instruction,
       i_ImmType     => ImmType,
       o_Immediate   => pc_addr_imm
     );
 
-  s_unsigned <= not s_sign;
+  -- EX-stage unsigned control
+  s_unsigned <= not ID_EX_sign;
 
   -- ALU
   ALU_inst: ALU
     generic map(N => N)
     port map(
-      rs1            => readData1,
-      rs2            => readData2,
-      i_imm          => pc_addr_imm,
-      i_selectOutput => s_selectAluOut,
-      i_aluSrc       => ALUSrc,
-      i_addSub       => ALUControl,
+      rs1            => ID_EX_readData1,
+      rs2            => ID_EX_readData2,
+      i_imm          => ID_EX_Immediate,
+      i_selectOutput => ID_EX_selectAluOut,
+      i_aluSrc       => ID_EX_ALUSrc,
+      i_addSub       => ID_EX_ALUControl,
       i_unsigned     => s_unsigned,
-      i_dir          => s_dir,
-      i_arith        => s_arith,
+      i_dir          => ID_EX_dir,
+      i_arith        => ID_EX_arith,
       alu_out        => aluResult
     );
 
