@@ -251,6 +251,14 @@ architecture structureTopLevel of RISCV_Processor is
   signal EX_MEM_Immediate : std_logic_vector(31 downto 0);
   signal EX_MEM_rd        : std_logic_vector(4 downto 0);
 
+  -- =============================================================
+  -- PART 2: MEM/WB Datapath Register Declarations
+  -- =============================================================
+  signal MEM_WB_ALUResult : std_logic_vector(31 downto 0);
+  signal MEM_WB_LoadData  : std_logic_vector(31 downto 0);
+  signal MEM_WB_Immediate : std_logic_vector(31 downto 0);
+  signal MEM_WB_rd        : std_logic_vector(4 downto 0);
+
 begin
 
   -- ============================================================
@@ -297,6 +305,12 @@ begin
       EX_MEM_ResultSrc      <= (others => '0');
       EX_MEM_Halt           <= '0';
 
+      -- MEM/WB datapath reset
+      MEM_WB_ALUResult <= (others => '0');
+      MEM_WB_LoadData  <= (others => '0');
+      MEM_WB_Immediate <= (others => '0');
+      MEM_WB_rd        <= (others => '0');
+
       -- MEM/WB controls
       MEM_WB_RegWrite  <= '0';
       MEM_WB_ResultSrc <= (others => '0');
@@ -336,6 +350,12 @@ begin
       EX_MEM_RegWrite       <= ID_EX_RegWrite;
       EX_MEM_ResultSrc      <= ID_EX_ResultSrc;
       EX_MEM_Halt           <= ID_EX_Halt;
+
+      -- MEM -> WB datapath
+      MEM_WB_ALUResult <= EX_MEM_ALUResult;
+      MEM_WB_LoadData  <= s_dataFromMemory;
+      MEM_WB_Immediate <= EX_MEM_Immediate;
+      MEM_WB_rd        <= EX_MEM_rd;
 
       -- MEM -> WB
       MEM_WB_RegWrite  <= EX_MEM_RegWrite;
