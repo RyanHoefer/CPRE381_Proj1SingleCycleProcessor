@@ -17,6 +17,7 @@
 
 library IEEE;
 use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
 
 library work;
 use work.RISCV_types.all;
@@ -95,15 +96,17 @@ architecture structureTopLevel of RISCV_Processor is
   component FetchModule is
     generic(N : integer := 32);
     port(
-      i_rs1_data    : in std_logic_vector(31 downto 0);
-      i_rs2_data    : in std_logic_vector(31 downto 0);
-      i_instruction : in std_logic_vector(31 downto 0);
-      pc_addr_imm   : in std_logic_vector(31 downto 0);
-      CLK           : in std_logic;
-      reset         : in std_logic;
-      o_pc          : out std_logic_vector(31 downto 0);
-      o_pc_plus4    : out std_logic_vector(31 downto 0);
-      o_pc_plus_imm : out std_logic_vector(31 downto 0)
+      i_rs1_data       : in std_logic_vector(31 downto 0);
+      i_rs2_data       : in std_logic_vector(31 downto 0);
+      i_instruction    : in std_logic_vector(31 downto 0);
+      pc_addr_imm      : in std_logic_vector(31 downto 0);
+      i_instruction_pc : in std_logic_vector(31 downto 0);
+      CLK              : in std_logic;
+      reset            : in std_logic;
+      o_pc             : out std_logic_vector(31 downto 0);
+      o_pc_plus4       : out std_logic_vector(31 downto 0);
+      o_pc_plus_imm    : out std_logic_vector(31 downto 0);
+      o_redirect       : out std_logic
     );
   end component;
 
@@ -272,6 +275,9 @@ architecture structureTopLevel of RISCV_Processor is
   -- WB-stage write enable
   signal WB_RegWriteEnable : std_logic;
 
+  -- Tariq: Flush wrong-path instruction when ID redirects fetch
+  signal s_PC_Redirect : std_logic;
+
   -- PC-related pipeline datapath registers
   signal ID_EX_PCPlus4     : std_logic_vector(31 downto 0);
   signal ID_EX_PCPlusImm   : std_logic_vector(31 downto 0);
@@ -355,7 +361,7 @@ begin
     elsif rising_edge(iCLK) then
 
       -- IF -> ID datapath
-      if iInstLd = '0' then
+      if iInstLd = '0' and s_PC_Redirect = '0' then
         IF_ID_Instruction <= s_Inst;
         IF_ID_PC          <= s_PC;
         IF_ID_PCPlus4     <= PCPlusFour;
@@ -373,7 +379,7 @@ begin
 
       -- ID -> EX PC-related datapath
       ID_EX_PCPlus4   <= IF_ID_PCPlus4;
-      ID_EX_PCPlusImm <= s_PCPlusImm;
+      ID_EX_PCPlusImm <= std_logic_vector(unsigned(IF_ID_PC) + unsigned(pc_addr_imm));
 
       -- ID -> EX
       ID_EX_ALUSrc         <= ALUSrc;
@@ -460,15 +466,17 @@ begin
   -- Fetch Module
   RyanFetchModule: FetchModule
     port map(
-      i_instruction => s_Inst,
-      i_rs1_data    => readData1,
-      i_rs2_data    => readData2,
-      pc_addr_imm   => pc_addr_imm,
-      CLK           => iCLK,
-      reset         => iRST,
-      o_pc          => s_PC,
-      o_pc_plus4    => PCPlusFour,
-      o_pc_plus_imm => s_PCPlusImm
+      i_instruction    => IF_ID_Instruction,
+      i_rs1_data       => readData1,
+      i_rs2_data       => readData2,
+      pc_addr_imm      => pc_addr_imm,
+      i_instruction_pc => IF_ID_PC,
+      CLK              => iCLK,
+      reset            => iRST,
+      o_pc             => s_PC,
+      o_pc_plus4       => PCPlusFour,
+      o_pc_plus_imm    => s_PCPlusImm,
+      o_redirect       => s_PC_Redirect
     );
 
   -- Register addresses
@@ -569,7 +577,7 @@ begin
     );
 
   -- Detect WFI instruction
-  s_Halt <= '1' when s_Inst = x"10500073" else '0';
+  s_Halt <= MEM_WB_Halt;
 
   -- Tariq: Expanded writeback to five sources
   -- for LUI, jumps, and AUIPC.
