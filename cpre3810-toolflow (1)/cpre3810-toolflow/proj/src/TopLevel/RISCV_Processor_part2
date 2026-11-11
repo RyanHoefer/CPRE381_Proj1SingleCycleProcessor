@@ -157,11 +157,11 @@ architecture structureTopLevel of RISCV_Processor is
 
   component StoreFormatter is
     port(
-      i_rs2Data    : in std_logic_vector(31 downto 0);
-      i_addr      : in std_logic_vector(1 downto 0);
-      i_dataSize  : in std_logic_vector(1 downto 0);
-      o_storeData : out std_logic_vector(31 downto 0);
-      o_byteEnable : out std_logic_vector(3 downto 0)
+      i_rs2Data     : in std_logic_vector(31 downto 0);
+      i_addr        : in std_logic_vector(1 downto 0);
+      i_dataSize    : in std_logic_vector(1 downto 0);
+      o_storeData   : out std_logic_vector(31 downto 0);
+      o_byteEnable  : out std_logic_vector(3 downto 0)
     );
   end component;
 
@@ -236,6 +236,74 @@ architecture structureTopLevel of RISCV_Processor is
   signal MEM_WB_Halt      : std_logic;
 
 begin
+
+  -- ============================================================
+  -- PART 2: Clocked Pipeline Control Registers
+  -- ============================================================
+
+  -- Detect WFI in the decode stage
+  ID_Halt <= '1' when s_Inst = x"10500073" else '0';
+
+  process(iCLK, iRST)
+  begin
+    if iRST = '1' then
+
+      -- ID/EX controls
+      ID_EX_ALUSrc         <= '0';
+      ID_EX_ALUControl     <= '0';
+      ID_EX_selectAluOut   <= (others => '0');
+      ID_EX_sign           <= '0';
+      ID_EX_dir            <= '0';
+      ID_EX_arith          <= '0';
+      ID_EX_MemWrite       <= '0';
+      ID_EX_selectDataSize <= (others => '0');
+      ID_EX_RegWrite       <= '0';
+      ID_EX_ResultSrc      <= (others => '0');
+      ID_EX_Halt           <= '0';
+
+      -- EX/MEM controls
+      EX_MEM_MemWrite       <= '0';
+      EX_MEM_selectDataSize <= (others => '0');
+      EX_MEM_sign           <= '0';
+      EX_MEM_RegWrite       <= '0';
+      EX_MEM_ResultSrc      <= (others => '0');
+      EX_MEM_Halt           <= '0';
+
+      -- MEM/WB controls
+      MEM_WB_RegWrite  <= '0';
+      MEM_WB_ResultSrc <= (others => '0');
+      MEM_WB_Halt      <= '0';
+
+    elsif rising_edge(iCLK) then
+
+      -- ID -> EX
+      ID_EX_ALUSrc         <= ALUSrc;
+      ID_EX_ALUControl     <= ALUControl;
+      ID_EX_selectAluOut   <= s_selectAluOut;
+      ID_EX_sign           <= s_sign;
+      ID_EX_dir            <= s_dir;
+      ID_EX_arith          <= s_arith;
+      ID_EX_MemWrite       <= s_DMemWr;
+      ID_EX_selectDataSize <= s_selectDataSize;
+      ID_EX_RegWrite       <= s_RegWr;
+      ID_EX_ResultSrc      <= ResultSrc;
+      ID_EX_Halt           <= ID_Halt;
+
+      -- EX -> MEM
+      EX_MEM_MemWrite       <= ID_EX_MemWrite;
+      EX_MEM_selectDataSize <= ID_EX_selectDataSize;
+      EX_MEM_sign           <= ID_EX_sign;
+      EX_MEM_RegWrite       <= ID_EX_RegWrite;
+      EX_MEM_ResultSrc      <= ID_EX_ResultSrc;
+      EX_MEM_Halt           <= ID_EX_Halt;
+
+      -- MEM -> WB
+      MEM_WB_RegWrite  <= EX_MEM_RegWrite;
+      MEM_WB_ResultSrc <= EX_MEM_ResultSrc;
+      MEM_WB_Halt      <= EX_MEM_Halt;
+
+    end if;
+  end process;
 
   -- RISC-V does not have hardware overflow detection.
   s_Ovfl <= '0';
