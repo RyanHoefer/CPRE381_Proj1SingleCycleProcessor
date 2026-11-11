@@ -243,6 +243,14 @@ architecture structureTopLevel of RISCV_Processor is
   signal ID_EX_Immediate : std_logic_vector(31 downto 0);
   signal ID_EX_rd        : std_logic_vector(4 downto 0);
 
+  -- =============================================================
+  -- PART 2: EX/MEM Datapath Register Declarations
+  -- =============================================================
+  signal EX_MEM_ALUResult : std_logic_vector(31 downto 0);
+  signal EX_MEM_StoreData : std_logic_vector(31 downto 0);
+  signal EX_MEM_Immediate : std_logic_vector(31 downto 0);
+  signal EX_MEM_rd        : std_logic_vector(4 downto 0);
+
 begin
 
   -- ============================================================
@@ -274,6 +282,12 @@ begin
       ID_EX_RegWrite       <= '0';
       ID_EX_ResultSrc      <= (others => '0');
       ID_EX_Halt           <= '0';
+
+      -- EX/MEM datapath reset
+      EX_MEM_ALUResult <= (others => '0');
+      EX_MEM_StoreData <= (others => '0');
+      EX_MEM_Immediate <= (others => '0');
+      EX_MEM_rd        <= (others => '0');
 
       -- EX/MEM controls
       EX_MEM_MemWrite       <= '0';
@@ -308,6 +322,12 @@ begin
       ID_EX_RegWrite       <= s_RegWr;
       ID_EX_ResultSrc      <= ResultSrc;
       ID_EX_Halt           <= ID_Halt;
+
+      -- EX -> MEM datapath
+      EX_MEM_ALUResult <= aluResult;
+      EX_MEM_StoreData <= ID_EX_readData2;
+      EX_MEM_Immediate <= ID_EX_Immediate;
+      EX_MEM_rd        <= ID_EX_rd;
 
       -- EX -> MEM
       EX_MEM_MemWrite       <= ID_EX_MemWrite;
