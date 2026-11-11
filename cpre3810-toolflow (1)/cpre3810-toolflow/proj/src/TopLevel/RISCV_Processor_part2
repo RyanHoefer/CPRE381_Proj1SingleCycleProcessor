@@ -235,6 +235,14 @@ architecture structureTopLevel of RISCV_Processor is
   signal MEM_WB_ResultSrc : std_logic_vector(2 downto 0);
   signal MEM_WB_Halt      : std_logic;
 
+  -- =============================================================
+  -- PART 2: ID/EX datapath register declarations
+  -- =============================================================
+  signal ID_EX_readData1 : std_logic_vector(31 downto 0);
+  signal ID_EX_readData2 : std_logic_vector(31 downto 0);
+  signal ID_EX_Immediate : std_logic_vector(31 downto 0);
+  signal ID_EX_rd        : std_logic_vector(4 downto 0);
+
 begin
 
   -- ============================================================
@@ -247,6 +255,12 @@ begin
   process(iCLK, iRST)
   begin
     if iRST = '1' then
+
+      -- ID/EX datapath reset
+      ID_EX_readData1 <= (others => '0');
+      ID_EX_readData2 <= (others => '0');
+      ID_EX_Immediate <= (others => '0');
+      ID_EX_rd        <= (others => '0');
 
       -- ID/EX controls
       ID_EX_ALUSrc         <= '0';
@@ -275,6 +289,12 @@ begin
       MEM_WB_Halt      <= '0';
 
     elsif rising_edge(iCLK) then
+
+      -- ID -> EX datapath
+      ID_EX_readData1 <= readData1;
+      ID_EX_readData2 <= readData2;
+      ID_EX_Immediate <= pc_addr_imm;
+      ID_EX_rd        <= s_Inst(11 downto 7);
 
       -- ID -> EX
       ID_EX_ALUSrc         <= ALUSrc;
