@@ -21,6 +21,8 @@ main:
     nop
     nop
     bne x3, t0, done
+    nop
+    nop
 
     # SUB: 20 - 6 = 14
     addi t0, x0, 14
@@ -28,13 +30,17 @@ main:
     nop 
     nop
     bne x4, t0, done
+    nop
+    nop
 
     # AND: 20 & 6 = 4
     addi t0, x0, 4
-    and x5, x1, x2
+    and x27, x1, x2
     nop
     nop
-    bne x5, t0, done
+    bne x27, t0, done
+    nop
+    nop
 
     # OR: 20 | 6 = 22
     addi t0, x0, 22
@@ -42,6 +48,8 @@ main:
     nop
     nop
     bne x6, t0, done
+    nop
+    nop
 
     # XOR: 20 ^ 6 = 18
     xor x7, x1, x2
@@ -49,6 +57,8 @@ main:
     nop
     nop
     bne x7, t0, done
+    nop
+    nop
 
     # ANDI: 20 & 15 = 4
     andi x8, x1, 15
@@ -56,6 +66,8 @@ main:
     nop
     nop
     bne x8, t0, done
+    nop
+    nop
 
     # ORI: 6 | 8 = 14
     ori x9, x2, 8
@@ -63,13 +75,17 @@ main:
     nop
     nop
     bne x9, t0, done
+    nop
+    nop
 
     # XORI: 20 ^ 7 = 19
-    xori x10, x1, 7
+    xori x26, x1, 7
     addi t0, x0, 19
     nop
     nop
-    bne x10, t0, done
+    bne x26, t0, done
+    nop
+    nop
 
     # SLLI: 6 << 2 = 24
     slli x11, x2, 2
@@ -77,6 +93,8 @@ main:
     nop
     nop
     bne x11, t0, done
+    nop
+    nop
 
     # SRLI: 20 >> 2 = 5
     srli x12, x1, 2
@@ -84,6 +102,8 @@ main:
     nop
     nop
     bne x12, t0, done
+    nop
+    nop
 
     # SRAI: arithmetic shift of -20
     addi t1, x0, -20
@@ -93,6 +113,8 @@ main:
     nop
     nop
     bne x13, t0, done
+    nop
+    nop
 
     # Register-based shifts
     addi t2, x0, 2
@@ -104,6 +126,8 @@ main:
     nop
     nop
     bne x14, t0, done
+    nop
+    nop
 
     # SRL: 20 >> 2 = 5
     srl x15, x1, t2
@@ -111,6 +135,8 @@ main:
     nop
     nop
     bne x15, t0, done
+    nop
+    nop
 
     # SRA: -20 >> 2 = -5
     sra x16, t1, t2
@@ -118,6 +144,8 @@ main:
     nop
     nop
     bne x16, t0, done
+    nop
+    nop
 
     # SLT: signed comparison 6 < 20
     slt x17, x2, x1
@@ -125,6 +153,8 @@ main:
     nop
     nop
     bne x17, t0, done
+    nop
+    nop
 
     # SLTU: unsigned comparison 6 < 20
     sltu x18, x2, x1
@@ -132,6 +162,8 @@ main:
     nop
     nop
     bne x18, t0, done
+    nop
+    nop
 
     # SLTI: signed comparison 6 < 10
     slti x19, x2, 10
@@ -139,6 +171,8 @@ main:
     nop
     nop
     bne x19, t0, done
+    nop
+    nop
 
     # SLTIU: unsigned comparison 6 < 10
     sltiu x20, x2, 10
@@ -146,6 +180,8 @@ main:
     nop
     nop
     bne x20, t0, done
+    nop
+    nop
 
     # LUI: load upper immediate
     lui x21, 0x12345
@@ -153,6 +189,8 @@ main:
     nop
     nop
     bne x21, t0, done
+    nop
+    nop
 
     # AUIPC: result = current PC + 0x1000
     # Subtract 0x1000 to recover the instruction PC.
@@ -169,6 +207,8 @@ main:
     nop
     nop
     bne t4, x0, done
+    nop
+    nop
 
     # Register dependency tests
     add x23, x3, x4
@@ -176,18 +216,24 @@ main:
     nop
     nop
     bne x23, t0, done
+    nop
+    nop
 
     sub x24, x23, x2
     addi t0, x0, 34
     nop
     nop
     bne x24, t0, done
+    nop
+    nop
 
     xor x25, x24, x1
     addi t0, x0, 54
     nop
     nop
     bne x25, t0, done
+    nop
+    nop
 
     # All tests passed
     addi a0, x0, 1
