@@ -1,0 +1,8 @@
+Oh no...
+
+Cycle: na
+RARS instruction number: 1	Instruction: lui x2,65553
+Expected:	Register Write to Reg: 0x02 Val: 0x10011000
+Got     :	Execution stopped
+Student execution ended prematurely
+

@@ -1,0 +1,139 @@
+[N
+12
+5
+5 xor_n
+2
+8 mux2t1_n
+4
+1 N
+8
+7 adder_n
+1
+110 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/proj/src/work
+6
+4 or_n
+10
+16 addsub_n_for_alu
+12
+14 structural_alu
+3
+10 structural
+11
+3 alu
+9
+10 onescomp_n
+7
+5 and_n
+]
+[G
+1
+11
+12
+1
+4
+1
+0
+32
+0
+0 0
+0
+0
+]
+[G
+1
+9
+3
+1
+4
+1
+0
+32
+0
+0 0
+0
+0
+]
+[G
+1
+7
+3
+1
+4
+1
+0
+32
+0
+0 0
+0
+0
+]
+[G
+1
+5
+3
+1
+4
+1
+0
+32
+0
+0 0
+0
+0
+]
+[G
+1
+2
+3
+1
+4
+1
+0
+32
+0
+0 0
+0
+0
+]
+[G
+1
+8
+3
+1
+4
+1
+0
+32
+0
+0 0
+0
+0
+]
+[G
+1
+6
+3
+1
+4
+1
+0
+32
+0
+0 0
+0
+0
+]
+[G
+1
+10
+3
+1
+4
+1
+0
+32
+0
+0 0
+0
+0
+]

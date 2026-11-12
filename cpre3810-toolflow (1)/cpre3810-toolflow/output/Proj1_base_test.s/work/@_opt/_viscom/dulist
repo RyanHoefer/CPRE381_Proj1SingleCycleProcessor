@@ -36,5 +36,5 @@
 1 10 extender_n 8 dataflow 128 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/containers/sim_container_0/work 1 65 0 0 335 0
 1 10 extender_n 8 dataflow 128 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/containers/sim_container_0/work 2 65 0 0 231 0
 1 13 loadformatter 10 structural 128 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/containers/sim_container_0/work 1 65 0 0 221 0
-1 15 riscv_processor 17 structuretoplevel 128 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/containers/sim_container_0/work 1 65 0 0 631 0
+1 15 riscv_processor 17 structuretoplevel 128 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/containers/sim_container_0/work 1 65 0 0 633 0
 1 2 tb 5 mixed 128 /home/rhoefer/cpre3810/CPRE381_Proj1SingleCycleProcessor/cpre3810-toolflow (1)/cpre3810-toolflow/containers/sim_container_0/work 1 65 0 0 421 0
