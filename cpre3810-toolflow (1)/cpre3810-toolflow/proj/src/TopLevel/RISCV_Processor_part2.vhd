@@ -212,6 +212,7 @@ architecture structureTopLevel of RISCV_Processor is
   -- Decode-stage WFI detection (eventually carried to WB)
   signal ID_Halt : std_logic;
 
+
   -- ID/EX: controls needed in EX, MEM, and WB (16 bits)
   signal ID_EX_ALUSrc         : std_logic;
   signal ID_EX_ALUControl     : std_logic;
@@ -271,6 +272,10 @@ architecture structureTopLevel of RISCV_Processor is
 
   -- MEM-stage write enable
   signal MEM_MemWriteEnable : std_logic;
+
+   -- Signals for decoder outputs
+  signal ID_MemWrite : std_logic;
+  signal ID_RegWrite : std_logic;
 
   -- WB-stage write enable
   signal WB_RegWriteEnable : std_logic;
@@ -388,9 +393,9 @@ begin
       ID_EX_sign           <= s_sign;
       ID_EX_dir            <= s_dir;
       ID_EX_arith          <= s_arith;
-      ID_EX_MemWrite       <= s_DMemWr;
+      ID_EX_MemWrite       <= ID_MemWrite;
       ID_EX_selectDataSize <= s_selectDataSize;
-      ID_EX_RegWrite       <= s_RegWr;
+      ID_EX_RegWrite       <= ID_RegWrite;
       ID_EX_ResultSrc      <= ResultSrc;
       ID_EX_Halt           <= ID_Halt;
 
@@ -433,6 +438,9 @@ begin
   -- RISC-V does not have hardware overflow detection.
   s_Ovfl <= '0';
 
+  s_DMemWr <= MEM_MemWriteEnable;
+  s_RegWr <= WB_RegWriteEnable;
+
   -- Connect ALU output for synthesis
   oALUOut <= aluResult;
   s_RegWrData <= writeData;
@@ -454,8 +462,8 @@ begin
       o_ALUControl     => ALUControl,
       o_ImmType        => ImmType,
       o_ResultSrc      => ResultSrc,
-      o_MemWrite       => s_DMemWr,
-      o_RegWrite       => s_RegWr,
+      o_MemWrite       => ID_MemWrite,
+      o_RegWrite       => ID_RegWrite,
       o_sign           => s_sign,
       o_selectDataSize => s_selectDataSize,
       o_selectAluOut   => s_selectAluOut,
@@ -493,7 +501,7 @@ begin
       i_w           => s_RegWrAddr,
       i_writeData   => s_RegWrData,
       i_writeEnable => WB_RegWriteEnable,
-      CLK           => iCLK,
+      CLK           => not iCLK,
       o_data1       => readData1,
       o_data2       => readData2
     );
