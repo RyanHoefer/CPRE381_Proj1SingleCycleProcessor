@@ -1,8 +1,20 @@
 Oh no...
 
-Cycle: na
-RARS instruction number: 1	Instruction: lui x2,65553
-Expected:	Register Write to Reg: 0x02 Val: 0x10011000
-Got     :	Execution stopped
-Student execution ended prematurely
+Cycle: 9
+RARS instruction number: 6	Instruction: addi x1,x1,28
+Expected:	Register Write to Reg: 0x01 Val: 0x00400024
+Got     :	Register Write to Reg: 0x01 Val: 0xXXXXXXXX
+Incorrect write
+
+Cycle: 12
+RARS instruction number: 8	Instruction: addi x2,x2,-40
+Expected:	Register Write to Reg: 0x02 Val: 0x10010FD8
+Got     :	Memory Write to Addr: 0x00000000 Val: 0x00000000 BE: 1111
+Wrote to incorrect structure
+
+Cycle: 13
+RARS instruction number: 11	Instruction: sw x1,36(x2)
+Expected:	Memory Write to Addr: 0x10010FFC Val: 0x00400024
+Got     :	Memory Write to Addr: 0x00000000 Val: 0x00000000 BE: 1111
+Incorrect write
 
